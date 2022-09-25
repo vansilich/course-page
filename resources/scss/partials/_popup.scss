@@ -1,0 +1,29 @@
+.popup-overlay{
+    -webkit-transform: translate3d(0, 0, 25px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1500;
+
+    &.hidden{
+        display: none;
+    }
+}
+
+.popup{
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    max-height: 80vh;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    z-index: 1501;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}

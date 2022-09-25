@@ -1,0 +1,65 @@
+.teacher{
+    padding: 85px 0 50px 0;
+
+    &__title{
+        font-size: 32px;
+        color: #000000;
+        font-weight: 700;
+        margin: 0;
+        width: fit-content;
+        padding: 0 0 7px 229px;
+        border-bottom: 7px solid #0042A6;
+    }
+
+    &__content{
+        margin: 50px 0 0 0;
+        padding: 0;
+    }
+}
+
+.about-teacher{
+    display: flex;
+    flex-direction: row;
+
+    &__image{
+        pointer-events: none;
+        display: block;
+        width: 189px;
+        height: 189px;
+    }
+
+    &__text{
+        margin: 0 0 0 45px;
+    }
+}
+
+.teacher-text{
+    color: #000000;
+
+    &__title{
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__concise{
+        margin: 5px 0 0 0;
+        padding: 0;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    &__about{
+        margin: 20px 0 0 0;
+        padding: 0;
+        font-weight: 500;
+        font-size: 16px;
+        list-style: none;
+
+        & li{
+            padding: 0;
+            margin: 5px 0 0 0;
+        }
+    }
+}

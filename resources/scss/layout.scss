@@ -1,0 +1,24 @@
+@import "abstract/variables";
+
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+
+    @media (min-width: $container-xxl-min) {
+        max-width: $container-xxl-min;
+    }
+}
+
+.container-left-shifted{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+
+    @media (min-width: $container-xxl-min) {
+        padding: 0 120px 0 0;
+        max-width: $container-xxl-min + 240px;
+    }
+}

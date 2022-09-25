@@ -1,0 +1,151 @@
+.section-start{
+    padding: 32px 0 85px 0;
+    overflow: hidden;
+
+    &__logo{
+        display: block;
+        width: 224px;
+        height: 55px;
+        margin: 0 0 25px 120px;
+    }
+
+    &__top{
+
+    }
+
+    &__middle{
+        background-color: #84B5FF;
+        border-radius: 44px;
+        padding: 50px 0 90px 120px;
+    }
+
+    &__bottom{
+
+    }
+}
+
+.promo-text{
+
+    &__top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__middle{
+        margin: 50px 0 0 0;
+        font-size: 64px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    &__bottom{
+        margin: 70px 0 0 0;
+        font-size: 36px;
+        font-weight: 700;
+        color: #000000;
+    }
+}
+
+
+.start-promo{
+    display: flex;
+    flex-direction: row;
+}
+
+.promo-animated{
+    width: 50%;
+    max-width: 50%;
+    position: relative;
+
+    & img{
+        display: block;
+        position: absolute;
+        transition: all .1s ease;
+    }
+
+    &__3D-1{
+        pointer-events: none;
+        z-index: 15;
+        top: -90px;
+        left: -50px;
+    }
+
+    &__3D-2{
+        pointer-events: none;
+        z-index: 15;
+        top: -210px;
+        right: -240px;
+    }
+
+    &__notebook{
+        pointer-events: none;
+        top: 220px;
+        z-index: 10;
+    }
+}
+
+.promo-logo{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-right: 40px;
+}
+
+.promo-course-description{
+    color: #000000;
+    font-weight: 500;
+    font-size: 33px;
+}
+
+.course-concise-description{
+
+    &__title{
+        margin: 60px 0 0 0;
+        font-weight: 700;
+        font-size: 32px;
+        width: fit-content;
+        padding: 0 4px 0 229px;
+        border-bottom: 7px solid #595959;
+    }
+}
+
+.start-description{
+    margin: 0 0 0 229px;
+    border-spacing: 0;
+
+    td{
+        vertical-align: top;
+    }
+
+    &__title{
+        padding: 40px 0 0 0;
+        color: #75A6F1;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    &__content{
+        padding: 40px 0 0 25px;
+        color: #000000;
+        font-weight: 500;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+
+    &__formats{
+
+        & ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            & li:not(:first-child){
+                padding: 0;
+                margin: 5px 0 0 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+@import "resources/scss/abstract/variables";
+
+.price{
+    background-color: $default-layout-color;
+    padding: 90px 0 60px 0;
+
+    &__title{
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 32px;
+    }
+}
+
+.price-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+
+    &__left, &__right{
+        width: 50%;
+        max-width: 50%;
+    }
+}
+
+.price-offer{
+
+    &__details{
+        margin: 50px 0 0 0;
+    }
+}
+
+.course-include{
+
+    &__items{
+        font-weight: 400;
+        font-size: 20px;
+        color: #ffffff;
+        list-style: none;
+        padding: 0 0 0 50px;
+        counter-reset: items-li;
+
+        & li {
+            position: relative;
+            padding:12px 20px 20px 28px;
+            transition-duration: 0.3s;
+        }
+
+        & li:not(:first-child){
+            margin: 20px 0 0 0;
+        }
+
+        & li:before {
+            border: 6px solid transparent;
+            line-height: 30px;
+            position: absolute;
+            top: 0;
+            left:-30px;
+            width:42px;
+            text-align:center;
+            font-size: 13px;
+            font-weight: bold;
+            color: #77AEDB;
+            counter-increment: items-li;
+            content: counter(items-li);
+            transition-duration: 0.3s;
+            box-sizing: border-box;
+        }
+
+        & li:after {
+            position: absolute;
+            top: 0;
+            left: -30px;
+            width: 42px;
+            height: 42px;
+            border: 6px solid #3399FF;
+            border-radius: 50%;
+            content: '';
+            opacity: 0.5;
+            box-sizing: border-box;
+        }
+
+        & li:hover:after {
+            animation: 500ms ease-in-out 0s bounceIn;
+            opacity: 1;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale3d(.6, .6, .6);
+            }
+            20% {
+                transform: scale3d(1, 1, 1);
+            }
+            40% {
+                transform: scale3d(.9, .9, .9);
+            }
+            60% {
+                opacity: 1;
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+            80% {
+                transform: scale3d(.97, .97, .97);
+            }
+            to {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+    }
+}
+
+.whats-included{
+
+    &__form-wrapper{
+        display: flex;
+        align-content: center;
+        justify-content: end;
+    }
+}

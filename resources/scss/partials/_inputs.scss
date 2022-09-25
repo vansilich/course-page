@@ -1,0 +1,23 @@
+@import "../abstract/variables";
+
+.text-input{
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #595959;
+    border: 1px solid #D9D9D9;
+    transition: .2s;
+
+    &.error{
+        border-color: #d93c3c;
+
+        &:focus{
+            box-shadow: 0 0 0 0.2rem rgb(217 60 60 / 50%);
+        }
+    }
+
+    &:focus{
+        box-shadow: 0 0 0 0.2rem rgb(217 217 217 / 50%);
+    }
+}

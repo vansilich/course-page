@@ -1,0 +1,47 @@
+@import "abstract/variables";
+@import "vendor/normalize";
+
+@import "layout";
+@import "sections/top-nav";
+@import "sections/section-start";
+@import "sections/seaction-is-for";
+@import "sections/section-format";
+@import "sections/section-program";
+@import "sections/section-teacher";
+@import "sections/section-price";
+@import "sections/section-reviews";
+@import "sections/section-certificate";
+@import "footer";
+
+@import "blocks/apply-form";
+@import "blocks/popup-apply-form";
+
+@import "partials/popup";
+@import "partials/inputs";
+
+@import "partials/animation";
+
+body{
+    width: 100%;
+    background-color: #ffffff;
+    font-family: Inter, sans-serif;
+
+    &.body-lock{
+        position: fixed;
+        overflow-y: scroll;
+    }
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    transition: background-color .3s;
+}
