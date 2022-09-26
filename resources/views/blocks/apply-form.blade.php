@@ -8,13 +8,12 @@
         <span class="apply-date__text">
             Начало обучения
         </span>
-
         <span class="apply-date__date">
             17 октября
         </span>
     </div>
 
-    <form class="apply-form__form" action="http://course.local/send/request" autocomplete="off">
+    <form class="apply-form__form" action="/send/request" autocomplete="off">
         @csrf
 
         <ul class="apply-form__success"></ul>
@@ -52,5 +51,4 @@
             </div>
         </div>
     </form>
-
 </div>
