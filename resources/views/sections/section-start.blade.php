@@ -50,7 +50,7 @@
                     ПРОДОЛЖИТЕЛЬНОСТЬ:
                 </td>
                 <td class="start-description__content">
-                    2 месяца
+                    1 месяц
                 </td>
             </tr>
             <tr class="start-description__row">

@@ -6,7 +6,7 @@
             ЗАПИСАТЬСЯ НА КУРС
         </h3>
 
-        <form class="popup-apply-form__form" action="">
+        <form class="popup-apply-form__form" action="/send/request" autocomplete="off">
 
             <div class="popup-apply-form__form-content">
 

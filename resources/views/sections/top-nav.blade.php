@@ -1,7 +1,5 @@
 <div class="nav-sticky">
-
     <div class="container">
-
         <div class="top-nav">
 
             <div class="top-nav__left">
@@ -11,10 +9,6 @@
             <div class="top-nav__right">
                 <a href="#" class="top-nav__text-item">
                     Программа
-                </a>
-
-                <a class="top-nav__text-item">
-                    Стоимость
                 </a>
 
                 <a href="tel:+70000000000" class="top-nav__text-item">
@@ -28,5 +22,4 @@
 
         </div>
     </div>
-
 </div>

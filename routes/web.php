@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\UserRequestController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +21,5 @@ Route::get('/', function () {
 Route::get('/privacy-policy', function () {
     return view('index');
 })->name('privacy-policy');
+
+Route::post('/request', [UserRequestController::class, 'getRequest'])->prefix('send');
