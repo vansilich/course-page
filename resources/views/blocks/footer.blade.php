@@ -10,8 +10,8 @@
                     <a href="tel:70000000000" class="footer-contacts__phone">
                         +7 (000) 000-00-00
                     </a>
-                    <a href="mailto:www@www" class="footer-contacts__email">
-                        www@www
+                    <a href="mailto:kurs@fluid-line.ru" class="footer-contacts__email">
+                        kurs@fluid-line.ru
                     </a>
                 </div>
 
