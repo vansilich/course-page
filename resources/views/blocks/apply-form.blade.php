@@ -14,8 +14,10 @@
         </span>
     </div>
 
-    <form class="apply-form__form" action="">
+    <form class="apply-form__form" action="http://course.local/send/request" autocomplete="off">
+        @csrf
 
+        <ul class="apply-form__success"></ul>
         <ul class="apply-form__errors"></ul>
 
         <input class="apply-form__text-input text-input"
@@ -36,7 +38,6 @@
             placeholder="Номер телефона"
             autocomplete="off">
 
-        @csrf
         <button class="apply-form__submit" type="submit">
             Отправить
         </button>

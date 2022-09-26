@@ -28,6 +28,25 @@
         padding: 0;
     }
 
+    &__success {
+        text-align: center;
+        padding: 10px 15px;
+        margin: 0 10px 0 0;
+        list-style: none;
+        border-radius: 5px;
+        border: 1px solid $success-border-color;
+        color: $success-text-color;
+        background-color: lighten($success-bg-color, 0%);
+
+        &:empty{
+            display: none;
+        }
+
+        li{
+            margin-top: 5px;
+        }
+    }
+
     &__errors{
         padding: 10px 15px;
         margin: 0 10px 0 0;
