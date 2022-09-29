@@ -21,7 +21,18 @@
 
 @import "partials/animation";
 
-body{
+@import "mobile/mobile-1440";
+@import "mobile/mobile-1280";
+@import "mobile/mobile-1140";
+@import "mobile/mobile-1024";
+@import "mobile/mobile-960";
+@import "mobile/mobile-768";
+@import "mobile/mobile-560";
+@import "mobile/mobile-425";
+@import "mobile/mobile-320";
+
+body {
+    min-width: 320px;
     width: 100%;
     background-color: #ffffff;
     font-family: Inter, sans-serif;
@@ -44,4 +55,8 @@ h1,h2,h3,h4,h5,h6{
 
 button{
     transition: background-color .3s;
+}
+
+.certificate-small, .nav-logo-small, .nav-logo-burger, .footer-md, .collapse {
+    display: none;
 }

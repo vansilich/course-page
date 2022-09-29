@@ -1,0 +1,265 @@
+@media screen and (max-width: 768px) {
+    $padding-size: 6.5vw;
+    .nav-logo-small {
+        display: block!important;
+    }
+    .nav-logo-big {
+        display: none;
+    }
+
+    //Navbar block
+    .nav-sticky {
+        .container {
+            padding: 0 calc($padding-size - 2.5vw);
+        }
+    }
+    //Model block
+    .section-start {
+        &__logo {
+            margin-left: 0;
+        }
+        &__middle {
+            width: 100%;
+            margin: 0;
+        }
+        .container-left-shifted {
+            padding-left: calc($padding-size - 2.5vw);
+
+            .promo-animated {
+                &__3D-1 {
+                    width: 35vw;
+                    top: -10px;
+                    left: -10vw;
+                }
+                &__3D-2 {
+                    width: 25vw;
+                    top: -125px;
+                    right: -8vw;
+                }
+                &__notebook {
+                    left: -7vw;
+                    top: 80px;
+                }
+            }
+        }
+    }
+    //Course block
+    .course-concise-description {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .start-description {
+            margin-left: $padding-size;
+        }
+    }
+    //Is for block
+    .is-for {
+        padding: 33px $padding-size;
+    }
+    //Format block
+    .format {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+            .formats {
+                margin-left: 0;
+                margin-right: 0;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 100px;
+
+                .format-text {
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+    //Program block
+    .program {
+        padding: 33px $padding-size;
+
+        .programs {
+            max-width: 100%;
+        }
+    }
+    //Teacher block
+    .teacher {
+        padding: 33px 0;
+
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+
+            .about-teacher {
+                padding: 0;
+            }
+        }
+    }
+    //Price block
+    .price {
+        padding: 33px $padding-size;
+        .whats-included {
+            display: block;
+
+            &__form-wrapper {
+                justify-content: end;
+            }
+        }
+    }
+    //Review block
+    .reviews {
+        padding-top: 33px;
+
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+
+            .review-item {
+                padding: 0;
+            }
+        }
+    }
+    //Cert block
+    .certificate {
+        padding-top: 33px;
+
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+        }
+        .certificate-small-form {
+            right: 10vw;
+            .apply-form {
+                max-width: 24vw;
+                padding: 25px 25px;
+                &__title {
+                    font-weight: 700;
+                    font-size: 15.3px;
+                    line-height: 19px;
+                }
+                &__form {
+                    margin-top: 0;
+                }
+                .apply-date {
+                    &__text {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                    &__date {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    //$apply-form-padding-t-b: 25px;
+    //$apply-form-padding-l-r: 20px;
+    //$apply-form-date-size: 12px;
+    //$policy-text-size: 8px;
+    //
+    //.nav-logo-small {
+    //    display: block!important;
+    //}
+    //.nav-logo-big {
+    //    display: none;
+    //}
+    //
+    //// Cert block
+    //.certificate {
+    //    &__text {
+    //        max-width: 50%;
+    //        font-weight: 400;
+    //        font-size: 16px;
+    //        line-height: 18px;
+    //    }
+    //    &__img {
+    //        margin-top: 2em;
+    //        max-width: 50%;
+    //        width: 100%;
+    //    }
+    //    &__title {
+    //        padding-left: $padding-size;
+    //    }
+    //    .container {
+    //        display: block;
+    //        padding-left: $padding-size;
+    //    }
+    //    .certificate-small-form {
+    //        position: absolute;
+    //        right: 5vw;
+    //    }
+    //
+    //    .certificate-small-form {
+    //        .apply-form {
+    //            max-width: 30vw;
+    //            padding: $apply-form-padding-t-b $apply-form-padding-l-r;
+    //
+    //            &__title {
+    //                font-weight: 700;
+    //                font-size: 15.3px;
+    //                line-height: 19px;
+    //            }
+    //            &__form {
+    //                margin-top: 10px;
+    //            }
+    //            &__text-input:not(:first-child) {
+    //                font-weight: 400;
+    //                font-size: 12px;
+    //                line-height: 15px;
+    //
+    //                margin-top: 8px;
+    //                padding: 5px 10px;
+    //            }
+    //
+    //            &__submit {
+    //                font-weight: 700;
+    //                font-size: 16px;
+    //                line-height: 22px;
+    //
+    //                margin-top: 20px;
+    //                padding: 8px 0;
+    //            }
+    //
+    //            .apply-date {
+    //                &__text {
+    //                    font-weight: 400;
+    //                    font-size: $apply-form-date-size;
+    //                    line-height: $apply-form-date-size;
+    //                }
+    //                &__date {
+    //                    font-weight: 400;
+    //                    font-size: $apply-form-date-size;
+    //                    line-height: $apply-form-date-size;
+    //                }
+    //            }
+    //            .apply-policy {
+    //                &__checkbox {
+    //                    width: $policy-text-size;
+    //                    height: $policy-text-size;
+    //                }
+    //                &__text {
+    //                    font-weight: 400;
+    //                    font-size: $policy-text-size;
+    //                    line-height: $policy-text-size;
+    //                }
+    //                &__link {
+    //                    font-weight: 400;
+    //                    font-size: $policy-text-size;
+    //                    line-height: $policy-text-size;
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
+}

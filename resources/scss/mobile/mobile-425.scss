@@ -1,0 +1,31 @@
+@media screen and (max-width: 425px) {
+    $padding-size: 5vw;
+
+    $apply-form-padding-t-b: 25px;
+    $apply-form-padding-l-r: 20px;
+    $apply-form-title-size: 21px;
+    $apply-form-date-size: 12px;
+    $policy-text-size: 8px;
+
+    .certificate {
+        &__text {
+            max-width: 100%;
+        }
+        &__img {
+            margin-top: 2em;
+            max-width: 100%;
+            width: 100%;
+        }
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            display: block;
+            padding-left: $padding-size;
+            padding-right: $padding-size;
+        }
+        .certificate-small-form {
+            display: none;
+        }
+    }
+}

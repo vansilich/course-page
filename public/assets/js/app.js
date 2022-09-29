@@ -2476,6 +2476,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_3d_compas__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/3d-compas */ "./resources/js/pages/3d-compas.js");
 
 
+var collapseShow = document.getElementById('collapse-burger-show');
+collapseShow.addEventListener('click', function () {
+  document.getElementById("collapse-container").style.display = "block";
+});
+var collapseHide = document.getElementById('collapse-burger-close');
+collapseHide.addEventListener('click', function () {
+  document.getElementById("collapse-container").style.display = "none";
+});
 
 /***/ }),
 

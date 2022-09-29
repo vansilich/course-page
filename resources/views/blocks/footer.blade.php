@@ -7,8 +7,8 @@
             <div class="footer-content__right footer-text">
 
                 <div class="footer-text__left footer-contacts">
-                    <a href="tel:70000000000" class="footer-contacts__phone">
-                        +7 (000) 000-00-00
+                    <a href="tel:74957411291" class="footer-contacts__phone">
+                        +7 (495) 741-12-91
                     </a>
                     <a href="mailto:kurs@fluid-line.ru" class="footer-contacts__email">
                         kurs@fluid-line.ru

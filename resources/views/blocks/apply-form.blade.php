@@ -1,7 +1,7 @@
 <div class="apply-form">
 
     <h3 class="apply-form__title">
-        ЗАПИСАТЬСЯ НУ КУРС
+        ЗАПИСАТЬСЯ НА КУРС
     </h3>
 
     <div class="apply-form__start apply-date">

@@ -1,17 +1,18 @@
-<section class="certificate certificate-large">
+<section class="certificate certificate-small">
 
+    <div class="certificate-small-form">
+        @include('blocks.apply-form')
+    </div>
     <h3 class="certificate__title">СЕРТИФИКАТ:</h3>
 
     <div class="container">
-
-        <img src="{{ asset('/assets/img/certificate.png') }}" alt="Сертификат" class="certificate__img">
-
         <p class="certificate__text">
             После сдачи тестовых заданий и итоговой работы - слушатель получает именной сертификат,
-            подтверждающий уровень его компетенции.
+            подтверждающий уровень его компетенции.<br><br>
             Документ высылается на электронную почту, либо отправляется на почтовый адрес,
             заказным письмом почты России.
         </p>
 
+        <img src="{{ asset('/assets/img/certificate.png') }}" alt="Сертификат" class="certificate__img">
     </div>
 </section>

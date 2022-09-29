@@ -1,0 +1,198 @@
+@media screen and (max-width: 320px) {
+    $padding-size: 26px;
+    $padding-size-top: 16px;
+
+    .nav-sticky {
+        .nav-logo-small {
+            display: none!important;
+        }
+        .nav-logo-burger {
+            padding: 0;
+        }
+        .collapse {
+            .item-collapse-button {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 29px;
+            }
+        }
+    }
+
+    //Model block
+    .section-start {
+        padding: 0 0;
+        padding-bottom: $padding-size-top;
+
+        &__logo {
+            width: 154px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        &__middle {
+            padding: 0 0;
+            border-radius: 18px;
+            max-width: 289px;
+        }
+        .start-promo {
+            padding: 33px 10px;
+            &__left {
+                min-width: 260px;
+
+            }
+        }
+        .container-left-shifted {
+            padding: $padding-size-top $padding-size-top;
+
+
+            .promo-logo {
+                width: 64px;
+                height: 64px;
+
+                margin-right: 7px;
+            }
+            .promo-text {
+                &__middle {
+                    font-weight: 700;
+                    font-size: 27px;
+                    line-height: 30px;
+
+                    margin-top: $padding-size-top;
+                }
+                &__bottom {
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 119.02%;
+
+                    margin-top: $padding-size-top;
+                    max-width: 114px;
+                }
+            }
+            .promo-course-description {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100.52%;
+
+                white-space: normal;
+            }
+            .promo-animated {
+                &__3D-1 {
+                    top: 10em;
+                    left: -13em;
+                    width: 234px;
+                }
+                &__3D-2 {
+                    right: -1em;
+                    top: -7.5em;
+                    width: 120px;
+                }
+                &__notebook {
+                    display: none;
+                }
+            }
+        }
+    }
+    //Course block
+    .course-concise-description {
+
+        &__title {
+            margin-top: 105px;
+            padding-left: $padding-size;
+        }
+        .start-description {
+            margin-left: $padding-size;
+
+            &__title {
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 22px;
+
+                display: block;
+                padding-left: 0;
+            }
+            &__content {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+
+                display: block;
+                padding-left: 0;
+            }
+
+            &__formats ul {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 15px;
+
+                li {
+                    margin-top: $padding-size-top;
+                }
+            }
+        }
+    }
+    //Is for block
+    .is-for {
+        padding: $padding-size-top $padding-size;
+        .for-who-icons {
+            flex-direction: column;
+        }
+        .for-who-item {
+            margin-bottom: 20px;
+        }
+    }
+    //Format block
+    .format {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding-left: $padding-size;
+
+            .formats {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    //Teacher block
+    .teacher {
+        padding: $padding-size-top 0;
+        &__title {
+            padding-left: $padding-size;
+        }
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            padding: 0 $padding-size    ;
+        }
+        .about-teacher {
+            &__image {
+                margin-bottom: $padding-size-top;
+            }
+        }
+        .teacher-text {
+            text-align: left;
+            margin: 0;
+
+            &__title {
+                font-size: 23px;
+                line-height: 23px;
+            }
+            &__concise {
+                font-size: 21px;
+                line-height: 21px;
+
+                margin-top: $padding-size-top;
+            }
+
+            &__about li {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+
+                margin-top: $padding-size-top;
+
+            }
+        }
+    }
+}

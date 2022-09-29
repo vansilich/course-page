@@ -1,5 +1,19 @@
 @import "resources/scss/abstract/variables";
 
+.nav-sticky {
+    .collapse {
+        position: absolute;
+        height: auto;
+        min-height: 200px;
+        background: white;
+        z-index: 100;
+        width: 100%;
+
+        .container {
+            padding: 1em 1em;
+        }
+    }
+}
 .nav-sticky{
     z-index: 100;
     top: 0;
