@@ -1,4 +1,4 @@
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 376px) {
     $padding-size: 42px;
     $padding-size-top: 18px;
 
@@ -294,6 +294,42 @@
             &__link {
                 margin-top: $padding-size-top;
                 text-align: right;
+            }
+        }
+    }
+
+    //Popup small block
+    .popup-overlay {
+        z-index: 9999;
+
+        .popup-apply-form {
+            max-width: 260px;
+            padding: 28px 17px;
+
+            &__form-content {
+                width: auto;
+            }
+            &__title {
+                font-size: 22px;
+            }
+            &__pre-date-text {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &__date {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &__text-input {
+                padding: 11px 12px;
+            }
+            &__submit {
+                line-height: 22px;
+            }
+            &__form-content-logo {
+                display: none;
             }
         }
     }

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserR extends Model
 {
-    protected $fillable = ['name', 'email', 'telephone'];
+    protected $fillable = ['name', 'email', 'telephone', 'updated_at'];
     protected $table = 'user_request';
     protected $primaryKey = 'user_id';
     public $incrementing = true;

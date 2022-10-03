@@ -47,7 +47,7 @@
             <div class="apply-policy__text">
                 Записываясь, вы принимаете условия <a href="" class="apply-policy__link">договора-оферты</a>
                 и даете согласие на обработку своих
-                персональных данных в соответствии с <a href="" class="apply-policy__link">политикой конфиденциальности</a>.
+                персональных данных в соответствии с <a href="https://fluid-line.ru/agreement" class="apply-policy__link">политикой конфиденциальности</a>.
             </div>
         </div>
     </form>

@@ -15,15 +15,15 @@
     }
     //Model block
     .section-start {
+        padding-top: 0;
         &__logo {
             margin-left: 0;
         }
         &__middle {
-            width: 100%;
             margin: 0;
         }
         .container-left-shifted {
-            padding-left: calc($padding-size - 2.5vw);
+            padding: 30px 30px;
 
             .promo-animated {
                 &__3D-1 {
@@ -34,7 +34,7 @@
                 &__3D-2 {
                     width: 25vw;
                     top: -125px;
-                    right: -8vw;
+                    left: 18vw;
                 }
                 &__notebook {
                     left: -7vw;
@@ -160,6 +160,16 @@
                     }
                 }
             }
+        }
+    }
+    //Footer block
+    footer {
+        padding: 30px $padding-size;
+        .container {
+            padding: 0;
+        }
+        .footer-contacts__email {
+            margin: 0;
         }
     }
 

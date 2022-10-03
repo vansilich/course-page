@@ -29,6 +29,9 @@
             margin-right: 15%;
             padding: 19px 0 41px 54px;
         }
+        .container-left-shifted {
+            padding: 0;
+        }
     }
 
     .promo-logo {
@@ -415,7 +418,7 @@
         display: none;
     }
 
-    .certificate-another, .certificate-another-form, .footer-sm {
+    .certificate-another, .certificate-another-form, .footer-md {
         display: block!important;
     }
 

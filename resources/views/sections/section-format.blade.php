@@ -46,19 +46,6 @@
             </div>
 
             <div class="formats__item">
-                <img class="formats__item-icon" src="{{ asset('/assets/icons/formats/support_chat.svg') }}" alt="">
-
-                <div class="formats__item-text format-text">
-                    <p class="format-text__title">
-                        Чат поддержки:
-                    </p>
-                    <p class="format-text__description">
-                        На протяжении всего курса, будет доступен общий чат с преподавателем
-                    </p>
-                </div>
-            </div>
-
-            <div class="formats__item">
                 <img class="formats__item-icon" src="{{ asset('/assets/icons/formats/test_task.svg') }}" alt="">
 
                 <div class="formats__item-text format-text">
@@ -83,9 +70,6 @@
                     </p>
                 </div>
             </div>
-
-
         </div>
-
     </div>
 </section>

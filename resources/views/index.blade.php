@@ -32,6 +32,7 @@
 
 @include('blocks.footer')
 @include('blocks.footer-md')
+@include('blocks.footer-sm')
 
 @include('blocks.popup-apply-form')
 </body>

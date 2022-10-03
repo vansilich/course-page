@@ -9,17 +9,16 @@
                         <img class="top-nav__logo nav-logo-burger" id="collapse-burger-close" src="{{ asset('/assets/icons/header-burger-hide.svg') }}" alt="fluid-line">
                     </a>
                 </div>
-
             </div>
         </div>
         <hr>
         <div class="collapse-items">
             <div class="container">
-                <a href="#" class="top-nav__text-item item-collapse">
+                <a href="#program" class="top-nav__text-item item-collapse-link">
                     Программа
                 </a>
 
-                <a href="tel:+74957411291" class="top-nav__text-item item-collapse">
+                <a href="tel:+74957411291" class="top-nav__text-item item-collapse-link">
                     +7 (495) 741-12-91
                 </a>
 
@@ -40,7 +39,7 @@
                 </a>
             </div>
             <div class="top-nav__right">
-                <a href="#" class="top-nav__text-item">
+                <a href="#program" class="top-nav__text-item">
                     Программа
                 </a>
 
@@ -52,7 +51,6 @@
                     Записаться на курс
                 </button>
             </div>
-
         </div>
     </div>
 </div>

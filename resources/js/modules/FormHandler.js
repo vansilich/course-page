@@ -77,14 +77,15 @@ export default class FormHandler{
         }
     }
 
-    handleFormSubmit(form, event){
+    handleFormSubmit(form, event) {
         event.preventDefault();
+        let success = document.getElementsByClassName('apply-form__success');
+        let error = document.getElementsByClassName('apply-form__success');
 
-        let error = document.querySelector('.apply-form__errors');
-        let success = document.querySelector('.apply-form__success');
-        let container = document.createElement('li');
-
-        error.innerHTML = success.innerHTML = '';
+        for (var i = 0; i < success.length; i++) {
+            success[i].innerHTML = "";
+            error[i].innerHTML = "";
+        }
 
         let token = document.head.querySelector("meta[name='_token']").content;
 
@@ -102,15 +103,23 @@ export default class FormHandler{
             }
             response.json().then((data) => {
                 if (response.status == 200) {
-                    container.innerHTML = data['body']['message'];
-
                     switch(data['method']) {
                         case 'success':
-                            success.appendChild(container);
+                            for (var i = 0; i < success.length; i++) {
+                                success[i].innerHTML = "<li>" + data['body']['message'] + "</li>";
+                            }
+
+                            let btns = document.getElementsByClassName('popup-apply-form__submit');
+                            for (var i = 0; i < btns.length; i++) {
+                                btns[i].style.display = 'none';
+                            }
+                            document.getElementsByClassName('popup-apply-form-close')[0].style.display = 'block';
                             break;
 
                         case 'error':
-                            error.appendChild(container);
+                            for (var i = 0; i < error.length; i++) {
+                                error[i].innerHTML = "<li>" + data['body']['message'] + "</li>";
+                            }
                             break;
                     }
                 }

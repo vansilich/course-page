@@ -1,8 +1,8 @@
-<footer class="footer-md">
+<footer class="footer-sm">
     <div class="container">
         <div class="footer-content">
 
-            <img class="footer-content__logo" src="{{ asset('/assets/icons/logo-white.svg') }}" alt="fluid-line">
+            <img class="footer-content__logo" src="{{ asset('/assets/icons/footer-sm-logo.svg') }}" alt="fluid-line">
 
             <div class="footer-content__right footer-text">
 

@@ -2,22 +2,48 @@
     $padding-size: 26px;
     $padding-size-top: 16px;
 
+    //Navbar block
     .nav-sticky {
-        .nav-logo-small {
-            display: none!important;
+        .top-nav {
+            &__button {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+
+                padding: 10px 10px;
+            }
         }
-        .nav-logo-burger {
-            padding: 0;
+        .container {
+            padding: 0 26px;
         }
         .collapse {
-            .item-collapse-button {
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 29px;
+            min-height: 250px;
+            hr {
+                margin: 0;
+            }
+            .container {
+                height: 65px;
+                padding: 0 26px;
+            }
+            .item-collapse-link {
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+            }
+            .top-nav {
+                &__button {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 29px;
+
+                    color: white;
+                }
+                &__left {
+                    height: 100%;
+                }
             }
         }
     }
-
     //Model block
     .section-start {
         padding: 0 0;
@@ -31,7 +57,6 @@
         &__middle {
             padding: 0 0;
             border-radius: 18px;
-            max-width: 289px;
         }
         .start-promo {
             padding: 33px 10px;
@@ -52,38 +77,23 @@
             }
             .promo-text {
                 &__middle {
-                    font-weight: 700;
                     font-size: 27px;
-                    line-height: 30px;
 
                     margin-top: $padding-size-top;
                 }
                 &__bottom {
-                    font-weight: 700;
-                    font-size: 15px;
-                    line-height: 119.02%;
-
                     margin-top: $padding-size-top;
-                    max-width: 114px;
                 }
             }
-            .promo-course-description {
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 100.52%;
 
-                white-space: normal;
-            }
             .promo-animated {
                 &__3D-1 {
                     top: 10em;
-                    left: -13em;
                     width: 234px;
                 }
                 &__3D-2 {
-                    right: -1em;
+                    left: -5em;
                     top: -7.5em;
-                    width: 120px;
                 }
                 &__notebook {
                     display: none;
@@ -110,6 +120,7 @@
                 padding-left: 0;
             }
             &__content {
+                padding-top: 0;
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 22px;
@@ -192,6 +203,113 @@
 
                 margin-top: $padding-size-top;
 
+            }
+        }
+    }
+    //Price block
+    .price {
+        padding: $padding-size-top $padding-size;
+
+        .price-content {
+            &__left {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        .whats-included {
+            display: none;
+        }
+        .course-include {
+            &__items li {
+                padding-top: 4px;
+            }
+        }
+    }
+    //Reviews block
+    .reviews {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+            .review__wrapper {
+                max-width: 320px;
+            }
+            .reviewer-name {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+
+                margin-left: 45px;
+            }
+            .reviewer-text {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .review-item {
+                padding: 0 $padding-size;
+                &__content {
+                    margin-left: -45px;
+                }
+
+                &__icon img {
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+        }
+    }
+    //Cert block
+    .certificate {
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+    //Footer block
+    .footer-sm {
+        padding: $padding-size-top $padding-size;
+        display: block!important;
+    }
+    footer {
+        .footer-contacts {
+            &__email {
+                margin-top: 24px;
+            }
+        }
+        .footer-content {
+            &__logo {
+                width: 61px;
+                height: 78px;
+            }
+            &__right {
+                flex-direction: column;
+                white-space: nowrap;
+            }
+
+        }
+        .footer-socials {
+            width: 100%;
+            max-width: 320px;
+        }
+        .container {
+            padding: 0;
+        }
+        .footer-links {
+            flex-direction: column;
+            width: 100%;
+
+            .footer-content__right {
+                width: 100%;
+            }
+            footer-content__left {
+                width: 100%;
+            }
+            &__link {
+                margin-top: $padding-size-top;
+                text-align: right;
             }
         }
     }
