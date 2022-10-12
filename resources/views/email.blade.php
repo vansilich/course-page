@@ -22,14 +22,14 @@
     </tr>
     <tr>
         <td style="padding-bottom: 1em;">
-            <a href="mailto:kurs@fluid-line.ru">kurs.fluid-line.ru</a><br>
+            <a href="mailto:kurs@fluid-line.ru">kurs@fluid-line.ru</a><br>
         </td>
     </tr>
     <tr>
         <td>Или задать по телефону и в мессенждерах WhatsApp, Telegram:</td>
     </tr>
     <tr>
-        <td style="padding-bottom: 1em;">8-495-741-12-91<br></td>
+        <td style="padding-bottom: 1em;">8-926-270-79-06<br></td>
     </tr>
     <tr>
         <td>Удачного обучения!</td>

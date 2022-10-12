@@ -2634,7 +2634,7 @@ var FormHandler = /*#__PURE__*/function () {
     value: function handleFormSubmit(form, event) {
       event.preventDefault();
       var success = document.getElementsByClassName('apply-form__success');
-      var error = document.getElementsByClassName('apply-form__success');
+      var error = document.getElementsByClassName('apply-form__errors');
 
       for (var i = 0; i < success.length; i++) {
         success[i].innerHTML = "";
@@ -2661,7 +2661,7 @@ var FormHandler = /*#__PURE__*/function () {
             switch (data['method']) {
               case 'success':
                 for (var i = 0; i < success.length; i++) {
-                  success[i].innerHTML = "<li>" + data['body']['message'] + "</li>";
+                  success[i].innerHTML = "<li>" + data['message'] + "</li>";
                 }
 
                 var btns = document.getElementsByClassName('popup-apply-form__submit');
@@ -2675,7 +2675,7 @@ var FormHandler = /*#__PURE__*/function () {
 
               case 'error':
                 for (var i = 0; i < error.length; i++) {
-                  error[i].innerHTML = "<li>" + data['body']['message'] + "</li>";
+                  error[i].innerHTML = "<li>" + data['message'] + "</li>";
                 }
 
                 break;

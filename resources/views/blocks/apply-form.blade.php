@@ -42,12 +42,11 @@
         </button>
 
         <div class="apply-form__bottom apply-policy">
-            <input type="checkbox" name="policy-apply" class="apply-policy__checkbox">
+            <input type="checkbox" name="policy-apply" class="apply-policy__checkbox" checked disabled>
 
-            <div class="apply-policy__text">
-                Записываясь, вы принимаете условия <a href="" class="apply-policy__link">договора-оферты</a>
-                и даете согласие на обработку своих
-                персональных данных в соответствии с <a href="https://fluid-line.ru/agreement" class="apply-policy__link">политикой конфиденциальности</a>.
+            <div class="popup-apply-policy__text">
+                Записываясь, вы принимаете и даёте согласие на обработку своих
+                персональных данных в соответствии с <a href="https://fluid-line.ru/agreement" class="popup-apply-policy__link">политикой конфиденциальности</a>.
             </div>
         </div>
     </form>

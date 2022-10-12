@@ -80,7 +80,7 @@ export default class FormHandler{
     handleFormSubmit(form, event) {
         event.preventDefault();
         let success = document.getElementsByClassName('apply-form__success');
-        let error = document.getElementsByClassName('apply-form__success');
+        let error = document.getElementsByClassName('apply-form__errors');
 
         for (var i = 0; i < success.length; i++) {
             success[i].innerHTML = "";
@@ -106,7 +106,7 @@ export default class FormHandler{
                     switch(data['method']) {
                         case 'success':
                             for (var i = 0; i < success.length; i++) {
-                                success[i].innerHTML = "<li>" + data['body']['message'] + "</li>";
+                                success[i].innerHTML = "<li>" + data['message'] + "</li>";
                             }
 
                             let btns = document.getElementsByClassName('popup-apply-form__submit');
@@ -118,7 +118,7 @@ export default class FormHandler{
 
                         case 'error':
                             for (var i = 0; i < error.length; i++) {
-                                error[i].innerHTML = "<li>" + data['body']['message'] + "</li>";
+                                error[i].innerHTML = "<li>" + data['message'] + "</li>";
                             }
                             break;
                     }

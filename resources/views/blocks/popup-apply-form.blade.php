@@ -58,8 +58,7 @@
                 <input type="checkbox" name="policy-apply" class="popup-apply-policy__checkbox" checked disabled>
 
                 <div class="popup-apply-policy__text">
-                    Записываясь, вы принимаете условия <a href="" class="popup-apply-policy__link">договора-оферты</a>
-                    и даете согласие на обработку своих
+                    Записываясь, вы принимаете и даёте согласие на обработку своих
                     персональных данных в соответствии с <a href="https://fluid-line.ru/agreement" class="popup-apply-policy__link">политикой конфиденциальности</a>.
                 </div>
             </div>
