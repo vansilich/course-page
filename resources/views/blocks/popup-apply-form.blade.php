@@ -19,7 +19,7 @@
                             Начало обучения:
                         </span>
                         <span class="popup-apply-form__date">
-                            17 октября
+                            24 октября
                         </span>
 
                     </div>

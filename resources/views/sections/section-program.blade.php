@@ -116,6 +116,37 @@
                                 МОДУЛЬ №4
                             </p>
                             <p class="program-block__description">
+                                Работа с чертежами
+                            </p>
+                        </div>
+
+                        <img class="program-block__icon" src="{{ asset('/assets/icons/program-toggle.svg') }}" alt="">
+                    </a>
+
+                    <ul class="program-content">
+                        <li>
+                            Создание чертежа. Получение проекций
+                        </li>
+                        <li>
+                            Создание чертежа. Выполнение разрезов
+                        </li>
+                        <li>
+                            Оформление чертежа - часть 1
+                        </li>
+                        <li>
+                            Оформление чертежа - часть 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="programs__item">
+
+                    <a class="program-block">
+                        <div class="program-block__text">
+                            <p class="program-block__title">
+                                МОДУЛЬ №5
+                            </p>
+                            <p class="program-block__description">
                                 Моделирование деталей типа тела вращения
                             </p>
                         </div>
@@ -149,37 +180,6 @@
                             Деталь «Маховичок» и получение ее чертежа
                         </li>
 
-                    </ul>
-                </div>
-
-                <div class="programs__item">
-
-                    <a class="program-block">
-                        <div class="program-block__text">
-                            <p class="program-block__title">
-                                МОДУЛЬ №5
-                            </p>
-                            <p class="program-block__description">
-                                Работа с чертежами
-                            </p>
-                        </div>
-
-                        <img class="program-block__icon" src="{{ asset('/assets/icons/program-toggle.svg') }}" alt="">
-                    </a>
-
-                    <ul class="program-content">
-                        <li>
-                            Создание чертежа. Получение проекций
-                        </li>
-                        <li>
-                            Создание чертежа. Выполнение разрезов
-                        </li>
-                        <li>
-                            Оформление чертежа - часть 1
-                        </li>
-                        <li>
-                            Оформление чертежа - часть 2
-                        </li>
                     </ul>
                 </div>
 

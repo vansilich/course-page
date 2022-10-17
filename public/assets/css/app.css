@@ -675,6 +675,7 @@ template {
   color: #000000;
 }
 .program-block__icon {
+  transition: 0.5s;
   transform: rotate(0deg);
   width: 28px;
   height: 28px;
@@ -682,6 +683,7 @@ template {
   cursor: pointer;
 }
 .expanded .program-block__icon {
+  transition: 0.5s;
   transform: rotate(45deg);
 }
 

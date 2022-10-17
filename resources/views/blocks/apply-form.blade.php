@@ -9,7 +9,7 @@
             Начало обучения
         </span>
         <span class="apply-date__date">
-            17 октября
+            24 октября
         </span>
     </div>
 
