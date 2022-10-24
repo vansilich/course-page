@@ -1,0 +1,29 @@
+@media screen and (max-width: 1024px) {
+    //Models course block
+    .section-start {
+        .container-left-shifted {
+            .promo-animated {
+                &__3D-1 {
+                    top: 80px;
+                }
+                &__3D-2 {
+                    top: -100px;
+                    left: 15vw;
+                }
+            }
+        }
+    }
+
+    //Program block
+    .program {
+        .programs {
+            max-width: 57%;
+        }
+        .program-form-wrapper {
+            .apply-form {
+                max-width: 24vw;
+            }
+        }
+    }
+
+}

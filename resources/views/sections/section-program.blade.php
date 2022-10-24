@@ -1,4 +1,4 @@
-<section class="program">
+<section class="program" id="program">
     <div class="container">
 
         <h3 class="program__title">
@@ -26,9 +26,6 @@
                     <ul class="program-content">
                         <li>
                             Знакомство с преподавателем курса
-                        </li>
-                        <li>
-                            Функциональные возможности программы Компас-3D
                         </li>
                         <li>
                             Знакомство с интерфейсом программы
@@ -103,11 +100,27 @@
                             Моделирование призматической детали - часть 2
                         </li>
                         <li>
-                            Моделирование отверстия
+                            Дополнительные команды 3-D моделирования
                         </li>
-                        <li>
-                            Изучение дополнительных команд 3d-моделирования
-                        </li>
+                    </ul>
+                </div>
+
+                <div class="programs__item">
+
+                    <a class="program-block">
+                        <div class="program-block__text">
+                            <p class="program-block__title">
+                                МОДУЛЬ №4
+                            </p>
+                            <p class="program-block__description">
+                                Работа с чертежами
+                            </p>
+                        </div>
+
+                        <img class="program-block__icon" src="{{ asset('/assets/icons/program-toggle.svg') }}" alt="">
+                    </a>
+
+                    <ul class="program-content">
                         <li>
                             Создание чертежа. Получение проекций
                         </li>
@@ -120,7 +133,6 @@
                         <li>
                             Оформление чертежа - часть 2
                         </li>
-
                     </ul>
                 </div>
 
@@ -129,7 +141,7 @@
                     <a class="program-block">
                         <div class="program-block__text">
                             <p class="program-block__title">
-                                МОДУЛЬ №4
+                                МОДУЛЬ №5
                             </p>
                             <p class="program-block__description">
                                 Моделирование деталей типа тела вращения
@@ -152,54 +164,6 @@
                         <li>
                             Деталь «Клапан» и получение ее чертежа
                         </li>
-                        <li>
-                            Деталь «Заглушка» и получение ее чертежа
-                        </li>
-                        <li>
-                            Деталь «Гайка» и получение ее чертежа - часть 1
-                        </li>
-                        <li>
-                            Деталь «Гайка» и получение ее чертежа - часть 2
-                        </li>
-                        <li>
-                            Деталь «Маховичок» и получение ее чертежа
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="programs__item">
-
-                    <a class="program-block">
-                        <div class="program-block__text">
-                            <p class="program-block__title">
-                                МОДУЛЬ №5
-                            </p>
-                            <p class="program-block__description">
-                                Моделирование деталей по сечениям
-                            </p>
-                        </div>
-
-                        <img class="program-block__icon" src="{{ asset('/assets/icons/program-toggle.svg') }}" alt="">
-                    </a>
-
-                    <ul class="program-content">
-                        <li>
-                            Операция «Элемент по сечениям»
-                        </li>
-                        <li>
-                            Моделирование детали по сечениям - часть 1
-                        </li>
-                        <li>
-                            Моделирование детали по сечениям - часть 2
-                        </li>
-                        <li>
-                            Моделирование детали по сечениям - часть 3
-                        </li>
-                        <li>
-                            Моделирование детали по сечениям - часть 4
-                        </li>
-
                     </ul>
                 </div>
 

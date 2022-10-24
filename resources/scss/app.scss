@@ -20,8 +20,19 @@
 @import "partials/inputs";
 
 @import "partials/animation";
+@import "mobile/mobile-1680";
+@import "mobile/mobile-1440";
+@import "mobile/mobile-1280";
+@import "mobile/mobile-1140";
+@import "mobile/mobile-1024";
+@import "mobile/mobile-960";
+@import "mobile/mobile-768";
+@import "mobile/mobile-540";
+@import "mobile/mobile-425";
+@import "mobile/mobile-375";
+@import "mobile/mobile-320";
 
-body{
+body {
     width: 100%;
     background-color: #ffffff;
     font-family: Inter, sans-serif;
@@ -44,4 +55,27 @@ h1,h2,h3,h4,h5,h6{
 
 button{
     transition: background-color .3s;
+}
+
+.certificate-small, .nav-logo-small, .nav-logo-burger, .footer-md, .footer-sm, .collapse {
+    display: none;
+}
+
+.popup-apply-form-close {
+    display: none;
+    text-decoration: none;
+}
+
+.promo-animated {
+    max-width: 0%;
+    width: 0%;
+    &__3D-1 {
+        top: 5em;
+    }
+    &__3D-2 {
+        left: 30em;
+    }
+    &__notebook {
+
+    }
 }

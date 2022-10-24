@@ -1,0 +1,19 @@
+@media screen and (max-width: 1280px) {
+    //Models course block
+    .section-start {
+        .container-left-shifted {
+            .promo-animated {
+                &__3D-1 {
+                    left: -7vw;
+                }
+                &__3D-2 {
+                    top: -125px;
+                    left: 15em;
+                }
+                &__notebook {
+                    left: -10vw;
+                }
+            }
+        }
+    }
+}

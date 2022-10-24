@@ -28,7 +28,7 @@
     }
 }
 
-.program-block{
+.program-block {
     user-select: none;
     padding: 10px;
     cursor: pointer;
@@ -43,7 +43,7 @@
         background-color: rgba(0, 0, 0, 0.1);
     }
 
-    &__title{
+    &__title {
         color: #ffffff;
         font-size: 20px;
         font-weight: 700;
@@ -51,7 +51,7 @@
         margin: 0 0 5px 0;
     }
 
-    &__description{
+    &__description {
         margin: 0;
         padding: 0;
         font-size: 20px;
@@ -59,7 +59,8 @@
         color: #000000;
     }
 
-    &__icon{
+    &__icon {
+        transition: .5s;
         transform: rotate(0deg);
         width: 28px;
         height: 28px;
@@ -67,7 +68,8 @@
         cursor: pointer;
     }
 
-    .expanded &__icon{
+    .expanded &__icon {
+        transition: .5s;
         transform: rotate(45deg);
     }
 }

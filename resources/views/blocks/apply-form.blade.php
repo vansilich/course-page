@@ -1,7 +1,7 @@
 <div class="apply-form">
 
     <h3 class="apply-form__title">
-        ЗАПИСАТЬСЯ НУ КУРС
+        ЗАПИСАТЬСЯ НА КУРС
     </h3>
 
     <div class="apply-form__start apply-date">
@@ -9,7 +9,7 @@
             Начало обучения
         </span>
         <span class="apply-date__date">
-            17 октября
+            31 октября
         </span>
     </div>
 
@@ -42,12 +42,11 @@
         </button>
 
         <div class="apply-form__bottom apply-policy">
-            <input type="checkbox" name="policy-apply" class="apply-policy__checkbox">
+            <input type="checkbox" name="policy-apply" class="apply-policy__checkbox" checked disabled>
 
-            <div class="apply-policy__text">
-                Записываясь, вы принимаете условия <a href="" class="apply-policy__link">договора-оферты</a>
-                и даете согласие на обработку своих
-                персональных данных в соответствии с <a href="" class="apply-policy__link">политикой конфиденциальности</a>.
+            <div class="popup-apply-policy__text">
+                Записываясь, вы принимаете и даёте согласие на обработку своих
+                персональных данных в соответствии с <a href="https://fluid-line.ru/agreement" class="popup-apply-policy__link">политикой конфиденциальности</a>.
             </div>
         </div>
     </form>

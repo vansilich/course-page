@@ -2476,6 +2476,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_3d_compas__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/3d-compas */ "./resources/js/pages/3d-compas.js");
 
 
+var collapseShow = document.getElementById('collapse-burger-show');
+collapseShow.addEventListener('click', function () {
+  document.getElementById("collapse-container").style.display = "block";
+});
+var collapseHide = document.getElementById('collapse-burger-close');
+collapseHide.addEventListener('click', function () {
+  document.getElementById("collapse-container").style.display = "none";
+});
 
 /***/ }),
 
@@ -2625,10 +2633,14 @@ var FormHandler = /*#__PURE__*/function () {
     key: "handleFormSubmit",
     value: function handleFormSubmit(form, event) {
       event.preventDefault();
-      var error = document.querySelector('.apply-form__errors');
-      var success = document.querySelector('.apply-form__success');
-      var container = document.createElement('li');
-      error.innerHTML = success.innerHTML = '';
+      var success = document.getElementsByClassName('apply-form__success');
+      var error = document.getElementsByClassName('apply-form__errors');
+
+      for (var i = 0; i < success.length; i++) {
+        success[i].innerHTML = "";
+        error[i].innerHTML = "";
+      }
+
       var token = document.head.querySelector("meta[name='_token']").content;
       fetch('send/request', {
         headers: {
@@ -2646,15 +2658,26 @@ var FormHandler = /*#__PURE__*/function () {
 
         response.json().then(function (data) {
           if (response.status == 200) {
-            container.innerHTML = data['body']['message'];
-
             switch (data['method']) {
               case 'success':
-                success.appendChild(container);
+                for (var i = 0; i < success.length; i++) {
+                  success[i].innerHTML = "<li>" + data['message'] + "</li>";
+                }
+
+                var btns = document.getElementsByClassName('popup-apply-form__submit');
+
+                for (var i = 0; i < btns.length; i++) {
+                  btns[i].style.display = 'none';
+                }
+
+                document.getElementsByClassName('popup-apply-form-close')[0].style.display = 'block';
                 break;
 
               case 'error':
-                error.appendChild(container);
+                for (var i = 0; i < error.length; i++) {
+                  error[i].innerHTML = "<li>" + data['message'] + "</li>";
+                }
+
                 break;
             }
           }

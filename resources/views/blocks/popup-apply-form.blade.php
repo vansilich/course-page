@@ -7,6 +7,8 @@
         </h3>
 
         <form class="popup-apply-form__form" action="/send/request" autocomplete="off">
+            <ul class="apply-form__success"></ul>
+            <ul class="apply-form__errors"></ul>
 
             <div class="popup-apply-form__form-content">
 
@@ -17,7 +19,7 @@
                             Начало обучения:
                         </span>
                         <span class="popup-apply-form__date">
-                            17 октября
+                            31 октября
                         </span>
 
                     </div>
@@ -48,14 +50,16 @@
             <button class="popup-apply-form__submit" type="submit">
                 Записаться на курс
             </button>
+            <a href="/" type="button" class="popup-apply-form-close popup-apply-form__submit">
+                Закрыть
+            </a>
 
             <div class="popup-apply-policy">
-                <input type="checkbox" name="policy-apply" class="popup-apply-policy__checkbox">
+                <input type="checkbox" name="policy-apply" class="popup-apply-policy__checkbox" checked disabled>
 
                 <div class="popup-apply-policy__text">
-                    Записываясь, вы принимаете условия <a href="" class="popup-apply-policy__link">договора-оферты</a>
-                    и даете согласие на обработку своих
-                    персональных данных в соответствии с <a href="" class="popup-apply-policy__link">политикой конфиденциальности</a>.
+                    Записываясь, вы принимаете и даёте согласие на обработку своих
+                    персональных данных в соответствии с <a href="https://fluid-line.ru/agreement" class="popup-apply-policy__link">политикой конфиденциальности</a>.
                 </div>
             </div>
         </form>

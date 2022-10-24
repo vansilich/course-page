@@ -1,0 +1,46 @@
+@media screen and (max-width: 1680px) {
+    $padding-size-top: 30px;
+    $padding-size: 10%;
+
+    //Models block
+    .section-start {
+        padding: $padding-size-top 0;
+
+        &__logo {
+           margin-left: 0;
+        }
+        &__middle {
+            padding: 30px 75px;
+        }
+        .container-left-shifted {
+            padding: 0 $padding-size;
+            margin: 0;
+            max-width: 100%;
+        }
+        .promo-animated {
+            &__3D-1 {
+                top: 8em;
+                width: 450px;
+                left: -6em;
+            }
+            &__3D-2 {
+                left: 17em;
+                width: 350px;
+                top: -3em;
+            }
+            &__notebook {
+                top: 20em;
+                width: 600px;
+            }
+        }
+    }
+    //Course block
+    .course-concise-description {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .start-description {
+            margin-left: $padding-size;
+        }
+    }
+}

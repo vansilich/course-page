@@ -1,0 +1,527 @@
+@media screen and (max-width: 1140px) {
+    $padding-size: 13.5vw;
+
+    //Navbar block
+    .nav-sticky {
+        .container {
+            padding: 0 calc($padding-size - 4vw);
+        }
+    }
+    //Models course block
+    .section-start {
+        &__middle {
+            padding: 0 0 54px 64px;
+        }
+
+        .container-left-shifted {
+            padding-left: calc($padding-size - 4vw);
+            .promo-animated {
+                &__3D-1 {
+                    width: 30vw;
+                    top: 20px;
+                    left: -7vw;
+                }
+                &__3D-2 {
+                    left: 13em;
+                }
+                &__notebook {
+                    width: 49vw;
+                    top: 160px;
+                    left: -10vw;
+                }
+            }
+        }
+    }
+    //Course block
+    .course-concise-description {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .start-description {
+            margin-left: $padding-size;
+        }
+    }
+    //Is for block
+    .is-for {
+        padding: 30px $padding-size;
+
+    }
+    //Format block
+    .format {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+        }
+        .format-text {
+            width: auto;
+        }
+    }
+    //Program block
+    .program {
+        padding: 47px $padding-size;
+
+        .programs {
+            max-width: 60%;
+        }
+        .program-form-wrapper {
+            .apply-form {
+                max-width: 22vw;
+            }
+        }
+    }
+    //Teacher block
+    .teacher {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+        }
+    }
+    //Price block
+    .price {
+        padding: 47px $padding-size;
+    }
+    //Review block
+    .reviews {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+        }
+    }
+    //Cert block
+    .certificate {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+        }
+    }
+    //Footer block
+    footer {
+        .container {
+            padding: 70px $padding-size;
+        }
+        .footer-contacts {
+            &__email {
+                margin-top: 48px;
+            }
+        }
+        .footer-socials {
+            margin-top: 25px;
+        }
+    }
+
+    //.top-nav {
+    //    padding-inline-start: 7em;
+    //    padding-inline-end: 7em;
+    //}
+    //.section-start__middle {
+    //    margin-left: 10%;
+    //    margin-right: 15%;
+    //    padding: 50px 0 41px 65px;
+    //}
+    //.promo-logo {
+    //    width: 80px;
+    //    height: 80px;
+    //}
+    //.promo-text {
+    //    &__middle {
+    //        font-weight: 700;
+    //        font-size: 34px;
+    //        line-height: 34px;
+    //        margin: 26px 0 0 0;
+    //    }
+    //    &__bottom {
+    //        margin: 35px 0 0 0;
+    //        font-weight: 700;
+    //        font-size: 20px;
+    //        line-height: 96.52%;
+    //    }
+    //}
+    //.promo-course-description {
+    //    font-weight: 500;
+    //    font-size: 22px;
+    //    line-height: 85.02%;
+    //    white-space: nowrap;
+    //}
+    //.promo-animated {
+    //    &__3D-1 {
+    //        width: 330px;
+    //        top: -15px;
+    //        left: -75px;
+    //    }
+    //    &__3D-2 {
+    //        top: -165px;
+    //        right: -80px;
+    //        width: 240px;
+    //    }
+    //    &__notebook {
+    //        top: 120px;
+    //        width: 450px;
+    //    }
+    //}
+    //.course-concise-description {
+    //    &__title {
+    //        padding-left: 158px;
+    //        font-weight: 700;
+    //        font-size: 20px;
+    //        line-height: 24px;
+    //        border-bottom: 5px solid #595959;
+    //    }
+    //}
+    //
+    //.start-description {
+    //    margin-left: 158px;
+    //    &__title {
+    //        font-weight: 900;
+    //        font-size: 14px;
+    //        line-height: 17px;
+    //    }
+    //    &__content {
+    //        font-weight: 500;
+    //        font-size: 14px;
+    //        line-height: 17px;
+    //    }
+    //}
+    //.is-for {
+    //    padding: 30px 158px 30px 158px;
+    //
+    //    &__title {
+    //        font-weight: 700;
+    //        font-size: 20px;
+    //        line-height: 24px;
+    //    }
+    //    &__description {
+    //        font-weight: 400;
+    //        font-size: 14px;
+    //        line-height: 104.02%;
+    //        margin-top: 3em;
+    //    }
+    //}
+    //.for-who-item__title {
+    //    font-weight: 700;
+    //    font-size: 16px;
+    //    line-height: 17px;
+    //    text-align: center;
+    //    margin-top: 1em;
+    //}
+    //.for-who-item__icon {
+    //    width: 45px;
+    //}
+    //.format {
+    //    &__title {
+    //        font-weight: 700;
+    //        font-size: 20px;
+    //        line-height: 24px;
+    //        padding-left: 158px;
+    //    }
+    //
+    //
+    //}
+    //.formats {
+    //    column-gap: 0px;
+    //    row-gap: 35px;
+    //    margin-left: 130px;
+    //    margin-right: 130px;
+    //    //grid-template-columns: 1fr 1fr;
+    //    &__item {
+    //        display: block;
+    //    }
+    //    &__item-icon {
+    //        width: 60px;
+    //        margin: auto;
+    //        margin-bottom: 1em;
+    //    }
+    //}
+    //.format-text {
+    //    text-align: center;
+    //    margin: 0;
+    //    width: 225px;
+    //
+    //    &__title {
+    //        font-weight: 500;
+    //        font-size: 16px;
+    //        line-height: 16px;
+    //        margin-bottom: .5em;
+    //    }
+    //    &__description {
+    //        text-align: left;
+    //        font-weight: 500;
+    //        font-size: 14px;
+    //        line-height: 14px;
+    //    }
+    //}
+    //.program {
+    //    padding-left: 158px;
+    //    padding-right: 158px;
+    //
+    //    &__title {
+    //        font-weight: 700;
+    //        font-size: 20px;
+    //        line-height: 24px;
+    //    }
+    //}
+    //.program-block {
+    //    &__title {
+    //        font-weight: 700;
+    //        font-size: 14px;
+    //        line-height: 17px;
+    //    }
+    //    &__description {
+    //        font-weight: 700;
+    //        font-size: 14px;
+    //        line-height: 17px;
+    //    }
+    //}
+    //.apply-form {
+    //    max-width: 200px;
+    //    padding-top: 21px;
+    //    padding-bottom: 32px;
+    //
+    //    &__start {
+    //        margin-top: .5em;
+    //    }
+    //
+    //    &__form {
+    //        margin-top: .5em;
+    //    }
+    //
+    //    &__title {
+    //        font-weight: 700;
+    //        font-size: 17px;
+    //        line-height: 21px;
+    //    }
+    //    &__submit {
+    //        margin-top: 25px;
+    //        font-weight: 700;
+    //        font-size: 16px;
+    //        line-height: 22px;
+    //        padding: 8px 0;
+    //    }
+    //    &__text-input:not(:first-child) {
+    //        margin-top: 4px;
+    //    }
+    //}
+    //.apply-date {
+    //    &__text {
+    //        font-weight: 400;
+    //        font-size: 12px;
+    //        line-height: 15px;
+    //    }
+    //    &__date {
+    //        font-weight: 700;
+    //        font-size: 12px;
+    //        line-height: 15px;
+    //    }
+    //}
+    //.text-input {
+    //    font-weight: 400;
+    //    font-size: 12px;
+    //    line-height: 15px;
+    //    padding: 5px 10px;
+    //}
+    //.apply-policy {
+    //    &__text {
+    //        font-weight: 400;
+    //        font-size: 8px;
+    //        line-height: 8px;
+    //    }
+    //    &__link {
+    //        font-weight: 400;
+    //        font-size: 8px;
+    //        line-height: 8px;
+    //    }
+    //    &__checkbox {
+    //        width: 8px;
+    //        height: 8px;
+    //    }
+    //}
+    //.program-content li {
+    //    font-weight: 400;
+    //    font-size: 14px;
+    //    line-height: 17px;
+    //}
+    //
+    //.teacher {
+    //    &__content {
+    //        margin-top: 1em;
+    //    }
+    //
+    //    &__title {
+    //        padding-left: 158px;
+    //        font-weight: 700;
+    //        font-size: 20px;
+    //        line-height: 24px;
+    //        border-bottom: 5px solid #595959;
+    //    }
+    //}
+    //.about-teacher {
+    //    padding-left: 158px;
+    //    padding-right: 100px;
+    //}
+    //.teacher-text {
+    //    &__title {
+    //        font-weight: 700;
+    //        font-size: 16px;
+    //        line-height: 17px;
+    //    }
+    //    &__concise {
+    //        font-weight: 400;
+    //        font-size: 16px;
+    //        line-height: 17px;
+    //    }
+    //    &__about li {
+    //        font-weight: 400;
+    //        font-size: 16px;
+    //        line-height: 17px;
+    //    }
+    //}
+    //.price {
+    //    padding-top: 47px;
+    //    padding-left: 158px;
+    //
+    //    &__title {
+    //        font-weight: 700;
+    //        font-size: 20px;
+    //        line-height: 24px;
+    //    }
+    //}
+    //.price-offer__details {
+    //    margin-top: 40px;
+    //}
+    //.course-include {
+    //    &__items {
+    //        padding-left: 30px;
+    //
+    //    }
+    //    &__items li {
+    //        font-weight: 400;
+    //        font-size: 14px;
+    //        line-height: 17px;
+    //    }
+    //}
+    //
+    //.price-content__right {
+    //    display: none;
+    //}
+    //
+    //.reviews {
+    //    &__title {
+    //        font-weight: 700;
+    //        font-size: 20px;
+    //        line-height: 24px;
+    //    }
+    //}
+    //.review-item {
+    //    padding-left: 158px;
+    //    padding-right: 158px;
+    //}
+    //.reviewer-name {
+    //    font-weight: 400;
+    //    font-size: 14px;
+    //    line-height: 17px;
+    //}
+    //.reviewer-text {
+    //    font-weight: 400;
+    //    font-size: 12px;
+    //    line-height: 15px;
+    //}
+    //.hide-review, .comments-toggler {
+    //    padding: 13px 50px;
+    //    font-weight: 400;
+    //    font-size: 14px;
+    //    line-height: 17px;
+    //
+    //}
+    //.expand-review {
+    //    right: 15px;
+    //    padding-top: 10px;
+    //    font-weight: 400;
+    //    font-size: 14px;
+    //    line-height: 17px;
+    //}
+    //.certificate-full {
+    //    display: none;
+    //}
+    //.certificate-another, .certificate-another-form {
+    //    display: block!important;
+    //}
+    //
+    //.certificate {
+    //    &__title {
+    //        padding-left: 158px;
+    //        font-weight: 700;
+    //        font-size: 20px;
+    //        line-height: 24px;
+    //        border-bottom: 5px solid #595959;
+    //    }
+    //    &__text {
+    //        font-weight: 400;
+    //        font-size: 14px;
+    //        line-height: 18px;
+    //    }
+    //    &__img {
+    //        width: 50vw;
+    //        margin-top: 3em;
+    //    }
+    //    .container {
+    //        padding-left: 158px;
+    //        padding-right: 158px;
+    //        display: block;
+    //    }
+    //}
+    //.certificate-another-form {
+    //    position: absolute;
+    //    right: 0;
+    //    margin-right: 5%;
+    //}
+    //footer {
+    //    padding-top: 30px;
+    //    padding-left: 111px;
+    //    padding-right: 111px;
+    //}
+    //.footer-content__logo {
+    //    width: 181px;
+    //}
+    //.footer-contacts__email {
+    //    margin-top: 3em;
+    //}
+    //.footer-contacts a {
+    //    font-weight: 500;
+    //    font-size: 16px;
+    //    line-height: 19px;
+    //}
+    //.footer-links__link {
+    //    font-weight: 500;
+    //    font-size: 12px;
+    //    line-height: 15px;
+    //}
+    //.footer-socials__img {
+    //    width: 19px;
+    //    height: 19px;
+    //}
+    //
+    //.popup-apply-form {
+    //    &__title {
+    //        font-weight: 700;
+    //        font-size: 40px;
+    //        line-height: 48px;
+    //    }
+    //    &__pre-date-text {
+    //        font-weight: 400;
+    //        font-size: 16px;
+    //        line-height: 19px;
+    //    }
+    //    &__date {
+    //        font-weight: 400;
+    //        font-size: 16px;
+    //        line-height: 19px;
+    //    }
+    //}
+}
