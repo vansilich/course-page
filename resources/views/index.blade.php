@@ -23,8 +23,36 @@
             webvisor:true
         });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/90898955" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->g
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/90898955" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    
+    @if(session('hash'))
+        <script>
+            const hash = '{{ session('hash') }}';
+            const route = '{{ route('save-ym-uid') }}'
+
+            ym(90898955, 'getClientID', (clientID) => {
+                
+                fetch(route, {
+                    method: 'POST',
+                    cache: 'no-cache',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    redirect: 'follow',
+                    body: JSON.stringify({
+                        hash: hash,
+                        ym_uid: clientID
+                    })
+                });
+            });
+        </script>
+    @endif
+
     <script src="{{ mix('/assets/js/app.js') }}" defer></script>
 </head>
 <body>

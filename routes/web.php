@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UserRequestController;
+use App\Http\Controllers\MailRefferalController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,10 +17,8 @@ use App\Http\Controllers\UserRequestController;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
 
-Route::get('/privacy-policy', function () {
-    return view('index');
-})->name('privacy-policy');
+Route::get('/refferal', MailRefferalController::class);
 
 Route::post('/request', [UserRequestController::class, 'getRequest'])->prefix('send');

@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\SaveVisitorYmUid;
 
 Use App\Http\Controllers\DebugMailController;
 /*
@@ -15,8 +16,8 @@ Use App\Http\Controllers\DebugMailController;
 |
 */
 
+Route::post('/save-ym-uid', SaveVisitorYmUid::class)->name('save-ym-uid');
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-//Route::post('debug/mail', [DebugMailController::class, 'index']);
