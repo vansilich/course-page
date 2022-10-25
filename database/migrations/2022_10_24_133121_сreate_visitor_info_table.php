@@ -16,11 +16,11 @@ class СreateVisitorInfoTable extends Migration
         Schema::create('visitor_info', function (Blueprint $table) {
             $table->id();
             $table->string('email_hash');
-            $table->string('utm_subject');
-            $table->string('utm_source');
-            $table->string('type');
-            $table->string('ip');
-            $table->string('from');
+            $table->string('utm_subject')->nullable();
+            $table->string('utm_source')->nullable();
+            $table->string('type')->nullable();
+            $table->string('ip')->nullable();
+            $table->string('from')->nullable();
             $table->string('ym_uid')->nullable();
             $table->timestamps();
         });

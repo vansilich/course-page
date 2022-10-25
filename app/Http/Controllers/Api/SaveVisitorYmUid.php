@@ -10,9 +10,9 @@ class SaveVisitorYmUid extends Controller
 {
     public function __invoke(Request $request)
     {
-        VisitorInfo::updateOrCreate(
-            ['email_hash' => $request->get('hash')],
-            ['ym_uid' => $request->get('ym_uid')]
-        );
+        $visitor = VisitorInfo::where('email_hash', $request->get('hash'));
+        if($visitor){
+            $visitor->update(['ym_uid' => $request->get('ym_uid')]);
+        }
     }
 }
