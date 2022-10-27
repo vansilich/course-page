@@ -11,6 +11,8 @@ class SendInvite extends Mailable
 {
     use Queueable, SerializesModels;
 
+    protected $param;
+
     /**
      * Create a new message instance.
      *

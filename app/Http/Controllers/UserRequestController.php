@@ -21,9 +21,10 @@ class UserRequestController extends Controller
         if ($response->created_at == $response->updated_at) {
             $body = ['method' => 'success', 'message' => 'Вы успешно записались на курс!'];
 
-            Mail::to($valid['email'])->send(new SendInvite([
-                'name' => $valid['name'], 'email' => $valid['email'], 'telephone' => $valid['telephone']
-            ]));
+            Mail::to($valid['email'])
+                ->later(now()->addMinute(), new SendInvite([
+                    'name' => $valid['name'], 'email' => $valid['email'], 'telephone' => $valid['telephone']
+                ]));
         } else {
             $body = ['method' => 'success', 'message' => 'Вы уже записаны на курс!'];
 
