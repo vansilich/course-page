@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
     $padding-size: 6.5vw;
     .nav-logo-small {
-        display: block!important;
+        display: block;
     }
     .nav-logo-big {
         display: none;
@@ -19,6 +19,9 @@
         &__logo {
             margin-left: 0;
         }
+        &__top{
+            margin: 0 10px 25px 0;
+        }
         &__middle {
             margin: 0;
         }
@@ -28,13 +31,13 @@
             .promo-animated {
                 &__3D-1 {
                     width: 35vw;
-                    top: -10px;
+                    top: 40px;
                     left: -10vw;
                 }
                 &__3D-2 {
                     width: 25vw;
-                    top: -125px;
-                    left: 18vw;
+                    top: -85px;
+                    left: 25vw;
                 }
                 &__notebook {
                     left: -7vw;
@@ -85,7 +88,7 @@
     }
     //Teacher block
     .teacher {
-        padding: 33px 0;
+        padding: 45px 0;
 
         &__title {
             padding-left: $padding-size;

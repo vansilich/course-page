@@ -32,6 +32,24 @@
         .container-left-shifted {
             padding: 0;
         }
+
+        & .container-left-shifted .promo-animated {
+            &__3D-1 {
+                width: 270px;
+                top: 33px;
+                left: -60px;
+            }
+            &__3D-2 {
+                left: 19vw;
+                top: -96px;
+                right: -76px;
+                width: 210px;
+            }
+            &__notebook {
+                top: 120px;
+                width: 375px;
+            }
+        }
     }
 
     .promo-logo {
@@ -60,23 +78,6 @@
         font-weight: 500;
         font-size: 19px;
         line-height: 19px;
-    }
-
-    .promo-animated {
-        &__3D-1 {
-            width: 270px;
-            top: 4px;
-            left: -25px;
-        }
-        &__3D-2 {
-            top: -96px;
-            right: -76px;
-            width: 210px;
-        }
-        &__notebook {
-            top: 120px;
-            width: 375px;
-        }
     }
     .course-concise-description {
         &__title {
@@ -306,8 +307,6 @@
     }
 
     .about-teacher {
-        padding-left: $size-padding;
-        padding-right: 100px;
 
         &__image {
             width: 155px;
@@ -316,6 +315,8 @@
     }
 
     .teacher-text {
+        margin-top: -50px;
+
         &__title {
             font-weight: 700;
             font-size: 13px;

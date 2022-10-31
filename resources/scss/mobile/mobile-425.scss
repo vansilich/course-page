@@ -4,7 +4,7 @@
 
     .nav-sticky {
         .nav-logo-small {
-            display: none!important;
+            display: none;
         }
         .nav-logo-burger {
             padding: 0;
@@ -28,6 +28,12 @@
             margin-left: 10px;
             margin-bottom: 10px;
         }
+
+        &__register-info{
+            margin: 0 0 0 50px;
+            display: block;
+        }
+
         &__middle {
             padding: 0 0;
             border-radius: 18px;
@@ -53,7 +59,6 @@
                     font-weight: 700;
                     font-size: 29px;
                     line-height: 30px;
-
                     margin-top: $padding-size-top;
                 }
                 &__bottom {
@@ -63,6 +68,9 @@
 
                     margin-top: $padding-size-top;
                     max-width: 114px;
+                }
+                &__register-info{
+                    display: none;
                 }
             }
             .promo-course-description {

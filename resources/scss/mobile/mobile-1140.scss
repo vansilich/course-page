@@ -80,6 +80,14 @@
             padding: 0 $padding-size;
         }
     }
+
+    .teacher-banner{
+    
+        &__main-photo{
+            width: 250px;
+            height: 140px;
+        }
+    }
     //Price block
     .price {
         padding: 47px $padding-size;

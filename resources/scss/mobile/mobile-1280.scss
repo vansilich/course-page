@@ -1,6 +1,10 @@
 @media screen and (max-width: 1280px) {
     //Models course block
     .section-start {
+        &__top{
+            margin: 0 100px 25px 0;
+        }
+
         .container-left-shifted {
             .promo-animated {
                 &__3D-1 {

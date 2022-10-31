@@ -12,6 +12,11 @@
 
                 padding: 10px 10px;
             }
+
+            .nav-logo-small{
+                display: block;
+                margin-right: 5px;
+            }
         }
         .container {
             padding: 0 26px;
@@ -50,10 +55,16 @@
         padding-bottom: $padding-size-top;
 
         &__logo {
+            display: none;
             width: 154px;
             margin-left: 10px;
             margin-bottom: 10px;
         }
+
+        &__register-info{
+            margin: 0;
+        }
+
         &__middle {
             padding: 0 0;
             border-radius: 18px;
@@ -92,7 +103,7 @@
                     width: 234px;
                 }
                 &__3D-2 {
-                    left: -5em;
+                    left: -4em;
                     top: -7.5em;
                 }
                 &__notebook {

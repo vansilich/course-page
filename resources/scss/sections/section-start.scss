@@ -6,11 +6,19 @@
         display: block;
         width: 224px;
         height: 55px;
-        margin: 0 0 25px 120px;
+    }
+
+    &__register-info{
+        font-size: 20px;
+        color: #595959;
     }
 
     &__top{
-
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 150px 25px 0;
     }
 
     &__middle{
@@ -46,6 +54,12 @@
         font-size: 36px;
         font-weight: 700;
         color: #000000;
+    }
+
+    &__register-info{
+        float: right;
+        display: none;
+        text-align: right;
     }
 }
 

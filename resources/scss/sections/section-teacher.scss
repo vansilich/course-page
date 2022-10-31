@@ -20,6 +20,7 @@
 .about-teacher{
     display: flex;
     flex-direction: row;
+    align-items: center;h
 
     &__image{
         pointer-events: none;
@@ -29,7 +30,22 @@
     }
 
     &__text{
-        margin: 0 0 0 45px;
+        margin: 0 0 0 55px;
+    }
+
+    &__video{
+
+    }
+}
+
+.teacher-banner{
+    display: block;
+    position: relative;
+
+    &__main-photo{
+        display: block;
+        width: 340px;
+        height: 190px;
     }
 }
 
