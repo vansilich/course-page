@@ -4,12 +4,14 @@ export default class FormHandler{
         form_selector,
         inputs_and_rules,
         input_error_class,
-        error_bag_selector
+        error_bag_selector,
+        success_alert_selector,
     ){
         this.forms = document.querySelectorAll(form_selector);
         this.inputs_and_rules = inputs_and_rules;
         this.input_error_class = input_error_class;
         this.error_bag_selector = error_bag_selector;
+        this.success_alert_selector = success_alert_selector;
 
         this.assignInputsHandlers();
     }
@@ -22,9 +24,10 @@ export default class FormHandler{
             form.addEventListener('submit', event => {
 
                 event.preventDefault();
-
+                
                 const formErrorBag = form.querySelector(this.error_bag_selector);
-                this.flushErrorBag(formErrorBag);
+                const formSuccessBag = form.querySelector(this.success_alert_selector);
+                this.flushAlerts(formErrorBag, formSuccessBag);
 
                 const errors = [];
 
@@ -54,7 +57,7 @@ export default class FormHandler{
                     return;
                 }
 
-                this.handleFormSubmit(form, event);
+                this.handleFormSubmit(form, event, formErrorBag, formSuccessBag);
             })
         })
     }
@@ -77,65 +80,59 @@ export default class FormHandler{
         }
     }
 
-    handleFormSubmit(form, event) {
-        event.preventDefault();
-        let success = document.getElementsByClassName('apply-form__success');
-        let error = document.getElementsByClassName('apply-form__errors');
+    async handleFormSubmit(form, event, formErrorBag, formSuccessBag) {
 
-        for (var i = 0; i < success.length; i++) {
-            success[i].innerHTML = "";
-            error[i].innerHTML = "";
-        }
+        event.preventDefault();
+        const requestUrl = form.getAttribute('action');
 
         let token = document.head.querySelector("meta[name='_token']").content;
 
-        fetch('send/request', {
+        const response = await fetch(requestUrl, {
             headers: {
-                'X-CSRF-TOKEN': token
+                'X-CSRF-TOKEN': token,
+                'Accept': 'application/json'
             },
             credentials: "same-origin",
-            method:'post', body: new FormData(form)
-        }).then((response) => {
-            if (response.status == 422) {
-                container.innerHTML = "Введённые Вами данные не прошли валидацию в системе :(";
-                error.appendChild(container);
-                return;
-            }
-            response.json().then((data) => {
-                if (response.status == 200) {
-                    switch(data['method']) {
-                        case 'success':
-                            for (var i = 0; i < success.length; i++) {
-                                success[i].innerHTML = "<li>" + data['message'] + "</li>";
-                            }
+            method:'post', 
+            body: new FormData(form),
+        })
+            
+        if (response.status == 422) {
+            this.placeErrorsToBag(formErrorBag, ["Введённые Вами данные не прошли валидацию в системе"]);
+            return;
+        }
+        const responseJSON = await response.json();
 
-                            let btns = document.getElementsByClassName('popup-apply-form__submit');
-                            for (var i = 0; i < btns.length; i++) {
-                                btns[i].style.display = 'none';
-                            }
-                            document.getElementsByClassName('popup-apply-form-close')[0].style.display = 'block';
-                            break;
+        try {
+            if (response.status == 200) {
+                switch(responseJSON['method']) {
+                    case 'success':
+                        
+                        this.placeSuccessMessagesToBag(formSuccessBag, [responseJSON['message']]);
 
-                        case 'error':
-                            for (var i = 0; i < error.length; i++) {
-                                error[i].innerHTML = "<li>" + data['message'] + "</li>";
-                            }
-                            break;
-                    }
+                        let btns = form.getElementsByClassName('popup-apply-form__submit');
+                        for (var i = 0; i < btns.length; i++) {
+                            btns[i].style.display = 'none';
+                        }
+                        form.getElementsByClassName('popup-apply-form-close')[0].style.display = 'block';
+                        break;
+
+                    case 'error':
+                        placeErrorsToBag(formErrorBag, [responseJSON['message']])
+                        break;
                 }
-            }).catch((err) => {
-                // let container = document.createElement('li');
-                // container.innerHTML = err;
-                // error.appendChild(container);
-            })
-        });
-
-        //TODO отправлять форму через fetch и показывать ошибки
+            }
+        } catch(err) {
+            // let container = document.createElement('li');
+            // container.innerHTML = err;
+            // error.appendChild(container);
+        }
+        
     }
 
-    flushErrorBag(errorBag) {
+    flushAlerts(errorBag, successBag) {
         errorBag.innerHTML = '';
-        let success = document.querySelector('.apply-form__success').innerHTML = '';
+        successBag.innerHTML = '';
     }
 
     placeErrorsToBag(errorBag, errors){
@@ -146,6 +143,16 @@ export default class FormHandler{
         });
 
         errorBag.innerHTML = HTML;
+    }
+
+    placeSuccessMessagesToBag(successBag, messages){
+        let HTML = '';
+
+        messages.forEach(message => {
+            HTML += '<li>' + message + '</li>';
+        });
+
+        successBag.innerHTML = HTML;
     }
 
 }

@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\UserRequestController;
 use App\Http\Controllers\MailRefferalController;
+use App\Http\Controllers\UserSignUpController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,4 +21,5 @@ Route::get('/', function () {
 
 Route::get('/refferal', MailRefferalController::class);
 
-Route::post('/request', [UserRequestController::class, 'getRequest'])->prefix('send');
+Route::post('/sign-up/future/compas-3D', [UserSignUpController::class, 'futureSignUp']);
+Route::post('/send/request', [UserSignUpController::class, 'getRequest']);

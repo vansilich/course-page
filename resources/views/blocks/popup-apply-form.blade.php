@@ -3,26 +3,16 @@
     <div class="popup-apply-form popup">
 
         <h3 class="popup-apply-form__title">
-            ЗАПИСАТЬСЯ НА КУРС
+            Запись на следующий поток
         </h3>
 
-        <form class="popup-apply-form__form" action="/send/request" autocomplete="off">
+        <form class="popup-apply-form__form" action="/sign-up/future/compas-3D" autocomplete="off">
             <ul class="apply-form__success"></ul>
             <ul class="apply-form__errors"></ul>
 
             <div class="popup-apply-form__form-content">
 
                 <div class="popup-apply-form__form-content-left">
-                    <div class="popup-apply-form__date-content">
-
-                        <span class="popup-apply-form__pre-date-text">
-                            Начало обучения:
-                        </span>
-                        <span class="popup-apply-form__date">
-                            31 октября
-                        </span>
-
-                    </div>
 
                     <ul class="popup-apply-form__errors"></ul>
 
@@ -41,6 +31,18 @@
                         name="telephone"
                         placeholder="Номер телефона"
                         autocomplete="off">
+
+                    <input class="popup-apply-form__text-input text-input"
+                        type="text"
+                        name="job"
+                        placeholder="Должность"
+                        autocomplete="off">
+
+                    <input class="popup-apply-form__text-input text-input"
+                        type="text"
+                        name="company"
+                        placeholder="Компания"
+                        autocomplete="off">
                 </div>
 
                 <img class="popup-apply-form__form-content-logo" src="{{ asset('/assets/icons/form-apply.svg') }}">
@@ -48,7 +50,7 @@
 
             @csrf
             <button class="popup-apply-form__submit" type="submit">
-                Записаться на курс
+                Записаться
             </button>
             <a href="/" type="button" class="popup-apply-form-close popup-apply-form__submit">
                 Закрыть

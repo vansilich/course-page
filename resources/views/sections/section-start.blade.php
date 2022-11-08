@@ -5,7 +5,7 @@
             <img class="section-start__logo" src="{{ asset('/assets/icons/logo-black.svg') }}" alt="fluid-line">
 
             <p class="section-start__register-info">
-                Запись открыта до 6 ноября включительно
+                Запись на курс закрыта
             </p>
         </div>
 
@@ -31,7 +31,7 @@
                             СТАРТ КУРСА 31 ОКТЯБРЯ
                         </h2>
                         <p class="promo-text__register-info">
-                            Запись открыта до 6 ноября включительно
+                            Запись на курс закрыта
                         </p>
                     </div>
 

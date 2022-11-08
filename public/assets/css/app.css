@@ -1235,17 +1235,6 @@ footer {
   background-color: #30b5be;
 }
 
-.apply-date__text {
-  font-weight: 400;
-  font-size: 16px;
-  color: #595959;
-}
-.apply-date__date {
-  font-weight: 400;
-  font-size: 20px;
-  color: #000000;
-}
-
 .apply-policy {
   margin: 25px 0 0 0;
   padding: 0;
@@ -1304,14 +1293,6 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-}
-.popup-apply-form__pre-date-text {
-  font-size: 16px;
-  color: #595959;
-}
-.popup-apply-form__date {
-  font-size: 20px;
-  color: #000000;
 }
 .popup-apply-form__text-input {
   display: block;
@@ -1687,16 +1668,6 @@ footer {
     width: 8px;
     height: 8px;
   }
-  .program .program-form-wrapper .apply-form .apply-date__text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .program .program-form-wrapper .apply-form .apply-date__date {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-  }
   .teacher {
     padding: 52px 0;
   }
@@ -1799,16 +1770,6 @@ footer {
   }
   .certificate .certificate-small-form .apply-form__form {
     margin-top: 20px;
-  }
-  .certificate .certificate-small-form .apply-form .apply-date__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-  }
-  .certificate .certificate-small-form .apply-form .apply-date__date {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
   }
   .certificate .certificate-small-form .apply-form .apply-policy__checkbox {
     width: 8px;
@@ -2157,16 +2118,6 @@ footer {
   .apply-form__text-input:not(:first-child) {
     margin-top: 4px;
   }
-  .apply-date__text {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
-  }
-  .apply-date__date {
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 16px;
-  }
   .text-input {
     font-weight: 400;
     font-size: 12px;
@@ -2362,16 +2313,6 @@ footer {
     font-size: 40px;
     line-height: 48px;
   }
-  .popup-apply-form__pre-date-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-  }
-  .popup-apply-form__date {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-  }
   .footer-links {
     margin-top: 1em;
     max-width: 100%;
@@ -2514,16 +2455,6 @@ footer {
   }
   .certificate .certificate-small-form .apply-form__form {
     margin-top: 0;
-  }
-  .certificate .certificate-small-form .apply-form .apply-date__text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .certificate .certificate-small-form .apply-form .apply-date__date {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
   }
   footer {
     padding: 30px 6.5vw;
@@ -2712,16 +2643,6 @@ footer {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-  }
-  .popup-overlay .popup-apply-form__pre-date-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .popup-overlay .popup-apply-form__date {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
   }
   .popup-overlay .popup-apply-form__text-input {
     font-weight: 400;
@@ -3226,16 +3147,6 @@ footer {
   }
   .popup-overlay .popup-apply-form__title {
     font-size: 22px;
-  }
-  .popup-overlay .popup-apply-form__pre-date-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .popup-overlay .popup-apply-form__date {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
   }
   .popup-overlay .popup-apply-form__text-input {
     padding: 11px 12px;

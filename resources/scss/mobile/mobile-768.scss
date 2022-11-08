@@ -150,18 +150,6 @@
                 &__form {
                     margin-top: 0;
                 }
-                .apply-date {
-                    &__text {
-                        font-weight: 400;
-                        font-size: 12px;
-                        line-height: 15px;
-                    }
-                    &__date {
-                        font-weight: 400;
-                        font-size: 12px;
-                        line-height: 15px;
-                    }
-                }
             }
         }
     }
@@ -244,18 +232,6 @@
     //                padding: 8px 0;
     //            }
     //
-    //            .apply-date {
-    //                &__text {
-    //                    font-weight: 400;
-    //                    font-size: $apply-form-date-size;
-    //                    line-height: $apply-form-date-size;
-    //                }
-    //                &__date {
-    //                    font-weight: 400;
-    //                    font-size: $apply-form-date-size;
-    //                    line-height: $apply-form-date-size;
-    //                }
-    //            }
     //            .apply-policy {
     //                &__checkbox {
     //                    width: $policy-text-size;

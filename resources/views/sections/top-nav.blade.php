@@ -25,7 +25,7 @@
                 </a>
 
                 <button class="top-nav__button item-collapse item-collapse-button">
-                    Записаться на курс
+                    Оставить заявку
                 </button>
             </div>
         </div>
@@ -51,7 +51,7 @@
                 </a>
 
                 <button class="top-nav__button">
-                    Записаться на курс
+                    Оставить заявку
                 </button>
             </div>
         </div>

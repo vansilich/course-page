@@ -283,23 +283,6 @@
                         height: 8px;
                     }
                 }
-                .apply-date {
-                    &__text {
-                        font-weight: 400;
-                        font-size: 12px;
-                        line-height: 15px;
-                    }
-                    &__date {
-                        font-weight: 400;
-                        font-size: 12px;
-                        line-height: 15px;
-                    }
-                }
-                &__text-input {
-                }
-                &__submit {
-                }
-
             }
         }
     }
@@ -427,18 +410,6 @@
 
                 &__form {
                     margin-top: 20px;
-                }
-                .apply-date {
-                    &__text {
-                        font-weight: 400;
-                        font-size: $apply-form-date-size;
-                        line-height: $apply-form-date-size;
-                    }
-                    &__date {
-                        font-weight: 400;
-                        font-size: $apply-form-date-size;
-                        line-height: $apply-form-date-size;
-                    }
                 }
                 .apply-policy {
                     &__checkbox {

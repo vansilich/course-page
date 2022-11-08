@@ -23,9 +23,18 @@ new FormHandler(
             liveValidator: phoneLiveValidator,
             submitValidators: [phoneSubmitValidator]
         },
+        'input[name="job"]': {
+            inputName: 'Должность',
+            submitValidators: [notEmptySubmitValidator]
+        },
+        'input[name="company"]': {
+            inputName: 'Компания',
+            submitValidators: [notEmptySubmitValidator]
+        },
     },
     'error',
-    '.apply-form__errors'
+    '.apply-form__errors',
+    '.apply-form__success'
 );
 
 new FormHandler(
@@ -44,9 +53,18 @@ new FormHandler(
             liveValidator: phoneLiveValidator,
             submitValidators: [phoneSubmitValidator]
         },
+        'input[name="job"]': {
+            inputName: 'Должность',
+            submitValidators: [notEmptySubmitValidator]
+        },
+        'input[name="company"]': {
+            inputName: 'Компания',
+            submitValidators: [notEmptySubmitValidator]
+        },
     },
     'error',
-    '.popup-apply-form__errors'
+    '.popup-apply-form__errors',
+    '.apply-form__success'
 );
 
 new CommentsExpand(

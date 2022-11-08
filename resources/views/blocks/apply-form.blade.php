@@ -1,19 +1,10 @@
 <div class="apply-form">
 
     <h3 class="apply-form__title">
-        ЗАПИСАТЬСЯ НА КУРС
+        Запись на следующий поток
     </h3>
 
-    <div class="apply-form__start apply-date">
-        <span class="apply-date__text">
-            Начало обучения
-        </span>
-        <span class="apply-date__date">
-            31 октября
-        </span>
-    </div>
-
-    <form class="apply-form__form" action="/send/request" autocomplete="off">
+    <form class="apply-form__form" action="/sign-up/future/compas-3D" autocomplete="off">
         @csrf
 
         <ul class="apply-form__success"></ul>
@@ -37,8 +28,20 @@
             placeholder="Номер телефона"
             autocomplete="off">
 
+        <input class="apply-form__text-input text-input"
+            type="text"
+            name="job"
+            placeholder="Должность"
+            autocomplete="off">
+
+        <input class="apply-form__text-input text-input"
+            type="text"
+            name="company"
+            placeholder="Компания"
+            autocomplete="off">
+
         <button class="apply-form__submit" type="submit">
-            Отправить
+            Записаться
         </button>
 
         <div class="apply-form__bottom apply-policy">
