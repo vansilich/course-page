@@ -6,7 +6,7 @@
     <meta name="_token" content="{{ csrf_token() }}">
     <title>Курс по Компас-3D</title>
 
-    <link rel="stylesheet" href="{{ asset('/assets/css/app.css')  }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/app.css') }}?v=1667896207">
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
@@ -53,7 +53,7 @@
         </script>
     @endif
 
-    <script src="{{ mix('/assets/js/app.js') }}" defer></script>
+    <script src="{{ mix('/assets/js/app.js') }}?v=1667896207" defer></script>
 </head>
 <body>
 @include('sections.top-nav')
