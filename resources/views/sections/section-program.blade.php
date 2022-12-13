@@ -8,7 +8,7 @@
         <div class="program__content">
 
             <div class="programs">
-                <div class="programs__item">
+                <!-- <div class="programs__item">
 
                     <a class="program-block">
                         <div class="program-block__text">
@@ -31,14 +31,14 @@
                             Знакомство с интерфейсом программы
                         </li>
                     </ul>
-                </div>
+                </div> -->
 
                 <div class="programs__item">
 
                     <a class="program-block">
                         <div class="program-block__text">
                             <p class="program-block__title">
-                                МОДУЛЬ №2
+                                МОДУЛЬ №1
                             </p>
                             <p class="program-block__description">
                                 Работа с эскизами
@@ -79,7 +79,7 @@
                     <a class="program-block">
                         <div class="program-block__text">
                             <p class="program-block__title">
-                                МОДУЛЬ №3
+                                МОДУЛЬ №2
                             </p>
                             <p class="program-block__description">
                                 Моделирование призматических деталей
@@ -110,7 +110,7 @@
                     <a class="program-block">
                         <div class="program-block__text">
                             <p class="program-block__title">
-                                МОДУЛЬ №4
+                                МОДУЛЬ №3
                             </p>
                             <p class="program-block__description">
                                 Работа с чертежами
@@ -141,7 +141,7 @@
                     <a class="program-block">
                         <div class="program-block__text">
                             <p class="program-block__title">
-                                МОДУЛЬ №5
+                                МОДУЛЬ №4
                             </p>
                             <p class="program-block__description">
                                 Моделирование деталей типа тела вращения

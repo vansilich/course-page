@@ -24,7 +24,7 @@
 
                 <div class="formats__item-text format-text">
                     <p class="format-text__title">
-                        5 контентных модулей:
+                        4 контентных модуля:
                     </p>
                     <p class="format-text__description">
                         6 часов полезных материалов - изучение основных понятий, инструментов и приёмов работы в системе
