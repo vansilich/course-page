@@ -10,6 +10,56 @@
         color: #000000;
         border-bottom: 7px solid #29C2E3;
     }
+
+    @media screen and (max-width: 1440px) {
+        &__title {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 41px;
+
+            padding-left: $padding-size;
+        }
+        
+        .container {
+            padding-left: $padding-size;
+            padding-right: $padding-size;
+
+            .formats {
+                column-gap: 0px;
+                &__item {
+                    display: block;
+                }
+                &__item-icon {
+                    margin: auto;
+                }
+                .format-text {
+                    margin-top: 8px;
+                    text-align: center;
+                    &__title {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                    &__description {
+                        text-align: left;
+
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+        }
+    }
 }
 
 .formats{
@@ -54,5 +104,10 @@
         color: #000000;
         padding: 0;
         margin: 0;
+    }
+
+    @media screen and (max-width: 1140px) {
+
+        width: auto;
     }
 }

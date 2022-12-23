@@ -15,6 +15,32 @@
         margin: 50px 0 0 0;
         padding: 0;
     }
+
+    @media screen and (max-width: 1440px) {
+        padding: 52px 0;
+
+        &__title {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 41px;
+
+            padding-left: $padding-size;
+        }
+        
+        .container {
+            padding: 0px $padding-size;
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+        }
+    }
 }
 
 .about-teacher{
@@ -32,10 +58,6 @@
     &__text{
         margin: 0 0 0 55px;
     }
-
-    &__video{
-
-    }
 }
 
 .teacher-banner{
@@ -46,6 +68,13 @@
         display: block;
         width: 340px;
         height: 190px;
+    }
+
+    @media screen and (max-width: 1140px) {
+        &__main-photo{
+            width: 250px;
+            height: 140px;
+        }
     }
 }
 

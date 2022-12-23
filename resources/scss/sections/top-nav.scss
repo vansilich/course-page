@@ -1,6 +1,18 @@
 @import "resources/scss/abstract/variables";
 
-.nav-sticky {
+.nav-sticky{
+    z-index: 100;
+    top: 0;
+    position: sticky;
+    height: 65px;
+    width: 100%;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
+    background-color: $default-layout-color;
+
+    .container{
+        height: 100%;
+    }
+
     .collapse {
         position: absolute;
         height: auto;
@@ -13,18 +25,19 @@
             padding: 1em 1em;
         }
     }
-}
-.nav-sticky{
-    z-index: 100;
-    top: 0;
-    position: sticky;
-    height: 65px;
-    width: 100%;
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
-    background-color: $default-layout-color;
 
-    .container{
-        height: 100%;
+    @media screen and (max-width: 1440px) {
+        .container {
+            max-width: 100%;
+            padding: 0px calc($padding-size - 5vw);
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+     
+        .container {
+            padding: 0 calc($padding-size - 4vw);
+        }
     }
 }
 

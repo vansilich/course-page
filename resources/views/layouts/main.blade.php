@@ -53,32 +53,14 @@
         </script>
     @endif
 
+    @yield('header_scripts')
+
     <script src="{{ mix('/assets/js/app.js') }}?v=1667896207" defer></script>
 </head>
 <body>
-@include('sections.top-nav')
+    
+    @yield('page_content')
 
-@include('sections.section-start')
-
-@include('sections.section-is-for')
-
-@include('sections.section-format')
-
-@include('sections.section-program')
-
-@include('sections.section-teacher')
-
-@include('sections.section-price')
-
-@include('sections.section-reviews')
-
-@include('sections.section-certificate')
-@include('sections.section-certificate-another')
-
-@include('blocks.footer')
-@include('blocks.footer-md')
-@include('blocks.footer-sm')
-
-@include('blocks.popup-apply-form')
+    @yield('footer_scripts')
 </body>
 </html>

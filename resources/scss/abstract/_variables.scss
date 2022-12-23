@@ -11,3 +11,21 @@ $success-bg-color: #d1e7dd;
 $success-border-color: #badbcc;
 
 $error-color: #d93c3c;
+
+@media screen and (max-width: 1680px) {
+    $padding-size-top: 30px;
+    $padding-size: 10%;
+}
+
+@media screen and (max-width: 1440px) {
+    $padding-size: 16vw;
+
+    $apply-form-padding-t-b: 25px;
+    $apply-form-padding-l-r: 20px;
+    $apply-form-date-size: 14px;
+    $policy-text-size: 8px;
+}
+
+@media screen and (max-width: 1140px) {
+    $padding-size: 13.5vw;
+}

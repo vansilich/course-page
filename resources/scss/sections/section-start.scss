@@ -27,8 +27,65 @@
         padding: 50px 0 90px 120px;
     }
 
-    &__bottom{
+    @media screen and (max-width: 1680px) {
+        padding: $padding-size-top 0;
 
+        &__logo {
+            margin-left: 0;
+        }
+
+        &__top{
+            margin: 0 0 25px 0;
+        }
+
+        &__middle {
+            padding: 30px 75px;
+        }
+
+        .container-left-shifted {
+            padding: 0 $padding-size;
+            margin: 0;
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1440px) {
+        &__logo {
+            margin-left: 0px;
+        }
+
+        &__register-info{
+            font-size: 16px;
+        }
+
+        &__top{
+            margin: 0 150px 25px 0;
+        }
+        &__middle {
+            padding: 24px 0 54px 75px;
+        }
+
+        .container-left-shifted {
+            padding-left: calc($padding-size - 5vw);
+            padding-right: 15%;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+       
+        &__top{
+            margin: 0 100px 25px 0;
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        &__middle {
+            padding: 0 0 54px 64px;
+        }
+
+        .container-left-shifted {
+            padding-left: calc($padding-size - 4vw);
+        }
     }
 }
 
@@ -60,6 +117,24 @@
         float: right;
         display: none;
         text-align: right;
+    }
+
+    @media screen and (max-width: 1440px) {
+        
+        &__middle {
+            font-weight: 700;
+            font-size: 3vw;
+            line-height: 3vw;
+
+            margin-top: 15px;
+        }
+        &__bottom {
+            font-weight: 700;
+            font-size: 1.55vw;
+            line-height: 96.52%;
+
+            margin-top: 50px;
+        }
     }
 }
 
@@ -99,6 +174,56 @@
         top: 220px;
         z-index: 10;
     }
+
+    @media screen and (max-width: 1680px) {
+        &__3D-1 {
+            top: 8em;
+            width: 450px;
+            left: -6em;
+        }
+        &__3D-2 {
+            left: 17em;
+            width: 350px;
+            top: -3em;
+        }
+        &__notebook {
+            top: 20em;
+            width: 600px;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        
+        &__3D-1 {
+            left: -7vw;
+        }
+
+        &__3D-2 {
+            top: -125px;
+            left: 15em;
+        }
+
+        &__notebook {
+            left: -10vw;
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+
+        &__3D-1 {
+            width: 30vw;
+            top: 20px;
+            left: -7vw;
+        }
+        &__3D-2 {
+            left: 13em;
+        }
+        &__notebook {
+            width: 49vw;
+            top: 160px;
+            left: -10vw;
+        }
+    }
 }
 
 .promo-logo{
@@ -106,14 +231,27 @@
     width: 150px;
     height: 150px;
     margin-right: 40px;
+
+    @media screen and (max-width: 1440px) {
+        width: 100px;
+    }
 }
 
 .promo-course-description{
     color: #000000;
     font-weight: 500;
     font-size: 33px;
+
+    @media screen and (max-width: 1440px) {
+        font-weight: 500;
+        font-size: 1.8vw;
+        line-height: 1.8vw;
+
+        white-space: nowrap;
+    }
 }
 
+//About course block
 .course-concise-description{
 
     &__title{
@@ -123,6 +261,46 @@
         width: fit-content;
         padding: 0 4px 0 229px;
         border-bottom: 7px solid #595959;
+    }
+
+    @media screen and (max-width: 1680px) {
+        
+        &__title {
+            padding-left: $padding-size;
+        }
+        .start-description {
+            margin-left: $padding-size;
+        }
+    } 
+
+    @media screen and (max-width: 1440px) {
+
+        &__title {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 41px;
+
+            padding-left: $padding-size;
+        }
+        .start-description {
+
+            &__title {
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            &__content {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        &__title {
+            padding-left: $padding-size;
+        }
     }
 }
 
@@ -161,5 +339,9 @@
                 margin: 5px 0 0 0;
             }
         }
+    }
+
+    @media screen and (max-width: 1140px) {
+        margin-left: $padding-size;
     }
 }

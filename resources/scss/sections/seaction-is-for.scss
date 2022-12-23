@@ -19,6 +19,38 @@
         font-weight: 400;
         font-size: 20px;
     }
+
+    @media screen and (max-width: 1440px) {
+        padding-top: 32px;
+        padding-left: $padding-size;
+        padding-right: $padding-size;
+        padding-bottom: 41px;
+
+        &__title {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 41px;
+        }
+
+        &__description {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        .for-who-item {
+            
+            &__title {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        padding: 30px $padding-size;
+    }
 }
 
 .for-who-icons{

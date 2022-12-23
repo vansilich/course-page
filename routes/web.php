@@ -16,7 +16,7 @@ use App\Http\Controllers\UserSignUpController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('pages.courses.kompas_3d.for_beginners');
 })->name('home');
 
 Route::get('/refferal', MailRefferalController::class);

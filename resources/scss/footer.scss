@@ -3,6 +3,20 @@
 footer{
     padding: 100px 0;
     background-color: $default-layout-color;
+
+    @media screen and (max-width: 1440px) {
+        padding: 0;
+        
+        .container {
+            padding: 66px $padding-size;
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        .container {
+            padding: 70px $padding-size;
+        }
+    }
 }
 
 .footer-content{
@@ -19,6 +33,12 @@ footer{
 
     &__right{
         width: 50%;
+    }
+
+    @media screen and (max-width: 1140px) {
+        &__email {
+            margin-top: 48px;
+        }
     }
 }
 
@@ -82,5 +102,9 @@ footer{
         display: block;
         width: 30px;
         height: 30px;
+    }
+
+    @media screen and (max-width: 1140px) {
+        margin-top: 25px;
     }
 }

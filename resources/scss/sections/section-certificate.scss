@@ -29,4 +29,103 @@
         padding: 0;
         margin: 0;
     }
+
+    @media screen and (max-width: 1440px) {
+        &__text {
+            max-width: 50%;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        &__img {
+            margin-top: 2em;
+            max-width: 50%;
+            width: 100%;
+        }
+
+        &__title {
+            padding-left: $padding-size;
+        }
+
+        .container {
+            display: block;
+            padding-left: $padding-size;
+        }
+
+        .certificate-small-form {
+            position: absolute;
+            right: 16vw;
+        }
+
+        .certificate-small-form {
+            .apply-form {
+                max-width: 20vw;
+                padding: $apply-form-padding-t-b $apply-form-padding-l-r;
+
+                &__title {
+                    font-weight: 700;
+                    font-size: 21px;
+                    line-height: 25px;
+                }
+
+                &__text-input:not(:first-child) {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+
+                    margin-top: 8px;
+                }
+
+                &__submit {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 22px;
+
+                    margin-top: 30px;
+                    padding: 8px 0;
+                }
+
+                &__form {
+                    margin-top: 20px;
+                }
+
+                .apply-policy {
+                    &__checkbox {
+                        width: $policy-text-size;
+                        height: $policy-text-size;
+                    }
+                    &__text {
+                        font-weight: 400;
+                        font-size: $policy-text-size;
+                        line-height: $policy-text-size;
+                    }
+                    &__link {
+                        font-weight: 400;
+                        font-size: $policy-text-size;
+                        line-height: $policy-text-size;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        &__title {
+            padding-left: $padding-size;
+        }
+        .container {
+            padding: 0 $padding-size;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .certificate-small {
+        display: block!important;
+    }
+    .certificate-large {
+        display: none;
+    }
 }

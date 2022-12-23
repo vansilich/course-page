@@ -11,6 +11,21 @@
         font-weight: 700;
         font-size: 32px;
     }
+
+    @media screen and (max-width: 1440px) {
+        padding: 52px $padding-size;
+
+        &__title {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 41px;
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        padding: 47px $padding-size;
+
+    }
 }
 
 .price-content{
@@ -111,6 +126,16 @@
             }
         }
     }
+
+    @media screen and (max-width: 1440px) {
+        margin-top: 30px;
+
+        &__items li {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
 }
 
 .whats-included{
@@ -119,5 +144,9 @@
         display: flex;
         align-content: center;
         justify-content: end;
+    }
+
+    @media screen and (max-width: 1440px) {
+        display: none;
     }
 }
