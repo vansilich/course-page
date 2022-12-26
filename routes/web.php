@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('pages.courses.kompas_3d.for_beginners');
 })->name('home');
 
+Route::get('/compas-3d/valve-modeling', function () {
+    return view('pages.courses.kompas_3d.valve_modeling');
+});
+
 Route::get('/refferal', MailRefferalController::class);
 
 Route::post('/sign-up/future/compas-3D', [UserSignUpController::class, 'futureSignUp']);

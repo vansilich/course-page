@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="_token" content="{{ csrf_token() }}">
-    <title>Курс по Компас-3D</title>
 
-    <link rel="stylesheet" href="{{ asset('/assets/css/app.css') }}?v=1667896207">
+    <title>Курс по Компас-3D</title>
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
@@ -53,9 +52,8 @@
         </script>
     @endif
 
-    @yield('header_scripts')
+    @yield('header_assets')
 
-    <script src="{{ mix('/assets/js/app.js') }}?v=1667896207" defer></script>
 </head>
 <body>
     

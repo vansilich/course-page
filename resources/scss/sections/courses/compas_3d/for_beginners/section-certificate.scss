@@ -1,0 +1,219 @@
+.certificate{
+    padding: 80px 0;
+
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        width: fit-content;
+        padding: 0 10px 0 229px;
+        border-bottom: 7px solid #1FBCDE;
+    }
+
+    & .container{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    &__img{
+        width: 65%;
+        display: block;
+    }
+
+    &__text{
+        max-width: 400px;
+        font-size: 20px;
+        color: #000000;
+        padding: 0;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 1440px) {
+        &__text {
+            max-width: 50%;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        &__img {
+            margin-top: 2em;
+            max-width: 50%;
+            width: 100%;
+        }
+
+        &__title {
+            padding-left: 16vw;
+        }
+
+        .container {
+            display: block;
+            padding-left: 16vw;
+        }
+
+        .certificate-small-form {
+            position: absolute;
+            right: 16vw;
+        }
+
+        .certificate-small-form {
+            .apply-form {
+                max-width: 20vw;
+                padding: 25px 20px;
+
+                &__title {
+                    font-weight: 700;
+                    font-size: 21px;
+                    line-height: 25px;
+                }
+
+                &__text-input:not(:first-child) {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+
+                    margin-top: 8px;
+                }
+
+                &__submit {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 22px;
+
+                    margin-top: 30px;
+                    padding: 8px 0;
+                }
+
+                &__form {
+                    margin-top: 20px;
+                }
+
+                .apply-policy {
+                    &__checkbox {
+                        width: 8px;
+                        height: 8px;
+                    }
+                    &__text {
+                        font-weight: 400;
+                        font-size: 8px;
+                        line-height: 8px;
+                    }
+                    &__link {
+                        font-weight: 400;
+                        font-size: 8px;
+                        line-height: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        &__title {
+            padding-left: 13.5vw;
+        }
+        .container {
+            padding: 0 13.5vw;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        &__title {
+            padding-left: 134px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            border-bottom: 5px solid #595959;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+        }
+        &__img {
+            margin-top: 3em;
+        }
+        .container {
+            padding-left: 134px;
+            padding-right: 134px;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 33px;
+
+        &__title {
+            padding-left: 6.5vw;
+        }
+        .container {
+            padding: 0 6.5vw;
+        }
+        .certificate-small-form {
+            right: 10vw;
+            .apply-form {
+                max-width: 24vw;
+                padding: 25px 25px;
+                &__title {
+                    font-weight: 700;
+                    font-size: 15.3px;
+                    line-height: 19px;
+                }
+                &__form {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        &__text, &__img {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 426px) {
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+}
+
+.certificate-small{
+
+    @media screen and (max-width: 1440px) {
+        display: block!important;
+    }
+
+    @media screen and (max-width: 540px) {
+        .certificate-small-form {
+            display: none;
+        }
+    }
+}
+
+.certificate-large {
+    @media screen and (max-width: 1440px) {
+        display: none;
+    }
+}

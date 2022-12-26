@@ -92,6 +92,95 @@
             background-color: #30b5be;
         }
     }
+
+    @media screen and (max-width: 1440px) {
+        padding-top: 25px;
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-bottom: 33px;
+
+        max-width: 24vw;
+
+        &__text-input:not(:first-child) {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+
+            margin-top: 8px;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 25px;
+        }
+
+        &__form {
+            margin-top: 22px;
+        }
+        &__submit {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+
+            margin-top: 22px;
+            padding: 9px 0;
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        max-width: 22vw;
+    }
+
+    @media screen and (max-width: 1024px) {
+        max-width: 24vw;
+    }
+
+    @media screen and (max-width: 960px) {
+        max-width: 200px;
+        padding-top: 21px;
+        padding-bottom: 32px;
+
+        &__start {
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+
+        &__form {
+            margin-top: .5em;
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 16.6px;
+            line-height: 20px;
+        }
+        &__submit {
+            margin-top: 25px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 8px 0;
+        }
+        &__text-input:not(:first-child) {
+            margin-top: 4px;
+        }
+
+
+    }
+}
+
+.text-input{
+
+    @media screen and (max-width: 1440px) {
+        padding: 7px 15px;
+    }
+
+    @media screen and (max-width: 960px) {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 5px 10px;
+    }
 }
 
 .apply-policy{
@@ -112,6 +201,39 @@
         text-decoration: none;
         color: #0092A6;
         font-size: 12px;
+    }
 
+    @media screen and (max-width: 1440px) {
+        &__text {
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 8px;
+        }
+        &__link {
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 8px;
+        }
+        &__checkbox {
+            width: 8px;
+            height: 8px;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        &__text {
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 8px;
+        }
+        &__link {
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 8px;
+        }
+        &__checkbox {
+            width: 8px;
+            height: 8px;
+        }
     }
 }

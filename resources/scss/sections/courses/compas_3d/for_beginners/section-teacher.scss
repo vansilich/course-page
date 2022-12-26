@@ -1,0 +1,344 @@
+.teacher{
+    padding: 85px 0 50px 0;
+
+    &__title{
+        font-size: 32px;
+        color: #000000;
+        font-weight: 700;
+        margin: 0;
+        width: fit-content;
+        padding: 0 0 7px 229px;
+        border-bottom: 7px solid #0042A6;
+    }
+
+    &__content{
+        margin: 50px 0 0 0;
+        padding: 0;
+    }
+
+    @media screen and (max-width: 1440px) {
+        padding: 52px 0;
+
+        &__title {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 41px;
+
+            padding-left: 16vw;
+        }
+        
+        .container {
+            padding: 0px 16vw;
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        &__title {
+            padding-left: 13.5vw;
+        }
+        .container {
+            padding: 0 13.5vws;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        padding-top: 40px;
+
+        &__content {
+            margin-top: 1em;
+        }
+        &__title {
+            padding-left: 134px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            border-bottom: 5px solid #595959;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 45px 0;
+
+        &__title {
+            padding-left: 6.5vw;
+        }
+        
+        .container {
+            padding: 0 6.5vw;
+        }
+    }
+
+    @media screen and (max-width: 426px) {
+        padding: 18px 0;
+
+        &__title {
+            padding-left: 42px;
+        }
+
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            padding: 0 42px;
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        padding: 17px 0;
+
+        &__title {
+            padding-left: 42px;
+        }
+
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            padding: 0 42px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        padding: 16px 0;
+
+        &__title {
+            padding-left: 26px;
+        }
+
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            padding: 0 26px;
+        }
+    }
+}
+
+.about-teacher{
+    display: flex;
+    flex-direction: row;
+    align-items: center;h
+
+    &__image{
+        pointer-events: none;
+        display: block;
+        width: 189px;
+        height: 189px;
+    }
+
+    &__text{
+        margin: 0 0 0 55px;
+    }
+
+    @media screen and (max-width: 960px) {
+
+        &__image {
+            width: 155px;
+            height: 155px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+
+    @media screen and (max-width: 720px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 426px) {
+        &__image {
+            margin-bottom: 18px;
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        &__image {
+            margin-bottom: 18px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        &__image {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.teacher-banner{
+    display: block;
+    position: relative;
+
+    &__main-photo{
+        display: block;
+        width: 340px;
+        height: 190px;
+    }
+
+    @media screen and (max-width: 1140px) {
+        &__main-photo{
+            width: 250px;
+            height: 140px;
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        margin: 0 auto;
+    
+        &__main-photo{
+            width: 267px;
+            height: 150px;
+        }
+    }
+}
+
+.teacher-text{
+    color: #000000;
+
+    &__title{
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__concise{
+        margin: 5px 0 0 0;
+        padding: 0;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    &__about{
+        margin: 20px 0 0 0;
+        padding: 0;
+        font-weight: 500;
+        font-size: 16px;
+        list-style: none;
+
+        & li{
+            padding: 0;
+            margin: 5px 0 0 0;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        margin-top: -50px;
+
+        &__title {
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 98.52%;
+        }
+        &__concise {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 98.52%;
+        }
+        &__about li {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 98.52%;
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        margin-top: 0;
+        font-size: 16px;
+
+        &__title{
+            margin: 30px 0 0 0;
+            font-size: 18px;
+        }
+
+        &__concise{
+            font-size: 16px;
+        }
+
+        &__about li{
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 426px) {
+        text-align: left;
+        margin: 0;
+
+        &__title {
+            font-size: 23px;
+            line-height: 23px;
+        }
+        &__concise {
+            font-size: 21px;
+            line-height: 21px;
+
+            margin-top: 18px;
+        }
+
+        &__about li {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+
+            margin-top: 18px;
+
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        text-align: left;
+        margin: 0;
+
+        &__title {
+            font-size: 23px;
+            line-height: 23px;
+        }
+        &__concise {
+            font-size: 21px;
+            line-height: 21px;
+
+            margin-top: 18px;
+        }
+
+        &__about li {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+
+            margin-top: 18px;
+
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        text-align: left;
+        margin: 0;
+
+        &__title {
+            font-size: 23px;
+            line-height: 23px;
+        }
+        &__concise {
+            font-size: 21px;
+            line-height: 21px;
+
+            margin-top: 16px;
+        }
+
+        &__about li {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+
+            margin-top: 16px;
+
+        }
+    }
+}

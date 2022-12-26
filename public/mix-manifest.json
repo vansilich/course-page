@@ -1,6 +1,7 @@
 {
-    "/assets/js/app.js": "/assets/js/app.js?id=9e64e2a69591d677ec1a947d98343b96",
-    "/assets/css/app.css": "/assets/css/app.css?id=e266703be397a66d26a4ede869039436",
+    "/assets/js/for_beginners.js": "/assets/js/for_beginners.js?id=e684d446fa9183b7810cfd43ec39fd87",
+    "/assets/js/valve_modeling.js": "/assets/js/valve_modeling.js?id=f41098e22b2386c97357b12530ccefc6",
+    "/assets/css/for_beginners.css": "/assets/css/for_beginners.css?id=e68dde00fdf8a7181461a1d2fea73566",
     "/assets/icons/course-logo-white.svg": "/assets/icons/course-logo-white.svg?id=051e6df842b5f81f45c2c3c2911acc91",
     "/assets/icons/footer-sm-logo.svg": "/assets/icons/footer-sm-logo.svg?id=01e170db2c5ea8703fda737e348b12d4",
     "/assets/icons/for_constructor_engineers.svg": "/assets/icons/for_constructor_engineers.svg?id=bff369920acea6e862b7a88956f7112f",
@@ -33,5 +34,6 @@
     "/assets/img/start_3d_1.png": "/assets/img/start_3d_1.png?id=17c3fbdb63460288d01ed05fd632b37c",
     "/assets/img/start_3d_2.png": "/assets/img/start_3d_2.png?id=07f7c64586c3b003950b468dca1ba864",
     "/assets/img/teacher-photo.png": "/assets/img/teacher-photo.png?id=133ed0db61b1a289e153070bc5d06127",
-    "/assets/js/app.js.LICENSE.txt": "/assets/js/app.js.LICENSE.txt?id=26fbb03f68cf58dcf9baf390a404c4cd"
+    "/assets/js/app.js.LICENSE.txt": "/assets/js/app.js.LICENSE.txt?id=26fbb03f68cf58dcf9baf390a404c4cd",
+    "/assets/css/valve_modeling.css": "/assets/css/valve_modeling.css?id=80c9d88d702197bdce62143f320d21c4"
 }

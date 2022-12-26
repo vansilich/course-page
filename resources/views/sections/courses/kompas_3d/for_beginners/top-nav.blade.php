@@ -4,7 +4,7 @@
         <div class="container">
             <div class="top-nav">
                 <div class="top-nav__left">
-                    <a href="https://fluid-line.ru/">
+                    <a href="/">
                         <img class="top-nav__logo nav-logo-small" src="{{ asset('/assets/icons/logo-black-560.svg') }}" alt="fluid-line">
                     </a>
                     <a class="top-nav__burger">
@@ -33,7 +33,7 @@
     <div class="container">
         <div class="top-nav">
             <div class="top-nav__left">
-                <a href="https://fluid-line.ru/">
+                <a href="/">
                     <img class="top-nav__logo nav-logo-big" src="{{ asset('/assets/icons/logo-white.svg') }}" alt="fluid-line">
                     <img class="top-nav__logo nav-logo-small" src="{{ asset('/assets/icons/logo-white-720.svg') }}" alt="fluid-line">
                 </a>

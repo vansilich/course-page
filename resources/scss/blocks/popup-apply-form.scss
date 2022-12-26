@@ -70,25 +70,56 @@
         }
     }
 
-    .popup-apply-policy{
-        margin: 25px 0 0 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-
-        &__text{
-            font-weight: 400;
-            color: #595959;
-            font-size: 12px;
-            padding: 0 0 0 10px;
+    @media screen and (max-width: 960px) {
+        &__title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
         }
+    }
 
-        &__link{
-            text-decoration: none;
-            color: #0092A6;
-            font-size: 12px;
+    @media screen and (max-width: 540px) {
+        max-width: 280px;
 
+        &__form-content {
+            width: auto;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__text-input {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+
+            width: 100%;
+            padding: 12px 14px;
+        }
+        &__form-content-logo {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        max-width: 260px;
+        padding: 28px 17px;
+
+        &__form-content {
+            width: auto;
+        }
+        &__title {
+            font-size: 22px;
+        }
+        &__text-input {
+            padding: 11px 12px;
+        }
+        &__submit {
+            line-height: 22px;
+        }
+        &__form-content-logo {
+            display: none;
         }
     }
 
@@ -106,5 +137,27 @@
     }
     @media only screen and (max-width: 539px) {
         width: 100%;
+    }
+}
+
+.popup-apply-policy{
+    margin: 25px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    &__text{
+        font-weight: 400;
+        color: #595959;
+        font-size: 12px;
+        padding: 0 0 0 10px;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: #0092A6;
+        font-size: 12px;
+
     }
 }

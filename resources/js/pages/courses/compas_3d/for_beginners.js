@@ -1,11 +1,25 @@
-import CommentsExpand from "../modules/comments-list";
-import ModulesList from "../modules/modules-list";
-import Popup from "../modules/popup";
-import MouseParallax from "../modules/animation/MouseParallax";
-import FormHandler from "../modules/FormHandler";
+import '../../../app';
 
-import {emailSubmitValidator, phoneSubmitValidator, notEmptySubmitValidator} from "../utils/validation/FormSubmitValidators";
-import {phoneLiveValidator} from "../utils/validation/LiveValidators";
+import CommentsExpand from "../../../modules/comments-list";
+import ModulesList from "../../../modules/modules-list";
+import Popup from "../../../modules/popup";
+import MouseParallax from "../../../modules/animation/MouseParallax";
+import FormHandler from "../../../modules/FormHandler";
+
+import {emailSubmitValidator, phoneSubmitValidator, notEmptySubmitValidator} from "../../../utils/validation/FormSubmitValidators";
+import {phoneLiveValidator} from "../../../utils/validation/LiveValidators";
+
+let collapseShow = document.getElementById('collapse-burger-show');
+
+collapseShow.addEventListener('click', function () {
+    document.getElementById("collapse-container").style.display = "block";
+});
+
+let collapseHide = document.getElementById('collapse-burger-close');
+
+collapseHide.addEventListener('click', function () {
+    document.getElementById("collapse-container").style.display = "none";
+});
 
 new FormHandler(
     '.apply-form__form',

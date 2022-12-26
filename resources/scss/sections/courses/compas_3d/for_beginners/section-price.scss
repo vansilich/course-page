@@ -13,7 +13,7 @@
     }
 
     @media screen and (max-width: 1440px) {
-        padding: 52px $padding-size;
+        padding: 52px 16vw;
 
         &__title {
             font-weight: 700;
@@ -23,8 +23,35 @@
     }
 
     @media screen and (max-width: 1140px) {
-        padding: 47px $padding-size;
+        padding: 47px 13.5vw;
 
+    }
+
+    @media screen and (max-width: 960px) {
+        padding-top: 47px;
+        padding-left: 134px;
+
+        &__title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 33px 6.5vw;
+    }
+
+    @media screen and (max-width: 426px) {
+        padding: 18px 42px;
+    }
+
+    @media screen and (max-width: 376px) {
+        padding: 18px 42px;
+    }
+
+    @media screen and (max-width: 320px) {
+        padding: 16px 26px;
     }
 }
 
@@ -38,12 +65,52 @@
         width: 50%;
         max-width: 50%;
     }
+
+    @media screen and (max-width: 960px) {
+        &__right{
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        &__left {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 426px) {
+        &__left {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        &__left {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        &__left {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
 }
 
 .price-offer{
 
     &__details{
         margin: 50px 0 0 0;
+    }
+
+    @media screen and (max-width: 960px) {
+        &__details{
+            margin-top: 40px;
+        }
     }
 }
 
@@ -136,6 +203,34 @@
             line-height: 19px;
         }
     }
+
+    @media screen and (max-width: 960px) {
+        &__items li:after, &__items li:before {
+            width: 30px;
+            height: 30px;
+        }
+        &__items li:before {
+            top: -5px;
+        }
+        &__items li:not(:first-child) {
+            margin-top: 12px;
+        }
+        &__items {
+            padding-left: 30px;
+        }
+        &__items li {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            padding-bottom: 8px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        &__items li {
+            padding-top: 4px;
+        }
+    }
 }
 
 .whats-included{
@@ -147,6 +242,36 @@
     }
 
     @media screen and (max-width: 1440px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 960px) {
+        &__form-wrapper{
+            justify-content: start;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: block;
+
+        &__form-wrapper {
+            justify-content: end;
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 426px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 376px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 320px) {
         display: none;
     }
 }

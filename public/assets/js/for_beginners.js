@@ -2473,17 +2473,7 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-/* harmony import */ var _pages_3d_compas__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/3d-compas */ "./resources/js/pages/3d-compas.js");
 
-
-var collapseShow = document.getElementById('collapse-burger-show');
-collapseShow.addEventListener('click', function () {
-  document.getElementById("collapse-container").style.display = "block";
-});
-var collapseHide = document.getElementById('collapse-burger-close');
-collapseHide.addEventListener('click', function () {
-  document.getElementById("collapse-container").style.display = "none";
-});
 
 /***/ }),
 
@@ -3059,21 +3049,22 @@ var Popup = /*#__PURE__*/function () {
 
 /***/ }),
 
-/***/ "./resources/js/pages/3d-compas.js":
-/*!*****************************************!*\
-  !*** ./resources/js/pages/3d-compas.js ***!
-  \*****************************************/
+/***/ "./resources/js/pages/courses/compas_3d/for_beginners.js":
+/*!***************************************************************!*\
+  !*** ./resources/js/pages/courses/compas_3d/for_beginners.js ***!
+  \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_comments_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/comments-list */ "./resources/js/modules/comments-list.js");
-/* harmony import */ var _modules_modules_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/modules-list */ "./resources/js/modules/modules-list.js");
-/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/popup */ "./resources/js/modules/popup.js");
-/* harmony import */ var _modules_animation_MouseParallax__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/animation/MouseParallax */ "./resources/js/modules/animation/MouseParallax.js");
-/* harmony import */ var _modules_FormHandler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/FormHandler */ "./resources/js/modules/FormHandler.js");
-/* harmony import */ var _utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/validation/FormSubmitValidators */ "./resources/js/utils/validation/FormSubmitValidators.js");
-/* harmony import */ var _utils_validation_LiveValidators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/validation/LiveValidators */ "./resources/js/utils/validation/LiveValidators.js");
+/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../app */ "./resources/js/app.js");
+/* harmony import */ var _modules_comments_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../modules/comments-list */ "./resources/js/modules/comments-list.js");
+/* harmony import */ var _modules_modules_list__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../modules/modules-list */ "./resources/js/modules/modules-list.js");
+/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../modules/popup */ "./resources/js/modules/popup.js");
+/* harmony import */ var _modules_animation_MouseParallax__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../modules/animation/MouseParallax */ "./resources/js/modules/animation/MouseParallax.js");
+/* harmony import */ var _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../modules/FormHandler */ "./resources/js/modules/FormHandler.js");
+/* harmony import */ var _utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../utils/validation/FormSubmitValidators */ "./resources/js/utils/validation/FormSubmitValidators.js");
+/* harmony import */ var _utils_validation_LiveValidators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../utils/validation/LiveValidators */ "./resources/js/utils/validation/LiveValidators.js");
 
 
 
@@ -3081,57 +3072,66 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_4__["default"]('.apply-form__form', {
+
+var collapseShow = document.getElementById('collapse-burger-show');
+collapseShow.addEventListener('click', function () {
+  document.getElementById("collapse-container").style.display = "block";
+});
+var collapseHide = document.getElementById('collapse-burger-close');
+collapseHide.addEventListener('click', function () {
+  document.getElementById("collapse-container").style.display = "none";
+});
+new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('.apply-form__form', {
   'input[name="name"]': {
     inputName: 'Имя',
-    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_5__.notEmptySubmitValidator]
+    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]
   },
   'input[name="email"]': {
     inputName: 'Имейл',
-    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_5__.emailSubmitValidator]
+    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.emailSubmitValidator]
   },
   'input[name="telephone"]': {
     inputName: 'Телефон',
-    liveValidator: _utils_validation_LiveValidators__WEBPACK_IMPORTED_MODULE_6__.phoneLiveValidator,
-    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_5__.phoneSubmitValidator]
+    liveValidator: _utils_validation_LiveValidators__WEBPACK_IMPORTED_MODULE_7__.phoneLiveValidator,
+    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.phoneSubmitValidator]
   },
   'input[name="job"]': {
     inputName: 'Должность',
-    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_5__.notEmptySubmitValidator]
+    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]
   },
   'input[name="company"]': {
     inputName: 'Компания',
-    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_5__.notEmptySubmitValidator]
+    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]
   }
 }, 'error', '.apply-form__errors', '.apply-form__success');
-new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_4__["default"]('.popup-apply-form__form', {
+new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('.popup-apply-form__form', {
   'input[name="name"]': {
     inputName: 'Имя',
-    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_5__.notEmptySubmitValidator]
+    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]
   },
   'input[name="email"]': {
     inputName: 'Имейл',
-    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_5__.emailSubmitValidator]
+    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.emailSubmitValidator]
   },
   'input[name="telephone"]': {
     inputName: 'Телефон',
-    liveValidator: _utils_validation_LiveValidators__WEBPACK_IMPORTED_MODULE_6__.phoneLiveValidator,
-    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_5__.phoneSubmitValidator]
+    liveValidator: _utils_validation_LiveValidators__WEBPACK_IMPORTED_MODULE_7__.phoneLiveValidator,
+    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.phoneSubmitValidator]
   },
   'input[name="job"]': {
     inputName: 'Должность',
-    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_5__.notEmptySubmitValidator]
+    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]
   },
   'input[name="company"]': {
     inputName: 'Компания',
-    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_5__.notEmptySubmitValidator]
+    submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]
   }
 }, 'error', '.popup-apply-form__errors', '.apply-form__success');
-new _modules_comments_list__WEBPACK_IMPORTED_MODULE_0__["default"]('.review__wrapper', '.review-item', '.expand-all-comments', '.hide-all-comments', '.review-item__content', '.expand-review', '.hide-review', 'expanded', 3);
-new _modules_modules_list__WEBPACK_IMPORTED_MODULE_1__["default"]('.programs__item', '.program-block', 'expanded');
-new _modules_popup__WEBPACK_IMPORTED_MODULE_2__["default"]('.top-nav__button', '.popup-overlay', 'hidden');
-new _modules_animation_MouseParallax__WEBPACK_IMPORTED_MODULE_3__["default"]('.promo-animated__3D-1', 1.7, 2);
-new _modules_animation_MouseParallax__WEBPACK_IMPORTED_MODULE_3__["default"]('.promo-animated__3D-2', 1.5, -1.5);
+new _modules_comments_list__WEBPACK_IMPORTED_MODULE_1__["default"]('.review__wrapper', '.review-item', '.expand-all-comments', '.hide-all-comments', '.review-item__content', '.expand-review', '.hide-review', 'expanded', 3);
+new _modules_modules_list__WEBPACK_IMPORTED_MODULE_2__["default"]('.programs__item', '.program-block', 'expanded');
+new _modules_popup__WEBPACK_IMPORTED_MODULE_3__["default"]('.top-nav__button', '.popup-overlay', 'hidden');
+new _modules_animation_MouseParallax__WEBPACK_IMPORTED_MODULE_4__["default"]('.promo-animated__3D-1', 1.7, 2);
+new _modules_animation_MouseParallax__WEBPACK_IMPORTED_MODULE_4__["default"]('.promo-animated__3D-2', 1.5, -1.5);
 
 /***/ }),
 
@@ -22513,10 +22513,23 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
-/***/ "./resources/scss/app.scss":
-/*!*********************************!*\
-  !*** ./resources/scss/app.scss ***!
-  \*********************************/
+/***/ "./resources/scss/pages/courses/compas_3d/for_beginners.scss":
+/*!*******************************************************************!*\
+  !*** ./resources/scss/pages/courses/compas_3d/for_beginners.scss ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/scss/pages/courses/compas_3d/valve_modeling.scss":
+/*!********************************************************************!*\
+  !*** ./resources/scss/pages/courses/compas_3d/valve_modeling.scss ***!
+  \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22854,8 +22867,9 @@ process.umask = function() { return 0; };
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/assets/js/app": 0,
-/******/ 			"assets/css/app": 0
+/******/ 			"/assets/js/for_beginners": 0,
+/******/ 			"assets/css/valve_modeling": 0,
+/******/ 			"assets/css/for_beginners": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -22905,8 +22919,9 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["assets/css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/app"], () => (__webpack_require__("./resources/scss/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/valve_modeling","assets/css/for_beginners"], () => (__webpack_require__("./resources/js/pages/courses/compas_3d/for_beginners.js")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/valve_modeling","assets/css/for_beginners"], () => (__webpack_require__("./resources/scss/pages/courses/compas_3d/for_beginners.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/valve_modeling","assets/css/for_beginners"], () => (__webpack_require__("./resources/scss/pages/courses/compas_3d/valve_modeling.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
