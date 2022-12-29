@@ -1,0 +1,215 @@
+.section-is-for{
+    background-color: #595959;
+
+    @media (min-width: $container-xxl-min) {
+        padding: 65px 0 80px;
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        padding: 65px 0 80px;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        padding: 65px 0 80px;
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        padding: 65px 0 80px;
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        padding: 65px 0 80px;
+    }
+
+    @media screen and (max-width: $container-xs-max) {
+        padding: 65px 0 80px;
+    }
+}
+
+.is-for{
+
+    &__title{
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        color: #FFFFFF;
+    }
+
+    &__top{
+        margin-top: 20px;
+    }
+
+    &__bottom{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        color: #FFFFFF;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+    }
+
+    @media screen and (max-width: $container-m-max) {
+
+        &__bottom{
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: $container-s-max) {
+
+        &__bottom{
+            margin-top: 30px;
+        }
+    }
+}
+
+.for-people-group{
+
+    &__item{
+        &:not(:first-child){
+            margin-top: 10px;
+        }
+    }
+
+    &__title{
+        display: inline;
+        font-weight: 700;
+        font-family: "inter", sans-serif;
+        font-size: 17px;
+        color: #6ACBEA;
+        white-space: nowrap;
+        margin-right: 3px;
+    }
+
+    &__text{
+        display: inline;
+        font-weight: 700;
+        font-family: "inter", sans-serif;
+        font-size: 17px;
+        color: #FFFFFF;
+    }
+
+    @media screen and (max-width: $container-l-max) {
+
+        &__item{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;    
+        }
+
+        &__title{
+            display: block;
+        }
+
+        &__text{
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: $container-s-max) {
+
+        &__item{
+            display: block;
+        }
+
+        &__title{
+            display: inline;
+        }
+
+        &__text{
+            display: inline;
+        }
+    }
+}
+
+.suitable-for{
+    line-height: 150%;
+
+    &__right{
+        width: 50%;
+    }
+
+    &__left{
+        width: 50%;
+    }
+
+    @media (min-width: $container-xxl-min) {
+
+        &__right{
+            width: 50%;
+        }
+    
+        &__left{
+            width: 50%;
+
+            & p{
+                width: 270px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+
+        &__right{
+            width: 65%;
+        }
+    
+        &__left{
+            width: 35%;
+
+            & p{
+                width: 270px;
+
+            }
+        }
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        
+        &__right{
+            width: 60%;
+        }
+    
+        &__left{
+            width: 40%;
+
+            & p{
+                width: 270px;
+
+            }
+        }
+    }
+
+    @media screen and (max-width: $container-m-max) {
+        &__right{
+            width: 100%;
+            margin-top: 40px;
+        }
+    
+        &__left{
+            width: 100%;
+
+            & p{
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+.suitable-description{
+
+    &__list{
+        margin: 10px 0 0 0;
+        padding: 0 0 0 20px;
+    }
+
+    @media screen and (max-width: $container-m-max) {
+        &__list{
+            margin: 15px 0 0 0;
+        }
+    }
+}

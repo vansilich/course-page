@@ -1,24 +1,46 @@
-$container-xxl-min: 1920px;
+@import "../../../app.scss";
+@import "../../../fonts/Inter.scss";
 
-$container-xl-max: 1919px;
-$container-xl-min: 1440px;
+@import "../../../layout.scss";
+@import "../../../partials/popup.scss";
+@import "../../../partials/inputs.scss";
+@import "../../../partials/animation.scss";
 
-$container-l-max: 1439px;
-$container-l-min: 1140px;
+// SIZING
+$container-xxl-min: 1440px;
 
-$container-m-max: 1139px;
-$container-m-min: 960px;
+$container-xl-max: 1439px;
+$container-xl-min: 1140px;
 
-$container-s-max: 959px;
-$container-s-min: 720px;
+$container-l-max: 1139px;
+$container-l-min: 960px;
 
-$container-xs-max: 719px;
-$container-xs-min: 540px;
+$container-m-max: 959px;
+$container-m-min: 720px;
 
-$container-xxs-max: 539px;
-$container-xxs-min: 375px;
+$container-s-max: 719px;
+$container-s-min: 540px;
 
-$container-xxxs-max: 374px;
+$container-xs-max: 539px;
+$container-xs-min: 375px;
+
+$container-xxs-max: 374px;
+
+// =====
+
+$container-mini-xl: 1000px;
+
+$container-mini-l: 820px;
+
+$container-mini-m: 600px;
+
+$container-mini-s: 440px;
+
+$container-mini-xs: 310px;
+
+$container-mini-xxs: 309px;
+
+// COLORS
 
 $default-active-color-peaky: #AD99FF;
 $default-active-color: #9847FF;
@@ -30,45 +52,78 @@ $default-active-color: #9847FF;
     box-sizing: border-box;
 
     @media (min-width: $container-xxl-min) {
+        padding: 0 70px 0 70px;
         max-width: $container-xxl-min;
     }
 
     @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        padding: 0 70px 0 70px;
         max-width: $container-xl-min;
     }
 
     @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        padding: 0 70px 0 70px;
         max-width: $container-l-min;
     }
 
     @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        padding: 0 45px 0 45px;
         max-width: $container-m-min;
     }
 
     @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        padding: 0 30px 0 30px;
         max-width: $container-s-min;
     }
 
-    @media screen and (max-width: $container-xs-max) and (min-width: $container-xs-min) {
-        max-width: $container-xs-min;
+    @media screen and (max-width: $container-xs-max) {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.container-mini{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+
+    @media (min-width: $container-xxl-min) {
+        max-width: $container-mini-xl;
     }
 
-    @media screen and (max-width: $container-xxs-max) and (min-width: $container-xxs-min) {
-        max-width: $container-xxs-min;
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        max-width: $container-mini-xl;
     }
 
-    @media screen and (max-width: $container-xxxs-max) {
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        max-width: $container-mini-l;
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        max-width: $container-mini-m;
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        max-width: $container-mini-s;
+    }
+
+    @media screen and (max-width: $container-xs-max) {
         max-width: 100%;
     }
 }
 
-@import "../../../app.scss";
-@import "../../../layout.scss";
-
 @import "../../../sections/courses/compas_3d/valve_modeling/top-nav.scss";
+@import "../../../sections/courses/compas_3d/valve_modeling/section-start.scss";
+@import "../../../sections/courses/compas_3d/valve_modeling/section-is-for.scss";
+@import "../../../sections/courses/compas_3d/valve_modeling/section-format.scss";
+@import "../../../sections/courses/compas_3d/valve_modeling/section-teacher.scss";
+@import "../../../sections/courses/compas_3d/valve_modeling/section-program.scss";
+@import "../../../sections/courses/compas_3d/valve_modeling/section-certificate.scss";
+@import "../../../sections/courses/compas_3d/valve_modeling/section-enroll.scss";
+@import "../../../sections/courses/compas_3d/valve_modeling/section-reviews.scss";
+
+@import "../../../blocks/courses/kompas_3d/valve_modeling/apply-form.scss";
+@import "../../../blocks/courses/kompas_3d/valve_modeling/popup-apply-form.scss";
 
 @import "../../../footer.scss";
-
-@import "../../../partials/popup.scss";
-@import "../../../partials/inputs.scss";
-@import "../../../partials/animation.scss";

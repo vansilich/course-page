@@ -33,7 +33,7 @@ export default class Popup{
             const target = event.target;
 
             if (target === this.poup_overlay){
-                this.togglePopup();
+                this.closePopup();
             }
         })
     }
@@ -42,29 +42,37 @@ export default class Popup{
         const isOpen = !this.poup_overlay.classList.contains(this.overlay_hide_class);
 
         if (!isOpen){
-            // opening popup
-
-            this.bodyScrollY = getBodyScrollTop();
-            document.body.style.top = `-${this.bodyScrollY}px`;
-
-            document.body.classList.add(this.body_lock_class);
-            this.poup_overlay.classList.remove(this.overlay_hide_class);
-
-            window.scrollTo({
-                left: 0,
-                top: this.bodyScrollY
-            });
+            this.openPopup();
         } else {
-            // closing popup
-
-            document.body.classList.remove(this.body_lock_class);
-            this.poup_overlay.classList.add(this.overlay_hide_class);
-
-            window.scrollTo({
-                left: 0,
-                top: this.bodyScrollY
-            });
+            this.closePopup();
         }
+    }
+
+    openPopup(){
+        // opening popup
+
+        this.bodyScrollY = getBodyScrollTop();
+        document.body.style.top = `-${this.bodyScrollY}px`;
+
+        document.body.classList.add(this.body_lock_class);
+        this.poup_overlay.classList.remove(this.overlay_hide_class);
+
+        window.scrollTo({
+            left: 0,
+            top: this.bodyScrollY
+        });
+    }
+
+    closePopup(){
+        // closing popup
+
+        document.body.classList.remove(this.body_lock_class);
+        this.poup_overlay.classList.add(this.overlay_hide_class);
+
+        window.scrollTo({
+            left: 0,
+            top: this.bodyScrollY
+        });
     }
 
 }

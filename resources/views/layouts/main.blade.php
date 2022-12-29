@@ -60,5 +60,6 @@
     @yield('page_content')
 
     @yield('footer_scripts')
+    
 </body>
 </html>

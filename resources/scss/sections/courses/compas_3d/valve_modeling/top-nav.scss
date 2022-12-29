@@ -1,8 +1,10 @@
+$nav-height: 65px;
+
 .nav-sticky{
-    z-index: 100;
+    z-index: 2000;
     top: 0;
     position: sticky;
-    height: 65px;
+    height: $nav-height;
     width: 100%;
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
     background-color: $default-layout-color;
@@ -31,6 +33,9 @@
     }
 
     &__button{
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
         cursor: pointer;
         padding: 9px 45px;
         border-radius: 9px;
@@ -48,19 +53,20 @@
     }
 
     &__burger-menu-icon{
+        cursor: pointer;
         display: block;
         border: none;
         background-color: transparent;
         padding: 0 0;
     }
 
-    @media screen and (max-width: $container-l-max) and (min-width: $container-m-min) {
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
         &__text-item{
             margin-right: 30px;
         }
     }
 
-    @media screen and (max-width: $container-s-max) {
+    @media screen and (max-width: $container-l-max) {
         justify-content: flex-end;
 
         &__left{
@@ -78,27 +84,186 @@
         }
 
         &__burger-menu{
-            order: 1;
             display: block;
         }
     }
 
-    @media screen and (max-width: $container-s-max) and (min-width: $container-xs-min) {
+    @media screen and (max-width: $container-l-max) and (min-width: $container-m-min) {
         &__burger-menu{
             margin-left: 35px;
+        }
+    }
+
+    @media screen and (max-width: $container-s-max) {
+        &__burger-menu{
+            position: relative;
+            order: 1;
+            margin-right: 20px;
+        }
+
+        &__left{
+            order: 2;
+        }
+
+        &__right{
+            order: 3;
+        }
+    }
+
+    @media screen and (max-width: $container-xs-max) {
+        &__logo{
+            width: 38px;
+        }
+
+        &__button{
+            padding: 9px 12px;
         }
     }
 }
 
 
-.nav-logo-burger{
-    display: block;
+.top-nav__burger-menu{
+
+    .nav-logo-burger, .nav-logo-burger-open{
+        width: 32px;
+        height: 32px;
+    }
+    
+    .nav-logo-burger{
+        display: block;
+    }
+
+    .nav-logo-burger-open{
+        display: none;
+    }
+    
+    &.open{
+
+        & ~ .top-nav__right{
+            display: none;
+        }
+
+        .nav-logo-burger{
+            display: none;
+        }
+    
+        .nav-logo-burger-open{
+            display: block;
+        }
+
+        .nav-burger-menu{
+            display: block;
+        }
+
+        .nav-burger-menu-overlay{
+            display: block;
+        }        
+    }
+}
+
+.nav-burger-menu-overlay{
+    display: none;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.63) !important;
+    backdrop-filter: blur(4px);
 }
 
 .nav-logo-small{
     display: none;
+
+    @media screen and (max-width: $container-xs-max) {
+        display: block;   
+    }
 }
 
 .nav-logo-big{
     display: block;
+
+    @media screen and (max-width: $container-xs-max) {
+        display: none;   
+    }
+}
+
+.nav-burger-menu{
+    display: none;
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px 35px 0 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    &__close{
+        margin-left: auto;
+        background-color: transparent;
+        border: none;
+        display: block;
+        cursor: pointer;
+
+        & img{
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        margin: 60px 0 0 0;
+        padding: 0;
+    }
+
+    @media screen and (max-width: $container-s-max) {
+        position: fixed;
+        top: $nav-height;
+        right: 0;
+        left: 0;
+        bottom: inherit;
+        padding: 45px 50px 0 50px;
+
+        &__content{
+            margin: 0;
+        }
+
+        &__close{
+            display: none;
+        }
+    }
+}
+
+.nav-mobile-item{
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #232323;
+    text-decoration: none;
+
+    &:not(:last-child){
+        margin-bottom: 35px;
+    }
+}
+
+.nav-mobile-enroll-btn{
+    font-family: 'Inter';
+    font-weight: 600;
+    border-radius: 9px;
+    font-size: 16px;
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.17));
+    background-color: #9847FF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #2C2C2C;
+    }
+
+    @media screen and (max-width: $container-s-max) {
+        display: none;
+    }
 }

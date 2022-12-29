@@ -2546,9 +2546,10 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 var FormHandler = /*#__PURE__*/function () {
-  function FormHandler(form_selector, inputs_and_rules, input_error_class, error_bag_selector, success_alert_selector) {
+  function FormHandler(register_endpoint, form_selector, inputs_and_rules, input_error_class, error_bag_selector, success_alert_selector) {
     _classCallCheck(this, FormHandler);
 
+    this.register_endpoint = register_endpoint;
     this.forms = document.querySelectorAll(form_selector);
     this.inputs_and_rules = inputs_and_rules;
     this.input_error_class = input_error_class;
@@ -2637,7 +2638,7 @@ var FormHandler = /*#__PURE__*/function () {
             switch (_context.prev = _context.next) {
               case 0:
                 event.preventDefault();
-                requestUrl = form.getAttribute('action');
+                requestUrl = this.register_endpoint;
                 token = document.head.querySelector("meta[name='_token']").content;
                 _context.next = 5;
                 return fetch(requestUrl, {
@@ -3011,7 +3012,7 @@ var Popup = /*#__PURE__*/function () {
         var target = event.target;
 
         if (target === _this.poup_overlay) {
-          _this.togglePopup();
+          _this.closePopup();
         }
       });
     }
@@ -3021,24 +3022,34 @@ var Popup = /*#__PURE__*/function () {
       var isOpen = !this.poup_overlay.classList.contains(this.overlay_hide_class);
 
       if (!isOpen) {
-        // opening popup
-        this.bodyScrollY = (0,_utils_DOM__WEBPACK_IMPORTED_MODULE_0__.getBodyScrollTop)();
-        document.body.style.top = "-".concat(this.bodyScrollY, "px");
-        document.body.classList.add(this.body_lock_class);
-        this.poup_overlay.classList.remove(this.overlay_hide_class);
-        window.scrollTo({
-          left: 0,
-          top: this.bodyScrollY
-        });
+        this.openPopup();
       } else {
-        // closing popup
-        document.body.classList.remove(this.body_lock_class);
-        this.poup_overlay.classList.add(this.overlay_hide_class);
-        window.scrollTo({
-          left: 0,
-          top: this.bodyScrollY
-        });
+        this.closePopup();
       }
+    }
+  }, {
+    key: "openPopup",
+    value: function openPopup() {
+      // opening popup
+      this.bodyScrollY = (0,_utils_DOM__WEBPACK_IMPORTED_MODULE_0__.getBodyScrollTop)();
+      document.body.style.top = "-".concat(this.bodyScrollY, "px");
+      document.body.classList.add(this.body_lock_class);
+      this.poup_overlay.classList.remove(this.overlay_hide_class);
+      window.scrollTo({
+        left: 0,
+        top: this.bodyScrollY
+      });
+    }
+  }, {
+    key: "closePopup",
+    value: function closePopup() {
+      // closing popup
+      document.body.classList.remove(this.body_lock_class);
+      this.poup_overlay.classList.add(this.overlay_hide_class);
+      window.scrollTo({
+        left: 0,
+        top: this.bodyScrollY
+      });
     }
   }]);
 
@@ -3081,7 +3092,7 @@ var collapseHide = document.getElementById('collapse-burger-close');
 collapseHide.addEventListener('click', function () {
   document.getElementById("collapse-container").style.display = "none";
 });
-new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('.apply-form__form', {
+new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('/send/request', '.apply-form__form', {
   'input[name="name"]': {
     inputName: 'Имя',
     submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]
@@ -3104,7 +3115,7 @@ new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('.apply-form__f
     submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]
   }
 }, 'error', '.apply-form__errors', '.apply-form__success');
-new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('.popup-apply-form__form', {
+new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('/send/request', '.popup-apply-form__form', {
   'input[name="name"]': {
     inputName: 'Имя',
     submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]

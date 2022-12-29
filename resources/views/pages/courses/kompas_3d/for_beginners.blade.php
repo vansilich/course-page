@@ -29,6 +29,6 @@
 
     @include('blocks.footer')
 
-    @include('blocks.popup-apply-form')
+    @include('blocks.courses.kompas_3d.for_beginners.popup-apply-form')
     
 @endsection

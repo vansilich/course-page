@@ -1,0 +1,546 @@
+.section-start{
+    overflow: hidden;
+}
+
+.promo-wrapper{
+    
+    @media screen and (min-width: $container-xxl-min) {
+        padding: 70px 45px 65px 45px;
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        padding: 60px 0 65px 0;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        padding: 30px 0 55px 0;
+        margin: 0 -20px 0 -20px;
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        padding: 30px 0 45px 0;
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        padding: 30px 0 60px 0;
+    }
+
+    @media screen and (max-width: $container-xs-max) {
+        padding: 30px 0 35px 0;
+    }
+}
+
+.promo-bg-colored{
+    background-color: #6ACBEA;
+    border-radius: 30px;
+
+    @media screen and (min-width: $container-xxl-min) {
+        padding: 60px 0 40px 0;
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        padding: 30px 50px 60px 50px;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        padding: 30px 30px 50px 30px;
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        padding: 20px 0 55px 0;
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        padding: 20px 0 30px 0;
+    }
+
+    @media screen and (max-width: $container-xs-max) and (min-width: $container-xs-min) {
+        padding: 20px 0 30px 0;
+    }
+
+    @media screen and (max-width: $container-xxs-max) {
+        padding: 20px 0 40px 0;
+    }
+}
+
+.start-promo{
+    display: flex;
+    flex-direction: row;
+}
+
+.promo-text{
+
+    &__top{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__middle{
+        font-family: "Inter";
+        color: #FFFFFF;
+        font-weight: 700;
+        letter-spacing: -0.015em;
+    }
+
+    @media screen and (min-width: $container-xxl-min) {
+        &__middle{
+            font-size: 59px;
+            margin-top: 25px;
+        }
+
+        &__bottom{
+            margin-top: 30px;
+        }
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        &__middle{
+            margin-top: 40px;
+            font-size: 59px;
+        }
+
+        &__bottom{
+            margin-top: 35px;
+        }
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        &__middle{
+            font-size: 40px;
+            margin-top: 30px;
+        }
+
+        &__bottom{
+            margin-top: 45px;
+        }
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        &__middle{
+            font-size: 30px;
+            margin-top: 30px;
+        }
+
+        &__bottom{
+            margin-top: 35px;
+        }
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        &__middle{
+            font-size: 25px;
+            margin-top: 15px;
+        }
+
+        &__bottom{
+            margin-top: 20px;
+        }
+    }
+
+    @media screen and (max-width: $container-xs-max) and (min-width: $container-xs-min) {
+        &__middle{
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+        &__bottom{
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (max-width: $container-xxs-max) {
+        &__middle{
+            font-size: 25px;
+            margin-top: 24px;
+        }
+
+        &__bottom{
+            margin-top: 0;
+        }
+    }
+}
+
+.promo-course-start-date{
+    display: block;
+
+    @media screen and (max-width: $container-xs-max) {
+        display: none;
+    }
+}
+
+.promo-course-start-date-mini{
+    display: none;
+
+    @media screen and (max-width: $container-xs-max) {
+        width: 170px;
+        margin-left: 10px;
+        display: block;
+    }
+}
+
+.promo-course-start-date, .promo-course-start-date-mini{
+    color: #000000;
+    font-family: "Inter";
+    font-weight: 700;
+
+    @media screen and (min-width: $container-xxl-min) {
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        font-size: 23px;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        font-size: 19px;
+    }
+
+    @media screen and (max-width: $container-s-max) {
+        font-size: 17px;
+    }
+}
+
+.promo-logo{
+
+    display: block;
+
+    @media screen and (min-width: $container-xl-min) {
+        width: 110px;
+        height: 110px;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        width: 100px;
+        height: 100px;
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        width: 80px;
+        height: 80px;
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        width: 90px;
+        height: 90px;
+    }
+
+    @media screen and (max-width: $container-xs-max) {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.promo-course-description{
+    display: block;
+
+    @media screen and (min-width: $container-xxl-min) {
+        width: 440px;
+        margin-left: 30px;
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        width: 440px;
+        margin-left: 30px;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        width: 285px;
+        margin-left: 25px;
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        width: 285px;
+        margin-left: 25px;
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        width: 260px;
+        margin-left: 15px;
+    }
+
+    @media screen and (max-width: $container-xs-max) {
+        display: none;
+    }
+}
+
+.promo-course-description-mini{
+    display: none;
+
+    @media screen and (max-width: $container-xs-max) {
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+
+.promo-course-description, .promo-course-description-mini{
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+
+    @media screen and (min-width: $container-m-min) {
+        font-size: 17px;
+    }
+
+    @media screen and (max-width: $container-s-max) {
+        font-size: 14px;
+    }
+}
+
+.promo-animated {
+    width: 0;
+    max-width: 0;
+    position: relative;
+
+    & img{
+        display: block;
+        position: absolute;
+        transition: all 0.1s ease;
+        pointer-events: none;
+    }
+
+    &__3D-1{
+        z-index: 15;
+        top: -10px;
+        width: 320px;
+        left: 340px;
+    }
+
+    &__3D-2{
+        z-index: 15;
+        left: -45px;
+        width: 420px;
+        top: -120px;
+    }
+
+    &__notebook {
+        top: 120px;
+        width: 630px;
+        left: 0px;
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        &__3D-1{
+            top: -50px;
+            width: 320px;
+            left: 140px;
+        }
+    
+        &__3D-2{
+            left: -95px;
+            width: 370px;
+            top: 50px;
+        }
+
+        &__notebook {
+            left: -210px;
+            top: 170px;
+            width: 600px;
+        }
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        &__3D-1{
+            top: -30px;
+            width: 270px;
+            left: 170px;
+        }
+    
+        &__3D-2{
+            left: -65px;
+            width: 370px;
+            top: -10px;
+        }
+
+        &__notebook {
+            left: -30px;
+            top: 210px;
+            width: 500px;
+        }
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        &__3D-1{
+            top: -10px;
+            width: 190px;
+            left: 90px;
+        }
+    
+        &__3D-2{
+            left: -105px;
+            width: 290px;
+            top: 30px;
+        }
+
+        &__notebook {
+            left: -150px;
+            top: 150px;
+            width: 430px;
+        }
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        &__3D-1{
+            top: -40px;
+            width: 170px;
+            left: -10px;        
+        }
+    
+        &__3D-2{
+            left: -125px;
+            width: 210px;
+            top: 30px;
+        }
+
+        &__notebook {
+            left: -170px;
+            top: 130px;
+            width: 320px;
+        }
+    }
+
+    @media screen and (max-width: $container-xs-max) and (min-width: $container-xs-min) {
+        &__3D-1{
+            top: -30px;
+            width: 170px;
+            left: -20px;
+        }
+    
+        &__3D-2{
+            left: -265px;
+            width: 260px;
+            top: 160px;
+        }
+
+        &__notebook {
+            left: -280px;
+            top: 280px;
+            width: 360px;
+        }
+    }
+
+    @media screen and (max-width: $container-xxs-max) {
+        &__3D-1{
+            top: -80px;
+            width: 110px;
+            left: -60px;
+        }
+    
+        &__3D-2{
+            left: -265px;
+            width: 170px;
+            top: 210px;
+        }
+
+        &__notebook {
+            left: -280px;
+            top: 280px;
+            width: 270px;
+        }
+    }
+}
+
+.course-concise-description{
+    display: grid;
+    align-items: start;
+
+    &__title{
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+        font-size: 17px;
+        color: #898989;
+    }
+
+    &__text{
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+        font-size: 17px;
+        color: #232323;
+    }
+
+    @media screen and (min-width: $container-xxl-min) {
+        margin-top: 80px;
+        width: 630px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        margin-top: 60px;
+        width: 580px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        margin-top: 55px;
+        width: 460px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 35px;
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        margin-top: 30px;
+        width: 460px;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        margin-top: 65px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    @media screen and (max-width: $container-xs-max) and (min-width: $container-xs-min) {
+        margin-top: 320px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    @media screen and (max-width: $container-xxs-max) {
+        margin-top: 220px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 35px;
+    }
+}
+
+.description-duration{
+    order: 1;
+
+    @media screen and (max-width: $container-m-max) {
+        order: 1;
+    }
+}
+
+.description-permission-time{
+    order: 2;
+
+    @media screen and (max-width: $container-m-max) {
+        order: 3;
+    }
+}
+
+.description-level{
+    order: 3;
+
+    @media screen and (max-width: $container-m-max) {
+        order: 2;
+    }
+}
+
+.description-format{
+    order: 4;
+
+    @media screen and (max-width: $container-m-max) {
+        order: 4;
+    }
+}

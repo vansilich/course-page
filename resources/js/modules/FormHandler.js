@@ -1,12 +1,15 @@
 export default class FormHandler{
 
     constructor(
+        register_endpoint,
         form_selector,
         inputs_and_rules,
         input_error_class,
         error_bag_selector,
         success_alert_selector,
     ){
+        this.register_endpoint = register_endpoint;
+
         this.forms = document.querySelectorAll(form_selector);
         this.inputs_and_rules = inputs_and_rules;
         this.input_error_class = input_error_class;
@@ -83,7 +86,7 @@ export default class FormHandler{
     async handleFormSubmit(form, event, formErrorBag, formSuccessBag) {
 
         event.preventDefault();
-        const requestUrl = form.getAttribute('action');
+        const requestUrl = this.register_endpoint;
 
         let token = document.head.querySelector("meta[name='_token']").content;
 

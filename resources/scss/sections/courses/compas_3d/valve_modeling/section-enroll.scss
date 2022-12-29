@@ -1,0 +1,86 @@
+.section-enroll{
+    background-color: #595959;
+
+    @media (min-width: $container-xxl-min) {
+        padding: 75px 0 340px 0;
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        padding: 80px 0 360px 0;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        padding: 90px 0 320px 0;
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        padding: 80px 0;
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        padding: 90px 0 140px 0;
+    }
+
+    @media screen and (max-width: $container-xs-max) {
+        padding: 70px 0 90px 0;
+    }
+}
+
+.enroll-big-wrapper{
+    position: relative;
+
+    &__form{
+        position: absolute;
+        top: -20px;
+        right: 70px;
+    }
+
+    @media screen and (max-width: $container-m-max) {
+        &__form{
+            margin-top: 80px;
+            position: initial;
+        }
+    }
+}
+
+.enroll-content{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &__title{
+        font-weight: 700;
+        font-size: 34px;
+        color: #FFFFFF;
+    }
+}
+
+.course-include{
+    margin: 60px 0 0 0;
+    padding: 0 0 0 20px;
+    color: #FFFFFF;
+
+    &__item{
+
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+    }
+
+    @media (min-width: $container-xxl-min) {
+        width: 500px;
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        width: 500px;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        width: 370px;
+    }
+
+    @media screen and (max-width: $container-m-max)  {
+        width: 100%;
+    }
+}

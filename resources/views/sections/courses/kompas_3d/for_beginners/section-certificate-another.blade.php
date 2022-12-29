@@ -1,7 +1,7 @@
 <section class="certificate certificate-small">
 
     <div class="certificate-small-form">
-        @include('blocks.apply-form')
+        @include('blocks.courses.kompas_3d.for_beginners.apply-form')
     </div>
     <h3 class="certificate__title">СЕРТИФИКАТ:</h3>
 

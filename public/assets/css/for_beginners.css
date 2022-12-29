@@ -3779,11 +3779,6 @@ footer {
 .popup-overlay.hidden {
   display: none;
 }
-@media screen and (max-width: 540px) {
-  .popup-overlay {
-    z-index: 9999;
-  }
-}
 
 .popup {
   -webkit-overflow-scrolling: touch;

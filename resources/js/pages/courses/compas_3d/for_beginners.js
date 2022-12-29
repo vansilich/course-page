@@ -10,20 +10,19 @@ import {emailSubmitValidator, phoneSubmitValidator, notEmptySubmitValidator} fro
 import {phoneLiveValidator} from "../../../utils/validation/LiveValidators";
 
 let collapseShow = document.getElementById('collapse-burger-show');
-
 collapseShow.addEventListener('click', function () {
     document.getElementById("collapse-container").style.display = "block";
 });
 
 let collapseHide = document.getElementById('collapse-burger-close');
-
 collapseHide.addEventListener('click', function () {
     document.getElementById("collapse-container").style.display = "none";
 });
 
 new FormHandler(
+    '/send/request',
     '.apply-form__form',
-{
+    {
         'input[name="name"]': {
             inputName: 'Имя',
             submitValidators: [notEmptySubmitValidator]
@@ -52,6 +51,7 @@ new FormHandler(
 );
 
 new FormHandler(
+    '/send/request',
     '.popup-apply-form__form',
     {
         'input[name="name"]': {

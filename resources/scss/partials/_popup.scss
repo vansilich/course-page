@@ -11,10 +11,6 @@
     &.hidden{
         display: none;
     }
-
-    @media screen and (max-width: 540px) {
-        z-index: 9999;
-    }
 }
 
 .popup{

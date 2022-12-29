@@ -170,7 +170,7 @@
             </div>
 
             <div class="program-form-wrapper">
-                @include('blocks.apply-form')
+                @include('blocks.courses.kompas_3d.for_beginners.apply-form')
             </div>
         </div>
     </div>

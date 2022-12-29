@@ -1,0 +1,217 @@
+.section-teacher{
+    @media (min-width: $container-xxl-min) {
+        padding: 60px 0 120px 0;
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        padding: 45px 0 100px 0;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        padding: 50px 0 85px 0;
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        padding: 60px 0 90px 0;
+    }
+
+    @media screen and (max-width: $container-s-max) {
+        padding: 50px 0 70px 0;
+    }
+}
+
+.teacher{
+    font-family: "Inter", sans-serif;
+
+    &__title{
+        font-weight: 700;
+        color: #2C2C2C;
+        font-size: 32px;
+    }
+
+    &__content{
+        display: grid;
+    }
+
+    @media (min-width: $container-xxl-min) {
+        &__content{
+            margin-top: 70px;
+            margin-left: 45px;
+            grid-template-areas: 
+                "teacher-photo teacher-quick"
+                "teacher-photo teacher-about";
+        }
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        &__content{
+            margin-top: 70px;
+            margin-left: 45px;
+            grid-template-areas: 
+                "teacher-photo teacher-quick"
+                "teacher-photo teacher-about";
+        }
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        &__content{
+            margin-top: 70px;
+            margin-left: 45px;
+            grid-template-areas: 
+                "teacher-photo teacher-quick"
+                "teacher-photo teacher-about";
+        }
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        &__content{
+            margin-top: 90px;
+            margin-left: 35px;
+            align-items: center;
+            grid-template-areas: 
+                "teacher-photo teacher-quick"
+                "teacher-photo teacher-about";
+        }
+    }
+
+    @media screen and (max-width: $container-s-max) {
+        &__title{
+            font-size: 28px;
+        }
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        &__content{
+            margin-top: 30px;
+            grid-template-columns: 180px 1fr;
+            grid-template-areas: 
+                "teacher-photo teacher-quick"
+                "teacher-about teacher-about";
+        }
+    }
+
+    @media screen and (max-width: $container-xs-max) {
+        &__content{
+            margin-top: 30px;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            grid-template-areas: 
+                "teacher-photo"
+                "teacher-quick"
+                "teacher-about";
+        }
+    }
+}
+
+.about-teacher{
+
+    &__photo{
+        grid-area: teacher-photo;
+        display: block;
+    }
+
+    @media (min-width: $container-xxl-min) {
+
+        &__photo{
+            width: 190px;
+            height: 190px;
+            margin-right: 45px;
+        }
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+
+        &__photo{
+            width: 190px;
+            height: 190px;
+            margin-right: 45px;
+        }
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+
+        &__photo{
+            width: 190px;
+            height: 190px;
+            margin-right: 45px;
+        }
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+
+        &__photo{
+            margin-right: 35px;
+            width: 175px;
+            height: 175px;
+        }
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+
+        &__photo{
+            margin-right: 30px;
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+.teacher-text{
+    font-family: "Inter", sans-serif;
+    color: #2C2C2C;
+
+    &__quick{
+        grid-area: teacher-quick;
+        align-self: center;
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__concise{
+        font-weight: 400;
+        font-size: 17px;
+    }
+
+    &__about{
+        grid-area: teacher-about;
+        margin: 20px 0 0 0;
+        font-weight: 400;
+        font-size: 17px;
+        padding: 0;
+        list-style: none;
+
+        & li:not(:first-child){
+            margin-top: 5px;
+        }
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+
+        &__concise{
+            margin-top: 10px;
+        }
+
+        &__about{
+            margin-top: 50px;
+        }
+    }
+
+
+    @media screen and (max-width: $container-xs-max) {
+
+        &__quick{
+            margin-top: 60px;
+        }
+
+        &__concise{
+            margin-top: 10px;
+        }
+
+        &__about{
+            margin-top: 35px;
+        }
+    }
+}

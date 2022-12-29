@@ -1,0 +1,262 @@
+.apply-form{
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
+    border-radius: 23px;
+    padding: 40px 35px;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+
+    &__title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 28px;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__start{
+        margin-top: 20px;
+        font-size: 14px;
+        color: #595959;
+        text-align: center;
+    }
+
+    &__start-date{
+        color: #000000;
+    }
+
+    &__form{
+        margin: 25px 0 0 0;
+        padding: 0;
+
+        & label{
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+
+    &__success {
+        text-align: center;
+        padding: 10px 15px;
+        margin: 0 10px 0 0;
+        list-style: none;
+        border-radius: 5px;
+        border: 1px solid $success-border-color;
+        color: $success-text-color;
+        background-color: lighten($success-bg-color, 0%);
+
+        &:empty{
+            display: none;
+        }
+
+        li{
+            margin-top: 5px;
+        }
+    }
+
+    &__errors{
+        padding: 10px 15px;
+        margin: 0 10px 0 0;
+        list-style: none;
+        border-radius: 5px;
+        border: 1px solid $error-color;
+        color: $error-color;
+        background-color: lighten($error-color, 30%);
+
+        &:empty{
+            display: none;
+        }
+
+        li{
+            margin-top: 5px;
+        }
+    }
+
+    &__text-input{
+        display: block;
+        width: 100%;
+        outline: 0;
+        box-sizing: border-box;
+        padding: 10px 15px;
+        border-radius: 10px;
+        color: #595959;
+        border: 1px solid #D9D9D9;
+        background-color: #F3F3F3;
+        transition: .2s;
+    
+        &.error{
+            border-color: #d93c3c;
+    
+            &:focus{
+                box-shadow: 0 0 0 0.2rem rgb(217 60 60 / 50%);
+            }
+        }
+    
+        &:focus{
+            box-shadow: 0 0 0 0.2rem rgb(217 217 217 / 50%);
+        }
+        
+    }
+
+    &__item:not(:first-child){
+        margin: 15px 0 0 0;
+    }
+
+    &__submit{
+        margin: 40px 0 0 0;
+        padding: 13px 0;
+        display: block;
+        width: 100%;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: #9847FF;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.17);
+
+        &:hover{
+            background-color: #2C2C2C;
+        }
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        padding: 40px 35px;
+        max-width: 330px;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        padding: 40px 40px;
+        max-width: 330px;
+    }
+
+    @media screen and (max-width: $container-m-max) {
+        padding: 40px 35px;
+        max-width: 100%;
+    }
+}
+
+.enroll-custom-checkbox-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.enroll-custom-checkbox{
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid #9847FF;
+    box-shadow: 0px 0px 4px #27E2EE;
+    width: 13px;
+    height: 13px;
+    user-select: none;
+    display: block;
+    cursor: pointer;
+
+    &__input{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+
+        &:checked{
+            & ~ .enroll-custom-checkbox__checkmark{
+                display: block;
+            }
+        }
+    }
+
+    &__checkmark{
+        display: none;
+    }
+}
+
+label[for="im-student-checkbox"]{
+    margin-left: 20px;
+}
+
+.text-input{
+
+    @media screen and (max-width: 1440px) {
+        padding: 7px 15px;
+    }
+
+    @media screen and (max-width: 960px) {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 5px 10px;
+    }
+}
+
+.apply-form-choice{
+    margin: 15px 0 0 0;
+
+    &__worker{
+        display: block;
+    }
+
+    &__student{
+        display: none;
+    }
+}
+
+.apply-policy{
+    margin: 25px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 10px;
+
+    &__text{
+        font-weight: 400;
+        color: #595959;
+        padding: 0 0 0 10px;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: #9847FF;
+    }
+
+    @media screen and (max-width: 1440px) {
+        &__text {
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 8px;
+        }
+        &__link {
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 8px;
+        }
+        &__checkbox {
+            width: 8px;
+            height: 8px;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        &__text {
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 8px;
+        }
+        &__link {
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 8px;
+        }
+        &__checkbox {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.section-certificate{
+
+    @media (min-width: $container-xxl-min) {
+        padding: 110px 0;
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        padding: 110px 0 140px 0;
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        padding: 90px 0 130px 0;
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        padding: 70px 0 160px 0;
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        padding: 80px 0 90px 0;
+    }
+
+    @media screen and (max-width: $container-xs-max) {
+        padding: 80px 0 130px 0;
+    }
+}
+
+.certificate{
+    font-family: "Inter", sans-serif;
+
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        color: #2c2c2c;
+    }
+}
+
+.certificate-conntent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+   
+
+    &__img{
+        display: block;
+        width: 575px;
+    }
+
+    &__text{
+        color: #2c2c2c;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    @media (min-width: $container-xxl-min) {
+        margin-top: 50px;
+
+        &__img{
+            width: 575px;
+        }
+    
+        &__text{
+            width: 350px;
+        }
+    }
+
+    @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
+        margin-top: 60px;
+        
+        &__img{
+            width: 575px;
+        }
+    
+        &__text{
+            width: 350px;
+        }
+    }
+
+    @media screen and (max-width: $container-l-max) and (min-width: $container-l-min) {
+        margin-top: 65px;
+        
+        &__img{
+            width: 435px;
+        }
+    
+        &__text{
+            width: 360px;
+        }
+    }
+
+    @media screen and (max-width: $container-m-max){
+        flex-direction: column;
+        align-items: center;
+     
+        &__img{
+            order: 2;
+        }
+    
+        &__text{
+            order: 1;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $container-m-max) and (min-width: $container-m-min) {
+        margin-top: 65px;
+        
+        &__img{
+            margin-top: 55px;
+            width: 440px;
+        }
+    }
+
+    @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
+        margin-top: 45px;
+        
+        &__img{
+            margin-top: 90px;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $container-xs-max) {
+        margin-top: 45px;
+        
+        &__img{
+            margin-top: 70px;
+            width: 100%;
+        }
+    }
+}

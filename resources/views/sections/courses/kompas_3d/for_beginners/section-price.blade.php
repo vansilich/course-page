@@ -27,7 +27,7 @@
             </div>
             <div class="price-content__right whats-included">
                 <div class="whats-included__form-wrapper">
-                    @include('blocks.apply-form')
+                    @include('blocks.courses.kompas_3d.for_beginners.apply-form')
                 </div>
             </div>
         </div>
