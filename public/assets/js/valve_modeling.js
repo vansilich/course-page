@@ -22902,6 +22902,10 @@ document.querySelector('#im-student-checkbox').addEventListener('change', functi
 var rightNavBurger = document.querySelector('.top-nav__burger-menu'); // Скрываем .top-nav__right когда открыто мобильное меню
 
 var rightNavBurgerObserver = new MutationObserver(function (mutations) {
+  if (document.body.clientWidth <= 720) {
+    return;
+  }
+
   var rightNav = document.querySelector('.top-nav__right');
 
   if (rightNavBurger.getAttribute('is-open') === 'false') {

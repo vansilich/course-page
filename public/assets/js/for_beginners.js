@@ -3094,8 +3094,8 @@ var collapseHide = document.getElementById('collapse-burger-close');
 collapseHide.addEventListener('click', function () {
   document.getElementById("collapse-container").style.display = "none";
 });
-new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('/send/request', '.apply-form__form', {
-  'input[name="name"]': {
+new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('/sign-up/course/for-beginners', '.apply-form__form', {
+  'input[name="name_and_surname"]': {
     inputName: 'Имя',
     submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]
   },
@@ -3103,7 +3103,7 @@ new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('/send/request'
     inputName: 'Имейл',
     submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.emailSubmitValidator]
   },
-  'input[name="telephone"]': {
+  'input[name="phone"]': {
     inputName: 'Телефон',
     liveValidator: _utils_validation_LiveValidators__WEBPACK_IMPORTED_MODULE_7__.phoneLiveValidator,
     submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.phoneSubmitValidator]
@@ -3117,8 +3117,8 @@ new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('/send/request'
     submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]
   }
 }, 'error', '.apply-form__errors', '.apply-form__success');
-new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('/send/request', '.popup-apply-form__form', {
-  'input[name="name"]': {
+new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('/sign-up/course/for-beginners', '.popup-apply-form__form', {
+  'input[name="name_and_surname"]': {
     inputName: 'Имя',
     submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.notEmptySubmitValidator]
   },
@@ -3126,7 +3126,7 @@ new _modules_FormHandler__WEBPACK_IMPORTED_MODULE_5__["default"]('/send/request'
     inputName: 'Имейл',
     submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.emailSubmitValidator]
   },
-  'input[name="telephone"]': {
+  'input[name="phone"]': {
     inputName: 'Телефон',
     liveValidator: _utils_validation_LiveValidators__WEBPACK_IMPORTED_MODULE_7__.phoneLiveValidator,
     submitValidators: [_utils_validation_FormSubmitValidators__WEBPACK_IMPORTED_MODULE_6__.phoneSubmitValidator]

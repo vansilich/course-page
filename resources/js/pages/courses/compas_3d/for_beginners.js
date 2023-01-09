@@ -20,10 +20,10 @@ collapseHide.addEventListener('click', function () {
 });
 
 new FormHandler(
-    '/send/request',
+    '/sign-up/course/for-beginners',
     '.apply-form__form',
     {
-        'input[name="name"]': {
+        'input[name="name_and_surname"]': {
             inputName: 'Имя',
             submitValidators: [notEmptySubmitValidator]
         },
@@ -31,7 +31,7 @@ new FormHandler(
             inputName: 'Имейл',
             submitValidators: [emailSubmitValidator]
         },
-        'input[name="telephone"]': {
+        'input[name="phone"]': {
             inputName: 'Телефон',
             liveValidator: phoneLiveValidator,
             submitValidators: [phoneSubmitValidator]
@@ -51,10 +51,10 @@ new FormHandler(
 );
 
 new FormHandler(
-    '/send/request',
+    '/sign-up/course/for-beginners',
     '.popup-apply-form__form',
     {
-        'input[name="name"]': {
+        'input[name="name_and_surname"]': {
             inputName: 'Имя',
             submitValidators: [notEmptySubmitValidator]
         },
@@ -62,7 +62,7 @@ new FormHandler(
             inputName: 'Имейл',
             submitValidators: [emailSubmitValidator]
         },
-        'input[name="telephone"]': {
+        'input[name="phone"]': {
             inputName: 'Телефон',
             liveValidator: phoneLiveValidator,
             submitValidators: [phoneSubmitValidator]

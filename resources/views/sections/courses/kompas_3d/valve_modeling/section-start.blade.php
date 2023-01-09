@@ -25,7 +25,7 @@
                                     </h3>
 
                                     <h2 class="promo-course-start-date-mini">
-                                        СТАРТ КУРСА 23 ЯНВАРЯ 2023 года
+                                        СТАРТ КУРСА 23 ЯНВАРЯ 2023
                                     </h2>
                                 </div>
                                 <h1 class="promo-text__middle">
@@ -34,7 +34,7 @@
                                     В КОМПАС-3D
                                 </h1>
                                 <h2 class="promo-text__bottom promo-course-start-date">
-                                    СТАРТ КУРСА 23 ЯНВАРЯ 2023 года
+                                    СТАРТ КУРСА 23 ЯНВАРЯ 2023
                                 </h2>
                             </div>
                         </div>

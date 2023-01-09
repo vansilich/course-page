@@ -7,13 +7,13 @@ use App\Models\Course;
 use App\Models\CourseRegistration;
 use App\Models\CourseRegistrationUserData;
 use App\Models\UserDataField;
-use App\Services\CourseRegistrationService;
 use App\Http\Requests\CourseRegistrationRequest;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\CourseSignUp;
 use App\Mail\CourseFutureSignUp;
 use App\Models\CourseFutureRegistrationUserData;
 use App\Models\CourseFutureRegistration;
+use Illuminate\Support\Facades\DB;
 
 class CourseRegisterController extends Controller
 {
@@ -47,27 +47,40 @@ class CourseRegisterController extends Controller
             return $this->futureRegister($request, $course);
         }
 
-        $new_registration = CourseRegistration::create(['course_id' => $course->id]);
+        try{
+            DB::beginTransaction();
 
-        foreach($course->registrationInputs as $registrationInput){
+            $new_registration = CourseRegistration::create(['course_id' => $course->id]);
 
-            $input = $registrationInput->userDataField;
+            foreach($course->registrationInputs as $registrationInput){
 
-            CourseRegistrationUserData::create([
-                'registration_id' => $new_registration->id,
-                'field_id' => $input->id,
-                'field_value' => $validated[$input->slug] ?? null,
-            ]);
+                $input = $registrationInput->userDataField;
+
+                CourseRegistrationUserData::create([
+                    'registration_id' => $new_registration->id,
+                    'field_id' => $input->id,
+                    'field_value' => $validated[$input->slug] ?? null,
+                ]);
+            }
+
+            throw new \Exception('тестовое исключение');
+
+            Mail::to($validated['email'])
+                ->later(now()->addMinute(), new CourseSignUp(
+                    $course->title,
+                    $validated['name_and_surname'], 
+                    $validated['email'], 
+                    $course->title,
+                    'Приглашение на курс',
+                ));
+                
+            DB::commit();
+
+        } catch (\Exception $e){
+
+            DB::rollBack();
+            throw $e;
         }
-
-        Mail::to($validated['email'])
-            ->later(now()->addMinute(), new CourseSignUp(
-                $course->title,
-                $validated['name_and_surname'], 
-                $validated['email'], 
-                $course->title,
-                'Приглашение на курс',
-            ));
 
         return response()->json([
             'method' => 'success', 
@@ -97,27 +110,38 @@ class CourseRegisterController extends Controller
             ]);
         }
 
-        $new_registration = CourseFutureRegistration::create(['course_id' => $course->id]);
+        try{
+            DB::beginTransaction();
+            
+            $new_registration = CourseFutureRegistration::create(['course_id' => $course->id]);
 
-        foreach($course->registrationInputs as $registrationInput){
+            foreach($course->registrationInputs as $registrationInput){
 
-            $input = $registrationInput->userDataField;
+                $input = $registrationInput->userDataField;
 
-            CourseFutureRegistrationUserData::create([
-                'registration_id' => $new_registration->id,
-                'field_id' => $input->id,
-                'field_value' => $validated[$input->slug] ?? null,
-            ]);
+                CourseFutureRegistrationUserData::create([
+                    'registration_id' => $new_registration->id,
+                    'field_id' => $input->id,
+                    'field_value' => $validated[$input->slug] ?? null,
+                ]);
+            }
+
+            Mail::to($validated['email'])
+                ->later(now()->addMinute(), new CourseFutureSignUp(
+                    $course->title,
+                    $validated['name_and_surname'], 
+                    $validated['email'], 
+                    $course->title,
+                    'Приглашение на курс',
+                ));
+
+            DB::commit();
+            
+        } catch (\Exception $e){
+
+            DB::rollBack();
+            throw $e;
         }
-
-        Mail::to($validated['email'])
-            ->later(now()->addMinute(), new CourseFutureSignUp(
-                $course->title,
-                $validated['name_and_surname'], 
-                $validated['email'], 
-                $course->title,
-                'Приглашение на курс',
-            ));
 
         return response()->json([
             'method' => 'success', 

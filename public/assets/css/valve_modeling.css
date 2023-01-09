@@ -487,6 +487,7 @@ button {
 @media screen and (max-width: 539px) {
   .container-mini {
     max-width: 100%;
+    padding: 0 5px;
   }
 }
 
@@ -805,6 +806,7 @@ button {
 .start-promo {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .promo-text__top {
@@ -831,7 +833,7 @@ button {
 @media screen and (max-width: 1439px) and (min-width: 1140px) {
   .promo-text__middle {
     margin-top: 40px;
-    font-size: 59px;
+    font-size: 50px;
   }
   .promo-text__bottom {
     margin-top: 35px;
@@ -1068,9 +1070,9 @@ button {
     left: 140px;
   }
   .promo-animated__3D-2 {
-    left: -95px;
+    left: -115px;
     width: 370px;
-    top: 50px;
+    top: 20px;
   }
   .promo-animated__notebook {
     left: -210px;
@@ -1114,7 +1116,7 @@ button {
 }
 @media screen and (max-width: 719px) and (min-width: 540px) {
   .promo-animated__3D-1 {
-    top: -40px;
+    top: -20px;
     width: 170px;
     left: -10px;
   }
@@ -1130,27 +1132,30 @@ button {
   }
 }
 @media screen and (max-width: 539px) and (min-width: 375px) {
+  .promo-animated {
+    position: initial;
+  }
   .promo-animated__3D-1 {
     top: -30px;
     width: 170px;
-    left: -20px;
+    left: calc(100% - 80px);
   }
   .promo-animated__3D-2 {
-    left: -265px;
+    left: calc(50% - 165px);
     width: 260px;
     top: 160px;
   }
   .promo-animated__notebook {
-    left: -280px;
+    left: calc(50% - 200px);
     top: 280px;
     width: 360px;
   }
 }
 @media screen and (max-width: 374px) {
   .promo-animated__3D-1 {
-    top: -80px;
+    top: -50px;
     width: 110px;
-    left: -60px;
+    left: -10px;
   }
   .promo-animated__3D-2 {
     left: -265px;
@@ -1230,7 +1235,7 @@ button {
 }
 @media screen and (max-width: 374px) {
   .course-concise-description {
-    margin-top: 220px;
+    margin-top: 240px;
     width: 100%;
     grid-template-columns: 1fr;
     row-gap: 35px;

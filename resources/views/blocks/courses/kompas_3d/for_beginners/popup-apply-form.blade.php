@@ -17,7 +17,7 @@
                     <ul class="popup-apply-form__errors"></ul>
 
                     <input class="popup-apply-form__text-input text-input"
-                        type="text" name="name"
+                        type="text" name="name_and_surname"
                         placeholder="Имя Фамилия"
                         autocomplete="off">
 
@@ -28,7 +28,7 @@
 
                     <input class="popup-apply-form__text-input text-input"
                         type="tel"
-                        name="telephone"
+                        name="phone"
                         placeholder="Номер телефона"
                         autocomplete="off">
 

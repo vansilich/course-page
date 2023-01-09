@@ -12,7 +12,7 @@
 
         <input class="apply-form__text-input text-input"
             type="text"
-            name="name"
+            name="name_and_surname"
             placeholder="Имя Фамилия"
             autocomplete="off">
 
@@ -24,7 +24,7 @@
 
         <input class="apply-form__text-input text-input"
             type="tel"
-            name="telephone"
+            name="phone"
             placeholder="Номер телефона"
             autocomplete="off">
 

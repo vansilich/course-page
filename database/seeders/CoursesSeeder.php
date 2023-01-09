@@ -15,10 +15,17 @@ class CoursesSeeder extends Seeder
     public function run()
     {
         Course::create([
+            'title' => 'Компас 3Д | Для начинающих',
+            'slug' => 'for-beginners',
+            'start_date' => '2022-10-31 00:00:00',
+            'end_date' => '2022-11-24 00:00:00',
+        ]);
+
+        Course::create([
             'title' => 'Компас 3Д | Моделирование клапана',
             'slug' => 'valve-modeling',
-            'start_date' => now(),
-            'end_date' => now()->addDays(10),
+            'start_date' => '2023-01-09 00:00:00',
+            'end_date' => '2023-01-23 00:00:00',
         ]);
     }
 }

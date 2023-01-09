@@ -66,6 +66,7 @@
 .start-promo{
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .promo-text{
@@ -98,7 +99,7 @@
     @media screen and (max-width: $container-xl-max) and (min-width: $container-xl-min) {
         &__middle{
             margin-top: 40px;
-            font-size: 59px;
+            font-size: 50px;
         }
 
         &__bottom{
@@ -332,9 +333,9 @@
         }
     
         &__3D-2{
-            left: -95px;
+            left: -115px;
             width: 370px;
-            top: 50px;
+            top: 20px;
         }
 
         &__notebook {
@@ -386,7 +387,7 @@
 
     @media screen and (max-width: $container-s-max) and (min-width: $container-s-min) {
         &__3D-1{
-            top: -40px;
+            top: -20px;
             width: 170px;
             left: -10px;        
         }
@@ -405,20 +406,22 @@
     }
 
     @media screen and (max-width: $container-xs-max) and (min-width: $container-xs-min) {
+        position: initial;
+
         &__3D-1{
             top: -30px;
             width: 170px;
-            left: -20px;
+            left: calc(100% - 80px);
         }
     
         &__3D-2{
-            left: -265px;
+            left: calc(50% - 165px);
             width: 260px;
             top: 160px;
         }
 
         &__notebook {
-            left: -280px;
+            left: calc(50% - 200px);;
             top: 280px;
             width: 360px;
         }
@@ -426,9 +429,9 @@
 
     @media screen and (max-width: $container-xxs-max) {
         &__3D-1{
-            top: -80px;
+            top: -50px;
             width: 110px;
-            left: -60px;
+            left: -10px;
         }
     
         &__3D-2{
@@ -506,7 +509,7 @@
     }
 
     @media screen and (max-width: $container-xxs-max) {
-        margin-top: 220px;
+        margin-top: 240px;
         width: 100%;
         grid-template-columns: 1fr;
         row-gap: 35px;

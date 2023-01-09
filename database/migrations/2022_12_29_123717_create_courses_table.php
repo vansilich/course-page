@@ -17,7 +17,7 @@ class CreateCoursesTable extends Migration
             $table->id();
 
             $table->string('title')->comment('Название курса');
-            $table->string('slug')->comment('title курса для URL');
+            $table->string('slug')->comment('title курса для URL')->unique();
 
             $table->dateTime('start_date')->comment('Дата начала регистрации на курс');
             $table->dateTime('end_date')->comment('Дата конца регистрации на курс');

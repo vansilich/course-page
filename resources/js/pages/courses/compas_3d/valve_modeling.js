@@ -42,6 +42,10 @@ const rightNavBurger = document.querySelector('.top-nav__burger-menu');
 // Скрываем .top-nav__right когда открыто мобильное меню
 const rightNavBurgerObserver = new MutationObserver((mutations) => {
 
+    if(document.body.clientWidth <= 720){
+        return;
+    }
+
     const rightNav = document.querySelector('.top-nav__right');
     if(rightNavBurger.getAttribute('is-open') === 'false'){
         rightNav.style.display = 'block';

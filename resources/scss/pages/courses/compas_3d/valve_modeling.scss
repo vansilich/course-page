@@ -110,6 +110,7 @@ $default-active-color: #9847FF;
 
     @media screen and (max-width: $container-xs-max) {
         max-width: 100%;
+        padding: 0 5px;
     }
 }
 
