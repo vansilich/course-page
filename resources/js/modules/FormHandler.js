@@ -6,7 +6,7 @@ export default class FormHandler{
         inputs_and_rules,
         input_error_class,
         error_bag_selector,
-        success_alert_selector,
+        success_alert_selector
     ){
         this.register_endpoint = register_endpoint;
 
@@ -110,25 +110,18 @@ export default class FormHandler{
             if (response.status == 200) {
                 switch(responseJSON['method']) {
                     case 'success':
-                        
                         this.placeSuccessMessagesToBag(formSuccessBag, [responseJSON['message']]);
-
-                        let btns = form.getElementsByClassName('popup-apply-form__submit');
-                        for (var i = 0; i < btns.length; i++) {
-                            btns[i].style.display = 'none';
-                        }
-                        form.getElementsByClassName('popup-apply-form-close')[0].style.display = 'block';
                         break;
-
                     case 'error':
-                        placeErrorsToBag(formErrorBag, [responseJSON['message']])
+                        this.placeErrorsToBag(formErrorBag, [responseJSON['message']]);
                         break;
                 }
+            } else {
+                this.placeErrorsToBag(formErrorBag, ['Произошла ошибка сервера, пожалуйста, попробуте позже']);
             }
         } catch(err) {
-            // let container = document.createElement('li');
-            // container.innerHTML = err;
-            // error.appendChild(container);
+            console.log(err);
+            this.placeErrorsToBag(formErrorBag, ['Произошла ошибка']);
         }
         
     }

@@ -1,6 +1,9 @@
 <table align="center" style="max-width: 600px">
     <tr>
-        <td style="padding-bottom: 1em;">Вы успешно записались на курс "Проектирование в КОМПАС-3D" для начинающих.<br></td>
+        <td style="padding-bottom: 1em;">
+            Вы успешно записались на курс 
+            "{{ $course_name }}".<br>
+        </td>
     </tr>
     <tr>
         <td>...............................................</td>
@@ -10,9 +13,6 @@
     </tr>
     <tr>
         <td>Email: {{ $email }}</td>
-    </tr>
-    <tr>
-        <td>Телефон: {{ $telephone }}</td>
     </tr>
     <tr>
         <td style="padding-bottom: 1em;">...............................................<br></td>

@@ -2,7 +2,7 @@
 
     <div class="popup-apply-form-wrapper popup">
 
-        <form class="popup-apply-form" action="/sign-up/future/compas-3D" autocomplete="off">
+        <form class="popup-apply-form" action="#" autocomplete="off">
 
             @csrf
 
@@ -23,7 +23,7 @@
 
                 <input class="popup-apply-form__item popup-apply-form__text-input"
                     type="text"
-                    name="name"
+                    name="name_and_surname"
                     placeholder="Имя Фамилия"
                     autocomplete="off">
 
@@ -35,14 +35,14 @@
 
                 <input class="popup-apply-form__item popup-apply-form__text-input"
                     type="tel"
-                    name="telephone"
+                    name="phone"
                     placeholder="+7 (999) 999-99-99"
                     autocomplete="off">
 
                 <div class="popup-apply-form__item popup-enroll-custom-checkbox-wrapper">
                     <label class="popup-enroll-custom-checkbox">
                         <input type="checkbox" id="popup-im-student-checkbox"
-                            name="im-student" class="popup-enroll-custom-checkbox__input">
+                            name="is-student" class="popup-enroll-custom-checkbox__input">
                         <img class="popup-enroll-custom-checkbox__checkmark" src="{{ asset('/assets/icons/pages/courses/compas_3d/checkbox-checkmark.svg') }}" alt="">
                     </label>
                     <label for="popup-im-student-checkbox">я студент</label>

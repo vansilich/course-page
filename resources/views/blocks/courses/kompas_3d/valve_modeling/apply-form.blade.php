@@ -8,7 +8,7 @@
         Начало обучения: <span class="apply-form__start-date">23 января</span>
     </p>
 
-    <form class="apply-form__form" action="/sign-up/future/compas-3D" autocomplete="off">
+    <form class="apply-form__form" action="#" autocomplete="off">
         @csrf
 
         <ul class="apply-form__success"></ul>
@@ -16,7 +16,7 @@
 
         <input class="apply-form__item apply-form__text-input"
             type="text"
-            name="name"
+            name="name_and_surname"
             placeholder="Имя Фамилия"
             autocomplete="off">
 
@@ -28,14 +28,14 @@
 
         <input class="apply-form__item apply-form__text-input"
             type="tel"
-            name="telephone"
+            name="phone"
             placeholder="+7 (999) 999-99-99"
             autocomplete="off">
 
         <div class="apply-form__item enroll-custom-checkbox-wrapper">
             <label class="enroll-custom-checkbox">
                 <input type="checkbox" id="im-student-checkbox"
-                    name="im-student" class="enroll-custom-checkbox__input">
+                    name="is-student" class="enroll-custom-checkbox__input">
                 <img class="enroll-custom-checkbox__checkmark" src="{{ asset('/assets/icons/pages/courses/compas_3d/checkbox-checkmark.svg') }}" alt="">
             </label>
             <label for="im-student-checkbox">я студент</label>

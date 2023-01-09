@@ -5,17 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class FutureCourseSignUp extends Model
+class CourseFutureRegistration extends Model
 {
     use HasFactory;
 
-    protected $table = 'future_course_sign_up';
+    protected $table = 'course_future_registrations';
 
     protected $fillable = [
-        'name',
-        'email',
-        'telephone',
-        'job',
-        'company'
+        'course_id',
     ];
 }

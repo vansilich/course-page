@@ -17,7 +17,3 @@ Use App\Http\Controllers\DebugMailController;
 */
 
 Route::post('/save-ym-uid', SaveVisitorYmUid::class)->name('save-ym-uid');
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});

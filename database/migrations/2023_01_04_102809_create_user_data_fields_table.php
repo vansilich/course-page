@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRegistrationUserDataTable extends Migration
+class CreateUserDataFieldsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,12 @@ class CreateRegistrationUserDataTable extends Migration
      */
     public function up()
     {
-        Schema::create('registration_user_data', function (Blueprint $table) {
+        Schema::create('user_data_fields', function (Blueprint $table) {
             $table->id();
 
-            $table->unsignedBigInteger('registraion_id');
-            $table->foreign('registraion_id')->references('id')->on('course_registrations');
-
-            $table->string('field_name');
-            $table->text('field_value');
+            $table->string('title')->comment('Человекочитаемое имя поля');
+            $table->string('slug')->comment('Имя input`a');
+            $table->text('type')->comment('PHP тип данных инпута');
 
             $table->timestamps();
         });
@@ -33,6 +31,6 @@ class CreateRegistrationUserDataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('registration_user_data');
+        Schema::dropIfExists('user_data_fields');
     }
 }

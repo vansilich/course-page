@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserRequestTable extends Migration
+class CreateCourseFutureRegistrations extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateUserRequestTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_request', function (Blueprint $table) {
-            $table->id('user_id');
-            $table->string('name');
-            $table->string('email');
-            $table->string('telephone', 25);
+        Schema::create('course_future_registrations', function (Blueprint $table) {
+            $table->id();
+
+            $table->unsignedBigInteger('course_id');
+            $table->foreign('course_id')->references('id')->on('courses');
+            
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateUserRequestTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_request');
+        Schema::dropIfExists('course_future_registrations');
     }
 }

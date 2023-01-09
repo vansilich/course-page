@@ -19,8 +19,8 @@ class CreateCoursesTable extends Migration
             $table->string('title')->comment('Название курса');
             $table->string('slug')->comment('title курса для URL');
 
-            $table->date('start_date')->comment('Дата начала курса');
-            $table->date('end_date')->comment('Дата конца регистрации на курс');
+            $table->dateTime('start_date')->comment('Дата начала регистрации на курс');
+            $table->dateTime('end_date')->comment('Дата конца регистрации на курс');
 
             $table->timestamps();
         });

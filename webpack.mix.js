@@ -1,5 +1,3 @@
-const mix = require('laravel-mix');
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -10,23 +8,43 @@ const mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
+
+const mix = require('laravel-mix');
+const fs = require('fs');
 const path = require('path');
 
 mix.disableSuccessNotifications();
 
-function findFiles(dir) {
-    const fs = require('fs');
+buildSass('resources/scss/pages/', 'public/assets/css');
+buildJs('resources/js/pages/', 'public/assets/js');
 
-    return fs.readdirSync(dir).filter(file => {
-        return fs.statSync(`${dir}/${file}`).isFile();
+mix.copyDirectory('resources/assets', 'public/assets')
+    .version();
+
+function findFiles(dir) {
+    var results = [];
+    var list = fs.readdirSync(dir);
+
+    list.forEach(function(file) {
+        file = dir + '/' + file;
+        var stat = fs.statSync(file);
+        if (stat && stat.isDirectory()) { 
+            /* Recurse into a subdirectory */
+            results = results.concat(findFiles(file));
+        } else { 
+            /* Is a file */
+            results.push(file);
+        }
     });
+
+    return results;
 }
 
 function buildSass(dir, dest) {
     findFiles(dir).forEach(function (file) {
 
         if (!file.startsWith('_')) {
-            mix.sass(dir + '/' + file, dest);
+            mix.sass(file, dest);
         }
     });
 }
@@ -35,14 +53,7 @@ function buildJs(dir, dest) {
     findFiles(dir).forEach(function (file) {
 
         if (!file.startsWith('_')) {
-            mix.js(dir + '/' + file, dest);
+            mix.js(file, dest);
         }
     });
 }
-
-buildSass('resources/scss/pages/courses/compas_3d/', 'public/assets/css');
-buildJs('resources/js/pages/courses/compas_3d/', 'public/assets/js');
-
-mix.copyDirectory('resources/assets', 'public/assets')
-    .version();
-

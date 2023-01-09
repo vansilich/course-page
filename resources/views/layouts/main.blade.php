@@ -8,7 +8,7 @@
     <title>Курс по Компас-3D</title>
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
+    <script>
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();
             for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -22,21 +22,20 @@
             webvisor:true
         });
     </script>
+
     <noscript>
         <div>
             <img src="https://mc.yandex.ru/watch/90898955" style="position:absolute; left:-9999px;" alt="" />
         </div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    
-    @if(session('hash'))
-        <script>
-            const hash = '{{ session('hash') }}';
-            const route = '{{ route('save-ym-uid') }}'
+        
+    <script>
+        @if(session('user_email_referral_hash'))
+            window.user_email_referral_hash = '{{ session('user_email_referral_hash') }}';
 
             ym(90898955, 'getClientID', (clientID) => {
-                
-                fetch(route, {
+                fetch('/api/save-ym-uid', {
                     method: 'POST',
                     cache: 'no-cache',
                     headers: {
@@ -44,13 +43,13 @@
                     },
                     redirect: 'follow',
                     body: JSON.stringify({
-                        hash: hash,
+                        hash: window.user_email_referral_hash,
                         ym_uid: clientID
                     })
                 });
             });
-        </script>
-    @endif
+        @endif
+    </script>
 
     @yield('header_assets')
 

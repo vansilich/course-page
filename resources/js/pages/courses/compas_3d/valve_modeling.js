@@ -1,8 +1,5 @@
 import '../../../app';
 
-// анимации на JS
-import anime from 'animejs/lib/anime.es'
-
 import BurgerMenuToggle from '../../../modules/burger-menu-toggle';
 import CommentsExpand from "../../../modules/comments-list";
 import ModulesList from "../../../modules/modules-list";
@@ -47,9 +44,9 @@ const rightNavBurgerObserver = new MutationObserver((mutations) => {
 
     const rightNav = document.querySelector('.top-nav__right');
     if(rightNavBurger.getAttribute('is-open') === 'false'){
-        rightNav.style.display = 'block'
+        rightNav.style.display = 'block';
     } else {
-        rightNav.style.display = 'none'
+        rightNav.style.display = 'none';
     }
 });
 rightNavBurgerObserver.observe(rightNavBurger, {
@@ -107,12 +104,11 @@ new MouseParallax(
     -1.5
 );
 
-
 new FormHandler(
     '/sign-up/course/valve-modeling',
     '.popup-apply-form',
     {
-        'input[name="name"]': {
+        'input[name="name_and_surname"]': {
             inputName: 'Имя',
             submitValidators: [notEmptySubmitValidator]
         },
@@ -120,7 +116,7 @@ new FormHandler(
             inputName: 'Имейл',
             submitValidators: [emailSubmitValidator]
         },
-        'input[name="telephone"]': {
+        'input[name="phone"]': {
             inputName: 'Телефон',
             liveValidator: phoneLiveValidator,
             submitValidators: [phoneSubmitValidator]
@@ -129,4 +125,27 @@ new FormHandler(
     'error',
     '.popup-apply-form__errors',
     '.popup-apply-form__success'
+);
+
+new FormHandler(
+    '/sign-up/course/valve-modeling',
+    '.apply-form__form',
+    {
+        'input[name="name_and_surname"]': {
+            inputName: 'Имя',
+            submitValidators: [notEmptySubmitValidator]
+        },
+        'input[name="email"]': {
+            inputName: 'Имейл',
+            submitValidators: [emailSubmitValidator]
+        },
+        'input[name="phone"]': {
+            inputName: 'Телефон',
+            liveValidator: phoneLiveValidator,
+            submitValidators: [phoneSubmitValidator]
+        },
+    },
+    'error',
+    '.apply-form__errors',
+    '.apply-form__success'
 );

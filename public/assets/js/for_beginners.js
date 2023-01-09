@@ -2632,7 +2632,7 @@ var FormHandler = /*#__PURE__*/function () {
     key: "handleFormSubmit",
     value: function () {
       var _handleFormSubmit = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(form, event, formErrorBag, formSuccessBag) {
-        var requestUrl, token, response, responseJSON, btns, i;
+        var requestUrl, token, response, responseJSON;
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -2671,38 +2671,40 @@ var FormHandler = /*#__PURE__*/function () {
                 _context.prev = 12;
 
                 if (!(response.status == 200)) {
-                  _context.next = 24;
+                  _context.next = 23;
                   break;
                 }
 
                 _context.t0 = responseJSON['method'];
-                _context.next = _context.t0 === 'success' ? 17 : _context.t0 === 'error' ? 22 : 24;
+                _context.next = _context.t0 === 'success' ? 17 : _context.t0 === 'error' ? 19 : 21;
                 break;
 
               case 17:
                 this.placeSuccessMessagesToBag(formSuccessBag, [responseJSON['message']]);
-                btns = form.getElementsByClassName('popup-apply-form__submit');
+                return _context.abrupt("break", 21);
 
-                for (i = 0; i < btns.length; i++) {
-                  btns[i].style.display = 'none';
-                }
+              case 19:
+                this.placeErrorsToBag(formErrorBag, [responseJSON['message']]);
+                return _context.abrupt("break", 21);
 
-                form.getElementsByClassName('popup-apply-form-close')[0].style.display = 'block';
-                return _context.abrupt("break", 24);
+              case 21:
+                _context.next = 24;
+                break;
 
-              case 22:
-                placeErrorsToBag(formErrorBag, [responseJSON['message']]);
-                return _context.abrupt("break", 24);
+              case 23:
+                this.placeErrorsToBag(formErrorBag, ['Произошла ошибка сервера, пожалуйста, попробуте позже']);
 
               case 24:
-                _context.next = 28;
+                _context.next = 30;
                 break;
 
               case 26:
                 _context.prev = 26;
                 _context.t1 = _context["catch"](12);
+                console.log(_context.t1);
+                this.placeErrorsToBag(formErrorBag, ['Произошла ошибка']);
 
-              case 28:
+              case 30:
               case "end":
                 return _context.stop();
             }
