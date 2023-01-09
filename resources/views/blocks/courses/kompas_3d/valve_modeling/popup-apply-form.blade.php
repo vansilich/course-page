@@ -16,7 +16,7 @@
                 </p>
 
                 <p class="popup-apply-form__end">
-                    Конец регистрации: <span class="popup-apply-form__end-date">29 января включительно</span>
+                    Окончание регистрации: <span class="popup-apply-form__end-date">29 января включительно</span>
                 </p>
             </div>
 

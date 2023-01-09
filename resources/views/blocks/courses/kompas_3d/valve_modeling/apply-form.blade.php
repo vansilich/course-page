@@ -9,7 +9,7 @@
     </p>
 
     <p class="apply-form__end">
-        Конец регистрации: <span class="apply-form__end-date">29 января включительно</span>
+        Окончание регистрации: <span class="apply-form__end-date">29 января включительно</span>
     </p>
 
     <form class="apply-form__form" action="#" autocomplete="off">

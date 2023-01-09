@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 Route::prefix('courses')->group(function () {
 
-    Route::get('/compas-3d/valve-modeling', function () {
+    Route::get('/compas-3d/valve', function () {
         return view('pages.courses.kompas_3d.valve_modeling');
     })->name('course.kompas_3d.valve_modeling');
     // ======
