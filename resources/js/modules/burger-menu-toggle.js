@@ -67,7 +67,7 @@ export default class BurgerMenuToggle{
         }
 
         this.target.classList.remove(this.expandedClass);
-        this.target.setAttribute('is-open', false)
+        this.target.setAttribute('is-open', false);
         document.body.classList.remove(this.body_lock_class);
 
         window.scrollTo({

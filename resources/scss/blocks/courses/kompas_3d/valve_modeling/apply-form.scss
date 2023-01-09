@@ -24,7 +24,14 @@
         text-align: center;
     }
 
-    &__start-date{
+    &__end{
+        margin-top: 10px;
+        font-size: 14px;
+        color: #595959;
+        text-align: center;
+    }
+
+    &__start-date, &__end-date{
         color: #000000;
     }
 

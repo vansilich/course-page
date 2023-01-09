@@ -3154,10 +3154,18 @@ var Popup = /*#__PURE__*/function () {
     key: "openPopup",
     value: function openPopup() {
       // opening popup
+      this.poup_overlay.classList.remove(this.overlay_hide_class); // Если несколько popup на странице,
+      // то делаем проверку для что, мы хотим закрыть popup
+      // именно в нашем классе
+
+      if (getComputedStyle(document.querySelector('body'))['position'] === 'fixed') {
+        this.bodyScrollY = null;
+        return;
+      }
+
       this.bodyScrollY = (0,_utils_DOM__WEBPACK_IMPORTED_MODULE_0__.getBodyScrollTop)();
       document.body.style.top = "-".concat(this.bodyScrollY, "px");
       document.body.classList.add(this.body_lock_class);
-      this.poup_overlay.classList.remove(this.overlay_hide_class);
       window.scrollTo({
         left: 0,
         top: this.bodyScrollY
@@ -3167,8 +3175,15 @@ var Popup = /*#__PURE__*/function () {
     key: "closePopup",
     value: function closePopup() {
       // closing popup
+      this.poup_overlay.classList.add(this.overlay_hide_class); // Если несколько popup на странице,
+      // то делаем проверку для что, мы хотим закрыть popup
+      // именно в нашем классе
+
+      if (this.bodyScrollY === null) {
+        return;
+      }
+
       document.body.classList.remove(this.body_lock_class);
-      this.poup_overlay.classList.add(this.overlay_hide_class);
       window.scrollTo({
         left: 0,
         top: this.bodyScrollY

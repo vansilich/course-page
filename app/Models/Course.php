@@ -14,6 +14,7 @@ class Course extends Model
     protected $fillable = [
         'title',
         'slug',
+        'link',
         'start_date',
         'end_date'
     ];

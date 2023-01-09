@@ -63,8 +63,6 @@ class CourseRegisterController extends Controller
                 ]);
             }
 
-            throw new \Exception('тестовое исключение');
-
             Mail::to($validated['email'])
                 ->later(now()->addMinute(), new CourseSignUp(
                     $course->title,
@@ -72,6 +70,7 @@ class CourseRegisterController extends Controller
                     $validated['email'], 
                     $course->title,
                     'Приглашение на курс',
+                    $course->link
                 ));
                 
             DB::commit();

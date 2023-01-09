@@ -8,6 +8,10 @@
         Начало обучения: <span class="apply-form__start-date">23 января</span>
     </p>
 
+    <p class="apply-form__end">
+        Конец регистрации: <span class="apply-form__end-date">29 января включительно</span>
+    </p>
+
     <form class="apply-form__form" action="#" autocomplete="off">
         @csrf
 

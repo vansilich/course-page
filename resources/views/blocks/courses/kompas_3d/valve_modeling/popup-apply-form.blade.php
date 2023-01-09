@@ -14,6 +14,10 @@
                 <p class="popup-apply-form__start">
                     Начало обучения: <span class="popup-apply-form__start-date">23 января</span>
                 </p>
+
+                <p class="popup-apply-form__end">
+                    Конец регистрации: <span class="popup-apply-form__end-date">29 января включительно</span>
+                </p>
             </div>
 
             <div class="popup-apply-form__form-inputs-wrapper">

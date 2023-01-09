@@ -1,8 +1,19 @@
 <table align="center" style="max-width: 600px">
     <tr>
         <td style="padding-bottom: 1em;">
-            Вы успешно записались на курс 
-            "{{ $course_name }}".<br>
+            Вы успешно записались на курс "{{ $course_name }}".<br>
+            Зарегистрироваться на образовательной площадке вы можете по ссылке:<br>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-bottom: 1em;">
+            <a href="{{ $course_link }}">{{ $course_link }}</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-bottom: 1em;">
+            Первые уроки будут доступны 23 января.<br>
+            Удачного обучения!<br>
         </td>
     </tr>
     <tr>

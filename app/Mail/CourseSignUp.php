@@ -22,6 +22,7 @@ class CourseSignUp extends Mailable
         protected string $user_email,
         protected string $mail_from_title,
         protected string $mail_subject = 'Приглашение на курс',
+        protected ?string $course_link = null,
     ){}
 
     /**
@@ -37,6 +38,7 @@ class CourseSignUp extends Mailable
             'course_name' => $this->course_name,
             'name' => $this->user_name,
             'email' => $this->user_email,
+            'course_link' => $this->course_link,
         ])
         ->view('emails.CourseSignUp');
     }

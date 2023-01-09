@@ -1976,17 +1976,17 @@ button {
 }
 @media (min-width: 1440px) {
   .section-enroll {
-    padding: 75px 0 340px 0;
+    padding: 75px 0 380px 0;
   }
 }
 @media screen and (max-width: 1439px) and (min-width: 1140px) {
   .section-enroll {
-    padding: 80px 0 360px 0;
+    padding: 80px 0 380px 0;
   }
 }
 @media screen and (max-width: 1139px) and (min-width: 960px) {
   .section-enroll {
-    padding: 90px 0 320px 0;
+    padding: 90px 0 360px 0;
   }
 }
 @media screen and (max-width: 959px) and (min-width: 720px) {
@@ -2352,7 +2352,13 @@ button {
   color: #595959;
   text-align: center;
 }
-.apply-form__start-date {
+.apply-form__end {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #595959;
+  text-align: center;
+}
+.apply-form__start-date, .apply-form__end-date {
   color: #000000;
 }
 .apply-form__form {
@@ -2571,6 +2577,8 @@ label[for=im-student-checkbox] {
 .popup-apply-form-overlay {
   z-index: 9999 !important;
   background-color: rgba(255, 255, 255, 0.63) !important;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .popup-apply-form-wrapper {
@@ -2643,6 +2651,7 @@ label[for=im-student-checkbox] {
   font-size: 32px;
   color: #000000;
   margin: 0;
+  max-width: 240px;
   padding: 0;
 }
 .popup-apply-form__start {
@@ -2650,7 +2659,12 @@ label[for=im-student-checkbox] {
   font-size: 14px;
   color: #595959;
 }
-.popup-apply-form__start-date {
+.popup-apply-form__end {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #595959;
+}
+.popup-apply-form__start-date, .popup-apply-form__end-date {
   color: #000000;
 }
 .popup-apply-form label {
@@ -2744,8 +2758,9 @@ label[for=im-student-checkbox] {
   }
   .popup-apply-form__title {
     text-align: center;
+    max-width: 100%;
   }
-  .popup-apply-form__start {
+  .popup-apply-form__start, .popup-apply-form__end {
     text-align: center;
   }
 }

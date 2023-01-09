@@ -51,11 +51,21 @@ export default class Popup{
     openPopup(){
         // opening popup
 
+        this.poup_overlay.classList.remove(this.overlay_hide_class);
+
+         // Если несколько popup на странице,
+        // то делаем проверку для что, мы хотим закрыть popup
+        // именно в нашем классе
+        if(getComputedStyle(document.querySelector('body'))['position'] === 'fixed'){
+           
+            this.bodyScrollY = null;
+            return;
+        }
+
         this.bodyScrollY = getBodyScrollTop();
         document.body.style.top = `-${this.bodyScrollY}px`;
 
         document.body.classList.add(this.body_lock_class);
-        this.poup_overlay.classList.remove(this.overlay_hide_class);
 
         window.scrollTo({
             left: 0,
@@ -66,8 +76,16 @@ export default class Popup{
     closePopup(){
         // closing popup
 
-        document.body.classList.remove(this.body_lock_class);
         this.poup_overlay.classList.add(this.overlay_hide_class);
+
+        // Если несколько popup на странице,
+        // то делаем проверку для что, мы хотим закрыть popup
+        // именно в нашем классе
+        if(this.bodyScrollY === null){
+            return;
+        }
+
+        document.body.classList.remove(this.body_lock_class);
 
         window.scrollTo({
             left: 0,

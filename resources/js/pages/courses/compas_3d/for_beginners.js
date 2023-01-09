@@ -97,7 +97,7 @@ new ModulesList(
     '.programs__item',
     '.program-block',
     'expanded'
-)
+);
 
 new Popup(
     '.top-nav__button',

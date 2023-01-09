@@ -22,10 +22,11 @@ class CoursesSeeder extends Seeder
         ]);
 
         Course::create([
-            'title' => 'Компас 3Д | Моделирование клапана',
+            'title' => 'Проектирование модели “Вентиль” в КОМПАС-3D',
             'slug' => 'valve-modeling',
+            'link' => 'https://go.teachbase.ru/course_sessions/proektirovanie-modeli-ventil-v-kompas-3d-01-23/apply',
             'start_date' => '2023-01-09 00:00:00',
-            'end_date' => '2023-01-23 00:00:00',
+            'end_date' => '2023-01-29 00:00:00',
         ]);
     }
 }
