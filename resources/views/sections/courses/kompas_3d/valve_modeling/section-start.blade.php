@@ -36,6 +36,10 @@
                                 <h2 class="promo-text__bottom promo-course-start-date">
                                     СТАРТ КУРСА 23 ЯНВАРЯ 2023
                                 </h2>
+
+                                <button class="promo-text__enroll">
+                                    Записаться
+                                </button>
                             </div>
                         </div>
 

@@ -25,6 +25,8 @@ class CourseRegisterController extends Controller
         $course = Course::where('slug', $course_slug)->first();
 
         $email_user_field = UserDataField::where('slug', 'email')->first();
+
+        $validated['email'] = trim($validated['email']);
         $email = $validated['email'];
         
         $email_registered_record = CourseRegistrationUserData::select('course_registration_user_data.*')
@@ -67,7 +69,7 @@ class CourseRegisterController extends Controller
                 ->later(now()->addMinute(), new CourseSignUp(
                     $course->title,
                     $validated['name_and_surname'], 
-                    $validated['email'], 
+                    $email,
                     $course->title,
                     'Приглашение на курс',
                     $course->link
@@ -92,6 +94,8 @@ class CourseRegisterController extends Controller
         $validated = $request->validated();
 
         $email_user_field = UserDataField::where('slug', 'email')->first();
+
+        $validated['email'] = trim($validated['email']);
         $email = $validated['email'];
         
         $email_registered_record = CourseFutureRegistrationUserData::select('course_future_registration_user_data.*')
@@ -129,7 +133,7 @@ class CourseRegisterController extends Controller
                 ->later(now()->addMinute(), new CourseFutureSignUp(
                     $course->title,
                     $validated['name_and_surname'], 
-                    $validated['email'], 
+                    $email,
                     $course->title,
                     'Приглашение на курс',
                 ));

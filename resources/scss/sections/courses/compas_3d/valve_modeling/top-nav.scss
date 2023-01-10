@@ -1,6 +1,7 @@
 $nav-height: 65px;
 
 .nav-sticky{
+    transform: translateZ(2px);
     z-index: 2000;
     top: 0;
     position: sticky;
@@ -162,6 +163,7 @@ $nav-height: 65px;
 }
 
 .nav-burger-menu-overlay{
+    transform: translateZ(1px);
     display: none;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.63) !important;
@@ -185,13 +187,14 @@ $nav-height: 65px;
 }
 
 .nav-burger-menu{
+    height: 100vh;
     display: none;
     position: fixed;
     background-color: #ffffff;
     top: 0;
     right: 0;
     bottom: 0;
-    padding: 15px 35px 0 20px;
+    padding: 15px 70px 0 70px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
     &__close{
@@ -216,6 +219,7 @@ $nav-height: 65px;
     }
 
     @media screen and (max-width: $container-s-max) {
+        height: inherit;
         position: fixed;
         top: $nav-height;
         right: 0;

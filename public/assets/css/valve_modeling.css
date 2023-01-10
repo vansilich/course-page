@@ -446,7 +446,13 @@ button {
     max-width: 540px;
   }
 }
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 539px) and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 374px) {
   .container {
     max-width: 100%;
     padding: 0 20px;
@@ -484,7 +490,12 @@ button {
     max-width: 440px;
   }
 }
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 539px) and (min-width: 375px) {
+  .container-mini {
+    max-width: 310px;
+  }
+}
+@media screen and (max-width: 374px) {
   .container-mini {
     max-width: 100%;
     padding: 0 5px;
@@ -492,6 +503,7 @@ button {
 }
 
 .nav-sticky {
+  transform: translateZ(2px);
   z-index: 2000;
   top: 0;
   position: sticky;
@@ -623,6 +635,7 @@ button {
 }
 
 .nav-burger-menu-overlay {
+  transform: translateZ(1px);
   display: none;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.63) !important;
@@ -649,13 +662,14 @@ button {
 }
 
 .nav-burger-menu {
+  height: 100vh;
   display: none;
   position: fixed;
   background-color: #ffffff;
   top: 0;
   right: 0;
   bottom: 0;
-  padding: 15px 35px 0 20px;
+  padding: 15px 70px 0 70px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .nav-burger-menu__close {
@@ -678,6 +692,7 @@ button {
 }
 @media screen and (max-width: 719px) {
   .nav-burger-menu {
+    height: inherit;
     position: fixed;
     top: 65px;
     right: 0;
@@ -769,7 +784,7 @@ button {
 }
 @media screen and (min-width: 1440px) {
   .promo-bg-colored {
-    padding: 60px 0 40px 0;
+    padding: 60px 0 60px 0;
   }
 }
 @media screen and (max-width: 1439px) and (min-width: 1140px) {
@@ -808,6 +823,11 @@ button {
   flex-direction: row;
   position: relative;
 }
+@media screen and (max-width: 539px) {
+  .start-promo__left {
+    width: 100%;
+  }
+}
 
 .promo-text__top {
   display: flex;
@@ -816,10 +836,27 @@ button {
   align-items: center;
 }
 .promo-text__middle {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   color: #FFFFFF;
   font-weight: 700;
   letter-spacing: -0.015em;
+}
+.promo-text__enroll {
+  cursor: pointer;
+  margin-top: 40px;
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+  padding: 12px 70px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  background-color: #6100FF;
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.17));
+  display: block;
+}
+.promo-text__enroll:hover {
+  background-color: #9847FF;
 }
 @media screen and (min-width: 1440px) {
   .promo-text__middle {
@@ -827,7 +864,7 @@ button {
     margin-top: 25px;
   }
   .promo-text__bottom {
-    margin-top: 30px;
+    margin-top: 25px;
   }
 }
 @media screen and (max-width: 1439px) and (min-width: 1140px) {
@@ -836,7 +873,7 @@ button {
     font-size: 50px;
   }
   .promo-text__bottom {
-    margin-top: 35px;
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 1139px) and (min-width: 960px) {
@@ -845,7 +882,7 @@ button {
     margin-top: 30px;
   }
   .promo-text__bottom {
-    margin-top: 45px;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 959px) and (min-width: 720px) {
@@ -854,7 +891,7 @@ button {
     margin-top: 30px;
   }
   .promo-text__bottom {
-    margin-top: 35px;
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 719px) and (min-width: 540px) {
@@ -867,6 +904,10 @@ button {
   }
 }
 @media screen and (max-width: 539px) and (min-width: 375px) {
+  .promo-text__enroll {
+    margin: 30px auto 0 auto;
+    padding: 10px 30px;
+  }
   .promo-text__middle {
     font-size: 25px;
     margin-top: 20px;
@@ -876,6 +917,10 @@ button {
   }
 }
 @media screen and (max-width: 374px) {
+  .promo-text__enroll {
+    margin: 30px auto 0 auto;
+    padding: 10px 30px;
+  }
   .promo-text__middle {
     font-size: 25px;
     margin-top: 24px;
@@ -1055,17 +1100,17 @@ button {
 .promo-animated__3D-2 {
   z-index: 15;
   left: -45px;
-  width: 420px;
+  width: 460px;
   top: -120px;
 }
 .promo-animated__notebook {
-  top: 120px;
-  width: 630px;
+  top: 210px;
+  width: 660px;
   left: 0px;
 }
 @media screen and (max-width: 1439px) and (min-width: 1140px) {
   .promo-animated__3D-1 {
-    top: -50px;
+    top: -10px;
     width: 320px;
     left: 140px;
   }
@@ -1075,8 +1120,8 @@ button {
     top: 20px;
   }
   .promo-animated__notebook {
-    left: -210px;
-    top: 170px;
+    left: -150px;
+    top: 220px;
     width: 600px;
   }
 }
@@ -1110,7 +1155,7 @@ button {
   }
   .promo-animated__notebook {
     left: -150px;
-    top: 150px;
+    top: 190px;
     width: 430px;
   }
 }
@@ -1118,16 +1163,16 @@ button {
   .promo-animated__3D-1 {
     top: -20px;
     width: 170px;
-    left: -10px;
+    left: 10px;
   }
   .promo-animated__3D-2 {
-    left: -125px;
+    left: -105px;
     width: 210px;
     top: 30px;
   }
   .promo-animated__notebook {
     left: -170px;
-    top: 130px;
+    top: 190px;
     width: 320px;
   }
 }
@@ -1143,28 +1188,31 @@ button {
   .promo-animated__3D-2 {
     left: calc(50% - 165px);
     width: 260px;
-    top: 160px;
+    top: 240px;
   }
   .promo-animated__notebook {
-    left: calc(50% - 200px);
-    top: 280px;
-    width: 360px;
+    left: calc(50% - 160px);
+    top: 370px;
+    width: 330px;
   }
 }
 @media screen and (max-width: 374px) {
+  .promo-animated {
+    position: initial;
+  }
   .promo-animated__3D-1 {
     top: -50px;
     width: 110px;
-    left: -10px;
+    left: calc(100% - 50px);
   }
   .promo-animated__3D-2 {
-    left: -265px;
-    width: 170px;
-    top: 210px;
+    left: calc(50% - 134px);
+    width: 210px;
+    top: 250px;
   }
   .promo-animated__notebook {
-    left: -280px;
-    top: 280px;
+    left: calc(50% - 140px);
+    top: 350px;
     width: 270px;
   }
 }
@@ -1329,7 +1377,7 @@ button {
   align-items: center;
   color: #FFFFFF;
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 @media screen and (max-width: 959px) {
   .is-for__bottom {
@@ -1356,7 +1404,7 @@ button {
 }
 .for-people-group__text {
   display: inline;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "inter", sans-serif;
   font-size: 17px;
   color: #FFFFFF;
@@ -1574,6 +1622,7 @@ button {
   font-weight: 400;
   font-size: 15px;
   color: #2C2C2C;
+  line-height: 24px;
 }
 @media screen and (max-width: 959px) {
   .course-format-text__title, .course-format-text__description {
@@ -1715,12 +1764,14 @@ button {
 .teacher-text__quick {
   grid-area: teacher-quick;
   align-self: center;
+  line-height: 21px;
 }
 .teacher-text__title {
   font-weight: 700;
   font-size: 20px;
 }
 .teacher-text__concise {
+  margin-top: 5px;
   font-weight: 400;
   font-size: 17px;
 }
@@ -1731,6 +1782,7 @@ button {
   font-size: 17px;
   padding: 0;
   list-style: none;
+  line-height: 21px;
 }
 .teacher-text__about li:not(:first-child) {
   margin-top: 5px;
@@ -1813,6 +1865,9 @@ button {
 .programs__item.expanded .program-content {
   display: block !important;
 }
+.programs__item.expanded .program-block {
+  padding: 25px 0 10px 0;
+}
 .programs__item.expanded .program-block__icon {
   transition: 0.5s;
   transform: rotate(45deg);
@@ -1822,6 +1877,7 @@ button {
   display: none;
   font-family: "Inter", sans-serif;
   padding: 5px 110px 20px 110px;
+  margin: 0 0 15px 0;
   color: #FFFFFF;
   font-size: 17px;
   font-weight: 400;
@@ -1836,7 +1892,7 @@ button {
 }
 @media screen and (max-width: 719px) {
   .program-content {
-    padding: 5px 0 20px 0;
+    padding: 5px 0 20px 20px;
   }
 }
 
@@ -2288,6 +2344,7 @@ button {
   background-color: transparent;
   border: none;
   font-size: 20px;
+  text-decoration: underline;
   color: #898989;
   cursor: pointer;
 }
@@ -2472,7 +2529,6 @@ button {
   position: relative;
   border-radius: 3px;
   border: 1px solid #9847FF;
-  box-shadow: 0px 0px 4px #27E2EE;
   width: 13px;
   height: 13px;
   -webkit-user-select: none;
@@ -2494,6 +2550,7 @@ button {
 }
 .enroll-custom-checkbox__checkmark {
   display: none;
+  box-shadow: 0px 0px 4px #27E2EE;
 }
 
 label[for=im-student-checkbox] {
@@ -2796,6 +2853,7 @@ label[for=im-student-checkbox] {
   display: block;
 }
 .popup-enroll-custom-checkbox__checkmark {
+  box-shadow: 0px 0px 4px #27E2EE;
   display: none;
 }
 

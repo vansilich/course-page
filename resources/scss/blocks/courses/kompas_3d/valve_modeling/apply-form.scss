@@ -157,7 +157,6 @@
     position: relative;
     border-radius: 3px;
     border: 1px solid #9847FF;
-    box-shadow: 0px 0px 4px #27E2EE;
     width: 13px;
     height: 13px;
     user-select: none;
@@ -181,6 +180,7 @@
 
     &__checkmark{
         display: none;
+        box-shadow: 0px 0px 4px #27E2EE;
     }
 }
 

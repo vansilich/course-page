@@ -1,9 +1,9 @@
 @extends('layouts.main')
 
 @section('header_assets')
-    <link rel="stylesheet" href="{{ asset('/assets/css/valve_modeling.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/valve_modeling.css') }}?v=4">
 
-    <script src="{{ mix('/assets/js/valve_modeling.js') }}" defer></script>
+    <script src="{{ mix('/assets/js/valve_modeling.js') }}?v=2" defer></script>
 @endsection
 
 @section('page_content')

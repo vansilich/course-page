@@ -76,7 +76,12 @@ $default-active-color: #9847FF;
         max-width: $container-s-min;
     }
 
-    @media screen and (max-width: $container-xs-max) {
+    @media screen and (max-width: $container-xs-max) and (min-width: $container-xs-min) {
+        max-width: $container-xs-min;
+        padding: 0 20px;
+    }
+
+    @media screen and (max-width: $container-xxs-max) {
         max-width: 100%;
         padding: 0 20px;
     }
@@ -108,7 +113,11 @@ $default-active-color: #9847FF;
         max-width: $container-mini-s;
     }
 
-    @media screen and (max-width: $container-xs-max) {
+    @media screen and (max-width: $container-xs-max) and (min-width: $container-xs-min) {
+        max-width: $container-mini-xs;
+    }
+
+    @media screen and (max-width: $container-xxs-max) {
         max-width: 100%;
         padding: 0 5px;
     }

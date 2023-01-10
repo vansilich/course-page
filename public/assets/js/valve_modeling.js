@@ -22933,7 +22933,9 @@ rightNavBurgerObserver.observe(rightNavBurger, {
   attributes: true //Слушаем только атрибуты
 
 });
-new _modules_burger_menu_toggle__WEBPACK_IMPORTED_MODULE_1__["default"]('.top-nav__burger-menu-icon', '.top-nav__burger-menu', 'open', '.nav-burger-menu__close', '.popup-overlay.nav-burger-menu-overlay'); // Popup по открытию кнопки из навигации
+new _modules_burger_menu_toggle__WEBPACK_IMPORTED_MODULE_1__["default"]('.top-nav__burger-menu-icon', '.top-nav__burger-menu', 'open', '.nav-burger-menu__close', '.popup-overlay.nav-burger-menu-overlay'); // Popup по открытию кнопки из мобильного меню
+
+new _modules_popup__WEBPACK_IMPORTED_MODULE_4__["default"]('.promo-text__enroll', '.popup-apply-form-overlay', 'hidden'); // Popup по открытию кнопки из навигации
 
 new _modules_popup__WEBPACK_IMPORTED_MODULE_4__["default"]('.top-nav__button', '.popup-apply-form-overlay', 'hidden'); // Popup по открытию кнопки из мобильного меню
 

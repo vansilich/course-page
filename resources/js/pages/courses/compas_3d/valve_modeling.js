@@ -64,6 +64,13 @@ new BurgerMenuToggle(
     '.popup-overlay.nav-burger-menu-overlay',
 );
 
+// Popup по открытию кнопки из мобильного меню
+new Popup(
+    '.promo-text__enroll',
+    '.popup-apply-form-overlay',
+    'hidden'
+);
+
 // Popup по открытию кнопки из навигации
 new Popup(
     '.top-nav__button',

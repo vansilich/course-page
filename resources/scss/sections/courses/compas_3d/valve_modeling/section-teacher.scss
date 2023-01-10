@@ -163,6 +163,7 @@
     &__quick{
         grid-area: teacher-quick;
         align-self: center;
+        line-height: 21px;
     }
 
     &__title{
@@ -171,6 +172,7 @@
     }
 
     &__concise{
+        margin-top: 5px;
         font-weight: 400;
         font-size: 17px;
     }
@@ -182,6 +184,7 @@
         font-size: 17px;
         padding: 0;
         list-style: none;
+        line-height: 21px;
 
         & li:not(:first-child){
             margin-top: 5px;
